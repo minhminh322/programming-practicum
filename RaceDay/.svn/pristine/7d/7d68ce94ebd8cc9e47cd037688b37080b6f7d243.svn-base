@@ -1,0 +1,9 @@
+package model;
+
+public class RaceMap {
+
+    public RaceMap() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

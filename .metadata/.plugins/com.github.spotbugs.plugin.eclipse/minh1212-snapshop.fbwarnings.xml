@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.11" sequence="1" timestamp="1549831258584" analysisTimestamp="1549831253198" release="">
+  <Project projectName="minh1212-snapshop">
+    <Jar>/Users/minhphan/eclipse-workspace/minh1212-snapshop/bin</Jar>
+    <AuxClasspathEntry>/Users/minhphan/eclipse-workspace/minh1212-snapshop/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/minhphan/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/minhphan/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/minhphan/eclipse-workspace/minh1212-snapshop/src</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 10 Feb 2019 12:40:52 -0800" total_classes="16" referenced_classes="100" total_bugs="0" total_size="361" num_packages="3" java_version="11" vm_version="11+28" cpu_seconds="41.41" clock_seconds="5.39" peak_mbytes="860.92" alloc_mbytes="1024.00" gc_seconds="0.54">
+    <PackageStats package="filters" total_bugs="0" total_types="10" total_size="154">
+      <ClassStats class="filters.AbstractFilter" sourceFile="AbstractFilter.java" interface="false" size="66" bugs="0"/>
+      <ClassStats class="filters.AbstractWeightedFilter" sourceFile="AbstractWeightedFilter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="filters.EdgeDetectFilter" sourceFile="EdgeDetectFilter.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="filters.EdgeHighlightFilter" sourceFile="EdgeHighlightFilter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="filters.Filter" sourceFile="Filter.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="filters.FlipHorizontalFilter" sourceFile="FlipHorizontalFilter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="filters.FlipVerticalFilter" sourceFile="FlipVerticalFilter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="filters.GrayscaleFilter" sourceFile="GrayscaleFilter.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="filters.SharpenFilter" sourceFile="SharpenFilter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="filters.SoftenFilter" sourceFile="SoftenFilter.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="gui" total_bugs="0" total_types="4" total_size="126">
+      <ClassStats class="gui.SnapShopGUI" sourceFile="SnapShopGUI.java" interface="false" size="103" bugs="0"/>
+      <ClassStats class="gui.SnapShopGUI$1MyActionListener" sourceFile="SnapShopGUI.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="gui.SnapShopMain" sourceFile="SnapShopMain.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="gui.SnapShopMain$1" sourceFile="SnapShopMain.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="image" total_bugs="0" total_types="2" total_size="81">
+      <ClassStats class="image.Pixel" sourceFile="Pixel.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="image.PixelImage" sourceFile="PixelImage.java" interface="false" size="43" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1137" invocations="884" avgMicrosecondsPerInvocation="1286" maxMicrosecondsPerInvocation="124332" standardDeviationMicrosecondsPerInvocation="6168"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="728" invocations="100" avgMicrosecondsPerInvocation="7285" maxMicrosecondsPerInvocation="105697" standardDeviationMicrosecondsPerInvocation="16064"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="497" invocations="384" avgMicrosecondsPerInvocation="1296" maxMicrosecondsPerInvocation="32460" standardDeviationMicrosecondsPerInvocation="3363"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="474" invocations="100" avgMicrosecondsPerInvocation="4749" maxMicrosecondsPerInvocation="72998" standardDeviationMicrosecondsPerInvocation="10277"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="360" invocations="2" avgMicrosecondsPerInvocation="180381" maxMicrosecondsPerInvocation="283866" standardDeviationMicrosecondsPerInvocation="103485"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="266" invocations="100" avgMicrosecondsPerInvocation="2665" maxMicrosecondsPerInvocation="75315" standardDeviationMicrosecondsPerInvocation="8024"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="232" invocations="100" avgMicrosecondsPerInvocation="2328" maxMicrosecondsPerInvocation="48866" standardDeviationMicrosecondsPerInvocation="5848"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="151" invocations="887" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="19271" standardDeviationMicrosecondsPerInvocation="1023"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="118" invocations="100" avgMicrosecondsPerInvocation="1181" maxMicrosecondsPerInvocation="40086" standardDeviationMicrosecondsPerInvocation="5114"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="114" invocations="100" avgMicrosecondsPerInvocation="1149" maxMicrosecondsPerInvocation="21104" standardDeviationMicrosecondsPerInvocation="2667"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1549831258584" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

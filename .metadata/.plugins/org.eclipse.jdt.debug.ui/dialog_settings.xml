@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=minh1212-orientation/src&amp;lt;{HelloMain.java[HelloMain&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=minh1212-bookstore/src&amp;lt;view{BookstoreMain.java[BookstoreMain&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=BigDecimal examples/src&amp;lt;tests{BigDecimalDemoCode.java[BigDecimalDemoCode&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=username-roadrage/src&amp;lt;view{RoadRageMain.java[RoadRageMain&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=username-snapshop/src&amp;lt;gui{SnapShopMain.java[SnapShopMain&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=minh1212-snapshop/src&amp;lt;gui{SnapShopMain.java[SnapShopMain&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=minh1212-roadrage/src&amp;lt;view{RoadRageMain.java[RoadRageMain&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Swing GUI Observer Example \(Time)/src&amp;lt;{Application.java[Application&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=crm-window/\/Users\/minhphan\/.p2\/pool\/plugins\/org.junit_4.12.0.v201504281640\/junit.jar&amp;lt;org.junit.runner(JUnitCore.class[JUnitCore&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=minh1212-raceday/src&amp;lt;application{Main.java[Main&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="280" key="DIALOG_X_ORIGIN"/>
+			<item value="137" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+</section>

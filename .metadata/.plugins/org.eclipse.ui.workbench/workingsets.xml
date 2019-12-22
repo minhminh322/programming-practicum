@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1538451289395_0" label="Java Main Sources" name="main"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1538451289409_1" label="Java Test Sources" name="test"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1545344078789_19" label="TCSS 305" name="TCSS 305">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/minh1212-raceday" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/minh1212-testing" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/minh1212-bookstore" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/minh1212-snapshop" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/minh1212-roadrage" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/minh1212-orientation" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1545428292474_20" label="CRM Project" name="CRM Project"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1538451291732_2" label="Window Working Set" name="Aggregate for window 1538451291732"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1540937522083_3" label="Window Working Set" name="Aggregate for window 1540937522083"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1540972306087_4" label="Window Working Set" name="Aggregate for window 1540972306087"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1541679997340_5" label="Window Working Set" name="Aggregate for window 1541679997340"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1542051802703_6" label="Window Working Set" name="Aggregate for window 1542051802703"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1542131167280_7" label="Window Working Set" name="Aggregate for window 1542131167280"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1542311769865_8" label="Window Working Set" name="Aggregate for window 1542311769865"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1542346644297_9" label="Window Working Set" name="Aggregate for window 1542346644297"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1542432376981_10" label="Window Working Set" name="Aggregate for window 1542432376981"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1542438810191_11" label="Window Working Set" name="Aggregate for window 1542438810191"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1542694590839_12" label="Window Working Set" name="Aggregate for window 1542694590839"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1542746048517_13" label="Window Working Set" name="Aggregate for window 1542746048517"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1543210173759_14" label="Window Working Set" name="Aggregate for window 1543210173759"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1543956503734_15" label="Window Working Set" name="Aggregate for window 1543956503733"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1544097807237_16" label="Window Working Set" name="Aggregate for window 1544097807237"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1544170432802_17" label="Window Working Set" name="Aggregate for window 1544170432802"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1544299887326_18" label="Window Working Set" name="Aggregate for window 1544299887326"/>
+<mruList name="CRM Project"/>
+<mruList name="TCSS 305"/>
+</workingSetManager>

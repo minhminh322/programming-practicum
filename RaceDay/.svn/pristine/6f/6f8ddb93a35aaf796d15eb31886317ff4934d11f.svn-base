@@ -1,0 +1,39 @@
+
+package model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Child class store Line Crossing Message.
+ * @author minhphan
+ * @version Fall 2018
+ *
+ */
+public class LeaderboardMessge extends AbstractMessage {
+    
+    /**
+     * List of racer Leaderboard.
+     */
+    private static List<Integer> board;
+    
+    /**
+     * Constructor with parameter.
+     * @param theTimeStamp time stamp.
+     * @param theList list of leaderboard.
+     */
+    public LeaderboardMessge(final int theTimeStamp, final List<Integer> theList) {
+        super(theTimeStamp);
+        board = new ArrayList<Integer>();
+    }
+    
+    /**
+     * Get leaderboard method.
+     * @return list of racer in leaderboard.
+     */
+    public List<Integer> getBoard() {
+        return board;
+    }
+    
+
+}

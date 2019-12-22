@@ -1,0 +1,63 @@
+
+package model;
+
+/**
+ * Child class store Line Crossing Message.
+ * @author minhphan
+ * @version Fall 2018
+ *
+ */
+public class TelementryMessge extends AbstractMessage {
+
+    /** race id variable. */
+    private int myRaceID;
+
+    /** distance variable. */
+    private double myDistance;
+
+    /** lap variable. */
+    private int myLap;
+
+    /**
+     * Constructor with parameters.
+     * @param theTimeStamp time stamp.
+     * @param theRaceID race id.
+     * @param theDistance distance.
+     * @param theLap lap.
+     */
+    public TelementryMessge(final int theTimeStamp, final int theRaceID,
+                            final double theDistance, final int theLap) {
+        super(theTimeStamp);
+
+        myRaceID = theRaceID;
+        myDistance = theDistance;
+        myLap = theLap;
+        
+      //  System.out.println(theTimeStamp + ":" + myRaceID + ":" + myDistance + ":" + myLap);
+    }
+
+    /**
+     * get the race id method.
+     * @return race id.
+     */
+    public int getRaceID() {
+        return myRaceID;
+    }
+
+    /**
+     * get the distance method.
+     * @return distance.
+     */
+    public double getDistance() {
+        return myDistance;
+    }
+
+    /**
+     * get the lap method.
+     * @return lap.
+     */
+    public int getLap() {
+        return myLap;
+    }
+
+}

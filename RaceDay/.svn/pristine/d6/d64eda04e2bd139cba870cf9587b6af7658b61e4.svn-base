@@ -1,0 +1,214 @@
+/*
+ * TCSS 305 - Assignment 5: RaceDay
+ */
+
+package model;
+
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.awt.image.Raster;
+import java.awt.image.WritableRaster;
+import java.beans.PropertyChangeListener;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+import javax.imageio.ImageIO;
+
+
+public final class Race implements PropertyChangeEnabledRaceControls {
+
+
+    // Constructor
+
+    public Race() {}
+
+
+
+    @Override
+    public void advance() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void advance(int theMillisecond) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void moveTo(int theMillisecond) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void toggleParticipant(int theParticpantID, boolean theToggle) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void loadRace(File theRaceFile) throws IOException {
+        final Scanner input = new Scanner(new FileReader(theRaceFile));
+        String line;
+        String str;
+        String str1;
+        int i = 0;
+        int participants = 0;
+        int countParticipants =0;
+        while (input.hasNextLine()) {
+            line = input.nextLine();   
+            str = line.substring(1);
+            
+            
+            Scanner s1 = new Scanner(str).useDelimiter(":");
+            
+           
+            Scanner s = new Scanner(line).useDelimiter(":");
+            
+            StringTokenizer tokens = new StringTokenizer(line, ":");
+          
+            int countTokens = tokens.countTokens();
+
+            if (i == 0 && !(s.next()).startsWith("#RACE")) {
+                throw new IOException();
+            } else if (i == 0 && countTokens != 2) {
+                throw new IOException();
+            } else if (i == 1 && !s.next().startsWith("#TRACK")) {
+                throw new IOException();
+            } else if (i == 1 && countTokens != 2) {
+                throw new IOException();
+            } else if (i == 2 && !s.next().startsWith("#WIDTH")) {
+                throw new IOException();
+            } else if (i == 2 && countTokens != 2) {
+                throw new IOException();
+            } else if (i == 3 && !s.next().startsWith("#HEIGHT")) {
+                throw new IOException();
+            } else if (i == 3 && countTokens != 2) {
+                throw new IOException();
+            } else if (i == 4 && !s.next().startsWith("#DISTANCE")) {
+                throw new IOException();
+            } else if (i == 4 && countTokens != 2) {
+                throw new IOException();
+            } else if (i == 5 && !s.next().startsWith("#TIME")) {
+                throw new IOException();
+            } else if (i == 5 && countTokens != 2) {
+                throw new IOException();
+            } 
+             else if (i == 6 && !s.next().startsWith("#PARTICIPANTS")) {
+                throw new IOException();
+            } else if (i == 6 && countTokens != 2) {
+                throw new IOException();
+            } 
+            
+           if (line.startsWith("#PARTICIPANTS")) {
+               System.out.println(line);
+                participants = s.nextInt();
+                line = input.nextLine();
+                while (!line.startsWith("$L")) {
+                    if (!line.startsWith("#")) {
+                        throw new IOException();
+                    }
+                    System.out.println(line);
+                    line = input.nextLine();
+
+                    countParticipants++;
+                }
+                if (countParticipants != participants) {
+                    throw new IOException();
+                }
+
+           } 
+           
+
+           
+          if (line.startsWith("$L")) {
+              
+              StringTokenizer temptok = new StringTokenizer(line, ":");
+              
+              int counttemp = temptok.countTokens();
+
+               if(counttemp != (participants + 2)) {                 
+                  throw new IOException();
+                
+               }
+              
+
+          }
+          
+          if (line.startsWith("$T")) {
+              StringTokenizer temptok = new StringTokenizer(line, ":");
+              
+              int counttemp = temptok.countTokens();
+
+               if(counttemp != 5) {       
+                  throw new IOException();
+                
+               }
+              
+
+          }
+          
+          if (line.startsWith("$C")) {
+              StringTokenizer temptok = new StringTokenizer(line, ":");
+              
+              int counttemp = temptok.countTokens();
+
+               if(counttemp != 5) {       
+                  throw new IOException();
+                
+               }
+              
+
+          }
+          
+          
+           
+          
+
+          
+           
+           
+               
+            System.out.println(line);
+
+            i++;
+        }
+        
+    }
+    
+    
+
+    @Override
+    public void addPropertyChangeListener(PropertyChangeListener theListener) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void addPropertyChangeListener(String thePropertyName,
+                                          PropertyChangeListener theListener) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void removePropertyChangeListener(PropertyChangeListener theListener) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void removePropertyChangeListener(String thePropertyName,
+                                             PropertyChangeListener theListener) {
+        // TODO Auto-generated method stub
+        
+    }
+
+
+}

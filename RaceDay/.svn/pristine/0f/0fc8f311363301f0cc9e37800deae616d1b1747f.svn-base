@@ -1,0 +1,33 @@
+
+package model;
+
+public class RaceTrackSize {
+
+    private static int myTrackWidth;
+    private static int myTrackHeight;
+
+    public RaceTrackSize() {
+        // TODO Auto-generated constructor stub
+    }
+
+    public RaceTrackSize(int theWidth, int theHeight) {
+        // TODO Auto-generated constructor stub
+        myTrackWidth = theWidth;
+        myTrackHeight = theHeight;
+    }
+
+    /**
+     * @return the myTrackWidth
+     */
+    public static int getTrackWidth() {
+        return myTrackWidth;
+    }
+
+    /**
+     * @return the myTrackHeight
+     */
+    public static int getTrackHeight() {
+        return myTrackHeight;
+    }
+
+}

@@ -1,0 +1,85 @@
+
+package model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Participants list class.
+ * @author minhphan
+ * @version 2019
+ *
+ */
+public class ParticipantsList {
+    /** List of participants. */
+    private static List<RaceParticipants> list;
+    
+    /** Initilize the size of list. */
+    private static int size;
+    /** List of racer name. */
+    private static List<String> NameList;
+    /** List of race id. */
+    private static List<Integer> IDList;
+    /** List of starting distance. */
+    private static List<Double> DistanceList;
+
+    /**
+     * Default constructor. 
+     */
+    public ParticipantsList() {
+        list = new ArrayList<>();
+        IDList = new ArrayList<>();
+        NameList = new ArrayList<>();
+        DistanceList = new ArrayList<>();
+    }
+
+    /**
+     * Constructor with parameter.
+     * @param theList list.
+     */
+    public ParticipantsList(final List<RaceParticipants> theList) {
+        list = theList;
+    }
+    /**
+     * add participants method.
+     * @param theParticipants participants.
+     */
+    public void add(final RaceParticipants theParticipants) {
+        list.add(theParticipants);
+        NameList.add(theParticipants.getRaceName());
+        IDList.add(theParticipants.getRaceID());
+        DistanceList.add(theParticipants.getStartDistance());
+        size++;
+    }
+
+    /**
+     * Get the size of list.
+     * @return number of size.
+     */
+    public int getSize() {
+        return size;
+    }
+    /**
+     * Get the list of name.
+     * @return name list.
+     */
+    public List<String> getListName() {
+        return NameList;
+    }
+    /**
+     * Get the list of id.
+     * @return id list.
+     */
+    public List<Integer> getListIds() {
+        return IDList;
+    }
+    
+    /**
+     * Get the list of start distance.
+     * @return the distance.
+     */
+    public List<Double> getListStart() {
+        return DistanceList;
+    }
+
+}

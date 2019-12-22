@@ -1,0 +1,12 @@
+
+package model;
+
+public class LeaderboardMessge extends AbstractMessage {
+
+    public LeaderboardMessge(final int theTimeStamp) {
+        super(theTimeStamp);
+
+        // TODO Auto-generated constructor stub
+    }
+
+}

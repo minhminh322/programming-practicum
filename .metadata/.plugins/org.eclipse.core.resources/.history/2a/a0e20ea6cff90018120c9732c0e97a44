@@ -1,0 +1,146 @@
+
+package view;
+
+import static model.PropertyChangeEnabledRaceControls.PROPERTY_DISTANCE;
+import static model.PropertyChangeEnabledRaceControls.PROPERTY_TIME;
+import static model.PropertyChangeEnabledRaceControls.PROPERTY_RACER_ID;
+
+import java.awt.BasicStroke;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import java.awt.Shape;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Point2D;
+import java.awt.geom.Rectangle2D;
+import java.awt.geom.RectangularShape;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.BorderFactory;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+import model.RaceInformation;
+import model.RaceTrackSize;
+import track.VisibleRaceTrack;
+
+public class RaceTrack extends JPanel implements PropertyChangeListener {
+
+    private final static int TRACK_WIDTH = 500;
+    private final static int TRACK_HEIGHT = 400;
+    private final static int TRACK_X = 90;
+    private final static int TRACK_Y = 100;
+    private final static int TRACK_STROKE= 15;
+
+    private Point2D.Double testPoint;
+
+    private Ellipse2D.Double testRacer;
+
+    private VisibleRaceTrack trackShape;
+
+    private Shape rectangle;
+    
+    private List<Ellipse2D.Double> myRacerSharp;
+    
+    private List<Point2D.Double> myRacerPoint;
+    
+    private Graphics2D g2d;
+
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 7872728925089958093L;
+
+    public RaceTrack() {
+        // TODO Auto-generated constructor stub
+        super();
+        
+        myRacerSharp = new ArrayList<>();
+        
+        myRacerPoint = new ArrayList<>();
+
+        trackShape = new VisibleRaceTrack(TRACK_X, TRACK_Y, TRACK_X + 250, TRACK_Y + 100,
+                                          10000);
+
+//        testPoint = trackShape.getPointAtDistance(5000);
+
+     //   testRacer = new Ellipse2D.Double(testPoint.getX(), testPoint.getY(), 25, 25);
+
+        setPreferredSize(new Dimension(TRACK_WIDTH, TRACK_HEIGHT));
+
+    }
+    
+    
+
+    public void paintComponent(final Graphics theGraphics) {
+        super.paintComponent(theGraphics);
+        g2d = (Graphics2D) theGraphics;
+
+        // for better graphics display
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                             RenderingHints.VALUE_ANTIALIAS_ON);
+
+        g2d.setPaint(Color.BLUE);
+
+        rectangle = new Rectangle2D.Double(getWidth() / 2 - TRACK_WIDTH / 2,
+                                           getHeight() / 2 - TRACK_HEIGHT / 2, TRACK_WIDTH,
+                                           TRACK_HEIGHT);
+
+        g2d.draw(rectangle);
+        g2d.setPaint(Color.BLACK);
+
+        g2d.setStroke(new BasicStroke(TRACK_STROKE));
+
+//        g2d.draw(trackShape);
+//
+//        g2d.setPaint(Color.PINK);
+//        
+//        g2d.draw(testRacer);
+
+        
+
+    }
+    //
+    // public static void drawCircle(Graphics g, int x, int y, int radius) {
+    //
+    // int diameter = radius * 2;
+    //
+    // //shift x and y by the radius of the circle in order to correctly center it
+    // g.fillOval(x - radius, y - radius, diameter, diameter);
+    //
+    // }
+
+    @Override
+    public void propertyChange(final PropertyChangeEvent theEvent) {
+        if (PROPERTY_TIME.equals(theEvent.getPropertyName())) {
+            // System.out.println(theEvent.getNewValue());
+            repaint();
+            
+            testRacer = new Ellipse2D.Double(testPoint.getX(), testPoint.getY(), 25, 25);
+            testPoint = trackShape.getPointAtDistance(1);
+            g2d.draw(trackShape);
+
+            g2d.setPaint(Color.PINK);
+            
+            g2d.draw(testRacer);
+        }
+
+        if (PROPERTY_RACER_ID.equals(theEvent.getPropertyName())) {
+
+            
+
+ 
+            
+           // System.out.println(theEvent.getNewValue());
+        }
+
+    }
+
+}

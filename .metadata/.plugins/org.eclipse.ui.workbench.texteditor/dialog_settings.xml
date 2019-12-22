@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="MyStringBuilder" key="selection"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="true" key="wholeword"/>
+		<list key="findhistory">
+			<item value="StringBuilder"/>
+			<item value="MyStringBuilder"/>
+			<item value="myRacerList"/>
+			<item value="rectangle"/>
+			<item value="ONE_DIGIT_FORMAT"/>
+			<item value="public"/>
+			<item value="public "/>
+			<item value="board"/>
+			<item value="scrollPane"/>
+			<item value="tabInside"/>
+			<item value="race"/>
+			<item value="leaderMess"/>
+			<item value="myTeleMessage"/>
+			<item value="racer"/>
+			<item value="teleMess"/>
+		</list>
+		<list key="replacehistory">
+			<item value="MyStringBuilder"/>
+			<item value="StringBuilder"/>
+			<item value="myRectangle"/>
+			<item value="private"/>
+			<item value="myBoard"/>
+			<item value="myScrollPane"/>
+			<item value="myTabInside"/>
+			<item value="myRace"/>
+			<item value="myLeader"/>
+			<item value="myTele"/>
+			<item value="myRacer"/>
+			<item value="myTeleMessage"/>
+			<item value="myMessage"/>
+			<item value="myMapList"/>
+			<item value="myInformation"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="294" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="408" key="DIALOG_HEIGHT"/>
+		<item value="1148" key="DIALOG_X_ORIGIN"/>
+		<item value="329" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

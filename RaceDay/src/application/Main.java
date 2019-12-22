@@ -1,0 +1,48 @@
+package application;
+
+import controller.RaceDayController;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
+
+/**
+ * Main method.
+ * @author minhphan
+ * @version Fall 2019.
+ *
+ */
+public final class Main {
+    
+    /**
+     * Default Constructor.
+     */
+    private Main() { }
+    /**
+     * Main method.
+     * @param theArgs .
+     */
+    public static void main(final String[] theArgs) {
+        /* Use an appropriate Look and Feel */
+        try {
+            UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
+        } catch (final UnsupportedLookAndFeelException ex) {
+            ex.printStackTrace();
+        } catch (final IllegalAccessException ex) {
+            ex.printStackTrace();
+        } catch (final InstantiationException ex) {
+            ex.printStackTrace();
+        } catch (final ClassNotFoundException ex) {
+            ex.printStackTrace();
+        }
+        /* Turn off metal's use of bold fonts */
+        UIManager.put("swing.boldMetal", Boolean.FALSE);
+        
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+             
+                RaceDayController.createAndShowGUI();
+            }
+        });
+    }
+}

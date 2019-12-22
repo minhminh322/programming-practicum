@@ -1,0 +1,21 @@
+#RACE:305 RACE A
+#TRACK:OvalTrack
+#WIDTH:5
+#HEIGHT:2
+#DISTANCE:10000
+#TIME:66845
+#PARTICIPANTS:10
+#63:David:0.0
+#48:Josh:-100.0
+#88:Sally:-200.0
+#18:Stephanie:-300.0
+#45:Quynh:-400.0
+#42:Zane:-500.0
+#64:Luke:-600.0
+#32:Yang:-800.0
+#62:Vecheka:-900.0
+$L:0:63:48:88:18:53:42:64:12:32:62
+$T:0:63:0.14:0
+$T:0:42:-499.84:0
+$T:1:53:-399.68:0
+$T:1:62:-899.69:0

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.11" sequence="1" timestamp="1549831255540" analysisTimestamp="1549831249628" release="">
+  <Project projectName="minh1212-orientation">
+    <Jar>/Users/minhphan/eclipse-workspace/minh1212-orientation/bin</Jar>
+    <AuxClasspathEntry>/Users/minhphan/eclipse-workspace/minh1212-orientation/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/minhphan/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/minhphan/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/minhphan/eclipse-workspace/minh1212-orientation/src</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 10 Feb 2019 12:40:49 -0800" total_classes="2" referenced_classes="15" total_bugs="0" total_size="17" num_packages="1" java_version="11" vm_version="11+28" cpu_seconds="44.65" clock_seconds="5.91" peak_mbytes="697.69" alloc_mbytes="1024.00" gc_seconds="0.60">
+    <PackageStats package="" total_bugs="0" total_types="2" total_size="17">
+      <ClassStats class="Hello" sourceFile="Hello.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="HelloMain" sourceFile="HelloMain.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="1751" invocations="2" avgMicrosecondsPerInvocation="875673" maxMicrosecondsPerInvocation="1356126" standardDeviationMicrosecondsPerInvocation="480453"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="589" invocations="359" avgMicrosecondsPerInvocation="1642" maxMicrosecondsPerInvocation="59266" standardDeviationMicrosecondsPerInvocation="5330"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="269" invocations="15" avgMicrosecondsPerInvocation="17957" maxMicrosecondsPerInvocation="102819" standardDeviationMicrosecondsPerInvocation="27621"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="239" invocations="15" avgMicrosecondsPerInvocation="15987" maxMicrosecondsPerInvocation="92970" standardDeviationMicrosecondsPerInvocation="30688"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="222" invocations="53" avgMicrosecondsPerInvocation="4192" maxMicrosecondsPerInvocation="67892" standardDeviationMicrosecondsPerInvocation="11511"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="183" invocations="15" avgMicrosecondsPerInvocation="12211" maxMicrosecondsPerInvocation="84212" standardDeviationMicrosecondsPerInvocation="21480"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="157" invocations="4" avgMicrosecondsPerInvocation="39330" maxMicrosecondsPerInvocation="155255" standardDeviationMicrosecondsPerInvocation="66930"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1549831255538" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

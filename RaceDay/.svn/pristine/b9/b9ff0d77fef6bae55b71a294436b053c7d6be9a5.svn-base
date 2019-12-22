@@ -1,0 +1,67 @@
+
+package model;
+
+import java.beans.PropertyChangeSupport;
+import static model.PropertyChangeEnabledRaceControls.PROPERTY_LEADERBOARD;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Child class store Line Crossing Message.
+ * @author minhphan
+ * @version Fall 2018
+ *
+ */
+public class LeaderboardMessge extends AbstractMessage {
+    
+    /**
+     * List of racer Leaderboard.
+     */
+    private List<Integer> board = new ArrayList<Integer>();
+    
+    private int myTimeStamp;
+    
+    private final PropertyChangeSupport myPcs;
+    /**
+     * Constructor with parameter.
+     * @param theTimeStamp time stamp.
+     * @param theList list of leaderboard.
+     */
+    public LeaderboardMessge(final int theTimeStamp, final List<Integer> theList) {
+        super(theTimeStamp);
+        
+        myTimeStamp = theTimeStamp;
+        board = theList;
+        
+        myPcs = new PropertyChangeSupport(this);
+
+
+    }
+    
+    /**
+     * Get leaderboard method.
+     * @return list of racer in leaderboard.
+     */
+    public List<Integer> getBoard() {
+        return board;
+    }
+    
+    public void setBoard(Integer theBoard) {
+        board.add(theBoard);
+        myPcs.firePropertyChange(PROPERTY_LEADERBOARD, null, board);
+    }
+    
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder();
+        for (Integer s : board) {
+            sb.append(":");
+            sb.append(s);
+
+        }
+        return "$L:" + myTimeStamp + sb.toString();
+        
+    }
+    
+
+}

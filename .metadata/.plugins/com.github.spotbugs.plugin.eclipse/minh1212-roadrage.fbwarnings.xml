@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.11" sequence="1" timestamp="1549831260560" analysisTimestamp="1549831252284" release="">
+  <Project projectName="minh1212-roadrage">
+    <Jar>/Users/minhphan/eclipse-workspace/minh1212-roadrage/bin</Jar>
+    <AuxClasspathEntry>/Users/minhphan/eclipse-workspace/minh1212-roadrage/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/minhphan/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/minhphan/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/minhphan/eclipse-workspace/minh1212-roadrage/src</SrcDir>
+  </Project>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="model.Direction">
+      <SourceLine classname="model.Direction" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+    </Class>
+    <Method classname="model.Direction" name="dx" signature="()I" isStatic="false">
+      <SourceLine classname="model.Direction" start="186" end="200" startBytecode="0" endBytecode="130" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+    </Method>
+    <SourceLine classname="model.Direction" start="188" end="194" startBytecode="10" endBytecode="42" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+    <SourceLine classname="model.Direction" start="188" end="194" startBytecode="10" endBytecode="42" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="model.Direction">
+      <SourceLine classname="model.Direction" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+    </Class>
+    <Method classname="model.Direction" name="dy" signature="()I" isStatic="false">
+      <SourceLine classname="model.Direction" start="210" end="224" startBytecode="0" endBytecode="130" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+    </Method>
+    <SourceLine classname="model.Direction" start="212" end="218" startBytecode="10" endBytecode="42" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+    <SourceLine classname="model.Direction" start="212" end="218" startBytecode="10" endBytecode="42" sourcefile="Direction.java" sourcepath="model/Direction.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="tests.TruckTest">
+      <SourceLine classname="tests.TruckTest" sourcefile="TruckTest.java" sourcepath="tests/TruckTest.java"/>
+    </Class>
+    <Method classname="tests.TruckTest" name="testCanPass" signature="()V" isStatic="false">
+      <SourceLine classname="tests.TruckTest" start="74" end="107" startBytecode="0" endBytecode="601" sourcefile="TruckTest.java" sourcepath="tests/TruckTest.java"/>
+    </Method>
+    <String value="validTerrain"/>
+    <Type descriptor="Ljava/util/ArrayList;">
+      <SourceLine classname="java.util.ArrayList" start="121" end="1758" sourcefile="ArrayList.java" sourcepath="java/util/ArrayList.java"/>
+    </Type>
+    <SourceLine classname="tests.TruckTest" start="74" end="74" startBytecode="4" endBytecode="4" sourcefile="TruckTest.java" sourcepath="tests/TruckTest.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="view.RoadRagePanel">
+      <SourceLine classname="view.RoadRagePanel" sourcefile="RoadRagePanel.java" sourcepath="view/RoadRagePanel.java"/>
+    </Class>
+    <Method classname="view.RoadRagePanel" name="drawMap" signature="(Ljava/awt/Graphics2D;)V" isStatic="false">
+      <SourceLine classname="view.RoadRagePanel" start="191" end="241" startBytecode="0" endBytecode="523" sourcefile="RoadRagePanel.java" sourcepath="view/RoadRagePanel.java"/>
+    </Method>
+    <SourceLine classname="view.RoadRagePanel" start="197" end="230" startBytecode="39" endBytecode="239" sourcefile="RoadRagePanel.java" sourcepath="view/RoadRagePanel.java"/>
+    <SourceLine classname="view.RoadRagePanel" start="197" end="230" startBytecode="39" endBytecode="239" sourcefile="RoadRagePanel.java" sourcepath="view/RoadRagePanel.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="view.util.FileLoader">
+      <SourceLine classname="view.util.FileLoader" sourcefile="FileLoader.java" sourcepath="view/util/FileLoader.java"/>
+    </Class>
+    <Method classname="view.util.FileLoader" name="readCity" signature="(Ljavax/swing/JFrame;)Lview/RoadRagePanel;" isStatic="true">
+      <SourceLine classname="view.util.FileLoader" start="49" end="65" startBytecode="0" endBytecode="203" sourcefile="FileLoader.java" sourcepath="view/util/FileLoader.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="639" end="640" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="view.util.FileLoader" start="53" end="53" startBytecode="15" endBytecode="15" sourcefile="FileLoader.java" sourcepath="view/util/FileLoader.java"/>
+    <SourceLine classname="view.util.FileLoader" start="53" end="53" startBytecode="15" endBytecode="15" sourcefile="FileLoader.java" sourcepath="view/util/FileLoader.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 10 Feb 2019 12:40:51 -0800" total_classes="20" referenced_classes="376" total_bugs="5" total_size="1021" num_packages="4" java_version="11" vm_version="11+28" cpu_seconds="63.24" clock_seconds="8.28" peak_mbytes="924.75" alloc_mbytes="1024.00" gc_seconds="0.76" priority_2="4" priority_1="1">
+    <PackageStats package="model" total_bugs="2" total_types="11" total_size="419" priority_2="2">
+      <ClassStats class="model.AbstractVehicle" sourceFile="AbstractVehicle.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="model.Atv" sourceFile="Atv.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="model.Bicycle" sourceFile="Bicycle.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="model.Car" sourceFile="Car.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="model.Direction" sourceFile="Direction.java" interface="false" size="79" bugs="2" priority_2="2"/>
+      <ClassStats class="model.Human" sourceFile="Human.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="model.Light" sourceFile="Light.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="model.Taxi" sourceFile="Taxi.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="model.Terrain" sourceFile="Terrain.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="model.Truck" sourceFile="Truck.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="model.Vehicle" sourceFile="Vehicle.java" interface="true" size="15" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="tests" total_bugs="1" total_types="2" total_size="188" priority_2="1">
+      <ClassStats class="tests.HumanTest" sourceFile="HumanTest.java" interface="false" size="105" bugs="0"/>
+      <ClassStats class="tests.TruckTest" sourceFile="TruckTest.java" interface="false" size="83" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="view" total_bugs="1" total_types="6" total_size="354" priority_2="1">
+      <ClassStats class="view.RoadRageGUI" sourceFile="RoadRageGUI.java" interface="false" size="108" bugs="0"/>
+      <ClassStats class="view.RoadRageGUI$1" sourceFile="RoadRageGUI.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="view.RoadRageGUI$Properties" sourceFile="RoadRageGUI.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="view.RoadRageMain" sourceFile="RoadRageMain.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="view.RoadRageMain$1" sourceFile="RoadRageMain.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="view.RoadRagePanel" sourceFile="RoadRagePanel.java" interface="false" size="218" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="view.util" total_bugs="1" total_types="1" total_size="60" priority_1="1">
+      <ClassStats class="view.util.FileLoader" sourceFile="FileLoader.java" interface="false" size="60" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1702" invocations="1760" avgMicrosecondsPerInvocation="967" maxMicrosecondsPerInvocation="73261" standardDeviationMicrosecondsPerInvocation="4297"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1073" invocations="376" avgMicrosecondsPerInvocation="2854" maxMicrosecondsPerInvocation="106171" standardDeviationMicrosecondsPerInvocation="8293"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="981" invocations="376" avgMicrosecondsPerInvocation="2611" maxMicrosecondsPerInvocation="64828" standardDeviationMicrosecondsPerInvocation="7257"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="530" invocations="2" avgMicrosecondsPerInvocation="265227" maxMicrosecondsPerInvocation="401746" standardDeviationMicrosecondsPerInvocation="136519"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="447" invocations="919" avgMicrosecondsPerInvocation="486" maxMicrosecondsPerInvocation="11834" standardDeviationMicrosecondsPerInvocation="1171"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="295" invocations="376" avgMicrosecondsPerInvocation="787" maxMicrosecondsPerInvocation="17510" standardDeviationMicrosecondsPerInvocation="1926"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="288" invocations="1764" avgMicrosecondsPerInvocation="163" maxMicrosecondsPerInvocation="29147" standardDeviationMicrosecondsPerInvocation="1207"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="263" invocations="376" avgMicrosecondsPerInvocation="701" maxMicrosecondsPerInvocation="19195" standardDeviationMicrosecondsPerInvocation="2065"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="253" invocations="376" avgMicrosecondsPerInvocation="673" maxMicrosecondsPerInvocation="14714" standardDeviationMicrosecondsPerInvocation="1984"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="210" invocations="376" avgMicrosecondsPerInvocation="559" maxMicrosecondsPerInvocation="58684" standardDeviationMicrosecondsPerInvocation="3770"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="155" invocations="455" avgMicrosecondsPerInvocation="341" maxMicrosecondsPerInvocation="55201" standardDeviationMicrosecondsPerInvocation="2695"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="154" invocations="376" avgMicrosecondsPerInvocation="410" maxMicrosecondsPerInvocation="8997" standardDeviationMicrosecondsPerInvocation="989"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1549831260560" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

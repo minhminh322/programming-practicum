@@ -1,0 +1,113 @@
+
+package model;
+
+import java.beans.PropertyChangeSupport;
+import static model.PropertyChangeEnabledRaceControls.PROPERTY_DISTANCE;
+import static model.PropertyChangeEnabledRaceControls.PROPERTY_RACER_ID;
+import static model.PropertyChangeEnabledRaceControls.PROPERTY_LAP;
+
+/**
+ * Child class store Line Crossing Message.
+ * 
+ * @author minhphan
+ * @version Fall 2018
+ *
+ */
+public class TelementryMessge extends AbstractMessage {
+    /** separator string. */
+    private static final String SEPARATOR = ":";
+    
+    /** race id variable. */
+    private int myRaceID;
+
+    /** distance variable. */
+    private double myDistance;
+
+    /** lap variable. */
+    private int myLap;
+
+    /** time stamp. */
+    private int myTimeStamp;
+    
+    private final PropertyChangeSupport myPcs;
+
+    /**
+     * Constructor with parameters.
+     * 
+     * @param theTimeStamp time stamp.
+     * @param theRaceID race id.
+     * @param theDistance distance.
+     * @param theLap lap.
+     */
+    public TelementryMessge(final int theTimeStamp, final int theRaceID,
+                            final double theDistance, final int theLap) {
+        super(theTimeStamp);
+        myTimeStamp = theTimeStamp;
+        myRaceID = theRaceID;
+        myDistance = theDistance;
+        myLap = theLap;
+        myPcs = new PropertyChangeSupport(this);
+
+//         System.out.println(theTimeStamp + ":" + myRaceID + ":" + myDistance + ":" + myLap);
+    }
+
+    /**
+     * get the race id method.
+     * 
+     * @return race id.
+     */
+    public int getRaceID() {
+        return myRaceID;
+    }
+    
+    public void setRaceID(int theRaceID) {
+        double old = myRaceID;
+        myRaceID = theRaceID;
+        myPcs.firePropertyChange(PROPERTY_RACER_ID, old, myRaceID);
+        
+    }
+
+    /**
+     * get the distance method.
+     * 
+     * @return distance.
+     */
+    public double getDistance() {
+        return myDistance;
+    }
+    
+    public void setDistance(double theDistance) {
+        double old = myDistance;
+        myDistance = theDistance;
+        myPcs.firePropertyChange(PROPERTY_DISTANCE, old, myDistance);
+        
+    }
+
+    /**
+     * get the lap method.
+     * 
+     * @return lap.
+     */
+    public int getLap() {
+        return myLap;
+    }
+    
+    public void setLAp(int theLap) {
+        double old = myLap;
+        myLap = theLap;
+        myPcs.firePropertyChange(PROPERTY_LAP, old, myLap);
+        
+    } 
+
+    @Override
+    public String toString() {
+
+        return "$T:" + myTimeStamp + SEPARATOR 
+                        + myRaceID + SEPARATOR 
+                        + myDistance + SEPARATOR + myLap;
+
+    }
+    
+    
+
+}

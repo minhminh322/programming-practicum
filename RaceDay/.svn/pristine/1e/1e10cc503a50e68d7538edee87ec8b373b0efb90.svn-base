@@ -1,0 +1,84 @@
+
+package view;
+
+import static model.PropertyChangeEnabledRaceControls.PROPERTY_MAP;
+import static model.PropertyChangeEnabledRaceControls.PROPERTY_PARTICIPANT;
+import static model.PropertyChangeEnabledRaceControls.PROPERTY_TIME;
+
+import java.awt.Dimension;
+import java.awt.GridLayout;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JButton;
+import javax.swing.JPanel;
+
+import model.Race;
+
+public class RaceLeaderboard extends JPanel implements PropertyChangeListener {
+
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 3405558915055849185L;
+
+    private Race myRace;
+
+    private List<String> myRacers;
+
+    private JButton buttons;
+
+
+    public RaceLeaderboard() {
+
+        super();
+
+        myRace = new Race();
+
+        setupComponents();
+
+        // createButtons();
+
+    }
+
+    private void setupComponents() {
+        setLayout(new GridLayout(10, 1));
+
+        setPreferredSize(new Dimension(200, 400));
+
+        buttons = new JButton();
+        add(buttons);
+
+    }
+
+    @Override
+    public void propertyChange(final PropertyChangeEvent theEvent) {
+        if (PROPERTY_TIME.equals(theEvent.getPropertyName())) {
+
+            // System.out.println(theEvent.getNewValue());
+
+        }
+        if (PROPERTY_MAP.equals(theEvent.getPropertyName())) {
+
+            myRace = (Race) theEvent.getNewValue();
+
+            myRacers = new ArrayList<>();
+            myRacers = myRace.getRacerName();
+
+            for (int i = 0; i < myRacers.size(); i++) {
+                final JButton button = new JButton(myRacers.get(i));
+                add(button);
+                // System.out.println(myRacers.get(i));
+            }
+            
+        }
+
+        if (PROPERTY_PARTICIPANT.equals(theEvent.getPropertyName())) {
+            // System.out.println(theEvent.getNewValue());
+        }
+
+    }
+
+}

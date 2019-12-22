@@ -1,0 +1,476 @@
+
+package controller;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.WindowEvent;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import javax.swing.BorderFactory;
+import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JSlider;
+import javax.swing.JTabbedPane;
+import javax.swing.JTextArea;
+import javax.swing.JButton;
+import javax.swing.JToolBar;
+
+import model.Race;
+
+/**
+ * 
+ * @author minhphan
+ *
+ */
+public class RaceDayGUI extends JPanel {
+
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+
+    /** The separator for formatted. */
+    public static final String SEPARATOR = ":";
+
+    /** The number of milliseconds in a second. */
+    public static final int MILLIS_PER_SEC = 1000;
+
+    /** The number of seconds in a minute. */
+    public static final int SEC_PER_MIN = 60;
+
+    /** The number of minute in a hour. */
+    public static final int MIN_PER_HOUR = 60;
+
+    /** Padding for the border around the label. */
+    private static final int PADDING = 5;
+
+    /** The default border size. */
+    private static final int BORDER_SIZE = 10;
+
+    /** A formatter to require at least 1 digit, leading 0. */
+    public static final DecimalFormat ONE_DIGIT_FORMAT = new DecimalFormat("0");
+
+    /** A formatter to require at least 2 digits, leading 0s. */
+    public static final DecimalFormat TWO_DIGIT_FORMAT = new DecimalFormat("00");
+
+    /** A formatter to require at least 3 digits, leading 0s. */
+    public static final DecimalFormat THREE_DIGIT_FORMAT = new DecimalFormat("000");
+
+    /** The number of rows in the text area. */
+    private static final int TEXT_AREA_ROWS = 10;
+
+    /** The number of columns in the text area. */
+    private static final int TEXT_AREA_COLS = 50;
+
+    private JSlider mySlider;
+    private JLabel myTimer;
+    private JTabbedPane myTabs;
+    private JMenuItem[] myControls;
+    private JButton[] myControlsBar;
+    private JMenuItem myInfoItem;
+    private final JTextArea dos;
+
+    /**
+     * JFileChooser.
+     */
+    private final JFileChooser myChooser = new JFileChooser();
+    /**
+     * The default directory.
+     */
+    private File myFile = new File(".");
+    private static ImageIcon img = new ImageIcon("./images/raceday.png");
+    private String restartItem = new String("./images/ic_restart.png");
+    private String playItem = new String("./images/ic_play.png");
+    private String timesOneItem = new String("./images/ic_one_times.png");
+    private String singleRaceItem = new String("./images/ic_repeat.png");
+    private String clearItem = new String("./images/ic_clear.png");
+
+    /**
+     * Constructs Race Day.
+     */
+    public RaceDayGUI() {
+        super(new BorderLayout());
+
+        mySlider = new JSlider(0, 50, 0);
+
+        myTimer = new JLabel(formatTime(0));
+
+        myTabs = new JTabbedPane();
+
+        myControls = new JMenuItem[] {
+                        new JMenuItem("Restart", buildControlsIcon(restartItem)),
+                        new JMenuItem("Play", buildControlsIcon(playItem)),
+                        new JMenuItem("Times One", buildControlsIcon(timesOneItem)),
+                        new JMenuItem("Single Race", buildControlsIcon(singleRaceItem)),
+                        new JMenuItem("Clear", buildControlsIcon(clearItem)) };
+        myControlsBar = new JButton[] { new JButton(buildControlsBarIcon(restartItem)),
+                        new JButton(buildControlsBarIcon(playItem)),
+                        new JButton(buildControlsBarIcon(timesOneItem)),
+                        new JButton(buildControlsBarIcon(singleRaceItem)),
+                        new JButton(buildControlsBarIcon(clearItem)) };
+
+        dos = new JTextArea(TEXT_AREA_ROWS, TEXT_AREA_COLS);
+
+        setUpComponents();
+    }
+
+    /**
+     * Lay out the components.
+     */
+    public final void setUpComponents() {
+
+        final JPanel innerPanel = new JPanel(new BorderLayout());
+
+        /* Upper Panel for slider and timer */
+        final JPanel upperPanel = new JPanel();
+
+        upperPanel.add(mySlider);
+        mySlider.setPreferredSize(new Dimension(465, 50));
+        mySlider.setEnabled(false);
+        mySlider.setMajorTickSpacing(60);
+        mySlider.setMinorTickSpacing(10);
+        upperPanel.add(myTimer);
+        myTimer.setBorder(BorderFactory
+                        .createCompoundBorder(BorderFactory.createEtchedBorder(),
+                                              BorderFactory.createEmptyBorder(PADDING, PADDING,
+                                                                              PADDING,
+                                                                              PADDING)));
+        innerPanel.add(upperPanel, BorderLayout.NORTH);
+
+        /* Lower Panel for two tabs */
+        final JPanel lowerPanel = new JPanel();
+
+        myTabs.add("Data Output Stream", tabDOSLabel());
+
+        myTabs.add("Race Particiants", tabRPLabel());
+        myTabs.setEnabledAt(1, false);
+
+        myTabs.setBorder(BorderFactory.createEmptyBorder(BORDER_SIZE, BORDER_SIZE, BORDER_SIZE,
+                                                         BORDER_SIZE));
+
+        lowerPanel.add(myTabs);
+        innerPanel.add(lowerPanel, BorderLayout.CENTER);
+
+        /* Set up border layout for main panel */
+        add(innerPanel, BorderLayout.CENTER);
+
+        add(createToolBar(), BorderLayout.SOUTH);
+
+    }
+
+    /**
+     * This formats a positive integer into minutes, seconds, and milliseconds. 00:00:000
+     * 
+     * @param theTime the time to be formatted
+     * @return the formated string.
+     */
+    public static String formatTime(final long theTime) {
+        long time = theTime;
+        final long milliseconds = time % MILLIS_PER_SEC;
+        time /= MILLIS_PER_SEC;
+        final long seconds = time % SEC_PER_MIN;
+        time /= SEC_PER_MIN;
+        final long min = time % MIN_PER_HOUR;
+        time /= MIN_PER_HOUR;
+        return TWO_DIGIT_FORMAT.format(min) + SEPARATOR + TWO_DIGIT_FORMAT.format(seconds)
+               + SEPARATOR + THREE_DIGIT_FORMAT.format(milliseconds);
+    }
+
+    private JPanel tabDOSLabel() {
+
+        final JPanel tabLabel1 = new JPanel();
+
+        final JScrollPane scrollPane =
+                        new JScrollPane(dos, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
+                                        JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+
+        // dos.setLineWrap(true);
+        dos.setEditable(false);
+        tabLabel1.add(scrollPane);
+
+        return tabLabel1;
+
+    }
+
+    private JPanel tabRPLabel() {
+
+        final JPanel myTabLabel = new JPanel(new GridLayout(6, 1));
+
+        final JCheckBox all = new JCheckBox("Select All", false);
+        final JCheckBox stephen = new JCheckBox("Stephen", false);
+        final JCheckBox glenn = new JCheckBox("Glenn", false);
+        final JCheckBox christ = new JCheckBox("Christopher", false);
+        final JCheckBox michelle = new JCheckBox("Michelle", false);
+        final JCheckBox lauren = new JCheckBox("Lauren", false);
+
+        myTabLabel.add(all);
+        myTabLabel.add(stephen);
+        myTabLabel.add(glenn);
+        myTabLabel.add(christ);
+        myTabLabel.add(michelle);
+        myTabLabel.add(lauren);
+
+        return myTabLabel;
+
+    }
+
+    /**
+     * Build the menu bar for this GUI. This method will need to be called where access to a
+     * JFrame occurs. You attach a MenuBar to a Frame, not a Panel.
+     * 
+     * @param theFrame the containing JFrame of this menu bar
+     * @return the menu bar for this GUI
+     */
+    private JMenuBar createMenu(final JFrame theFrame) {
+        final JMenuBar menuBar = new JMenuBar();
+
+        menuBar.add(buildFileMenu(theFrame));
+        menuBar.add(buildControlsMenu());
+        menuBar.add(buildHelpMenu());
+
+        return menuBar;
+    }
+
+    /**
+     * Builds a menu with some options.
+     * 
+     * @param theFrame the containing JFrame of this menu bar
+     * @return a "file" menu with some menu items
+     */
+    private JMenu buildFileMenu(final JFrame theFrame) {
+        /* File menu */
+        final JMenu menu = new JMenu("File");
+        menu.setMnemonic(KeyEvent.VK_F);
+
+        /* Load Race menu item */
+        final JMenuItem loadraceItem = new JMenuItem("Load Race...");
+        loadraceItem.setMnemonic(KeyEvent.VK_L);
+        loadraceItem.addActionListener(event -> loadingRace());
+
+        /* Exit menu item */
+        final JMenuItem exitItem = new JMenuItem("Exit");
+        exitItem.setMnemonic(KeyEvent.VK_X);
+        exitItem.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(final ActionEvent theEvent) {
+                theFrame.dispatchEvent(new WindowEvent(theFrame, WindowEvent.WINDOW_CLOSING));
+            }
+        });
+
+        menu.add(loadraceItem);
+        menu.addSeparator();
+        menu.add(exitItem);
+        return menu;
+    }
+
+    /**
+     * Load race files and throw exception for Load Race menu.
+     */
+    public void loadingRace() {
+        myChooser.setCurrentDirectory(myFile);
+        final int result = myChooser.showOpenDialog(null);
+
+        if (result == JFileChooser.APPROVE_OPTION) {
+            myFile = myChooser.getCurrentDirectory();
+
+            try {
+                Race myLoadRace = new Race();
+                myLoadRace.loadRace(myChooser.getSelectedFile());
+
+                mySlider.setEnabled(true);
+                mySlider.setPaintTicks(true);
+                myTabs.setEnabledAt(1, true);
+                myInfoItem.setEnabled(true);
+                for (JMenuItem i : myControls) {
+                    i.setEnabled(true);
+                }
+                for (JButton j : myControlsBar) {
+                    j.setEnabled(true);
+                }
+
+            } catch (final IOException event) {
+                final String message = "Error loading file.";
+
+                JOptionPane.showMessageDialog(null, message, "Error!",
+                                              JOptionPane.ERROR_MESSAGE);
+            }
+        }
+    }
+
+    /**
+     * Build controls menu.
+     * 
+     * @return the controls menu.
+     */
+    private JMenu buildControlsMenu() {
+        final JMenu controlsMenu = new JMenu("Controls");
+        controlsMenu.setMnemonic(KeyEvent.VK_C);
+
+        final JMenuItem[] menuItems = new JMenuItem[myControls.length];
+
+        for (int i = 0; i < menuItems.length; i++) {
+            controlsMenu.add(myControls[i]);
+            myControls[i].setEnabled(false);
+        }
+
+        return controlsMenu;
+
+    }
+
+    /**
+     * Helper method for control icons.
+     * 
+     * @param theImage string of icon image path.
+     * @return icon image path.
+     */
+    private ImageIcon buildControlsIcon(final String theImage) {
+
+        /*
+         * Scale the image from 32x32 pixels down to 12x12 pixels.
+         * https://docs.oracle.com/javase/8/docs/api/java/awt/Image.html
+         */
+        ImageIcon icon = new ImageIcon(theImage);
+        final Image smallImage =
+                        icon.getImage().getScaledInstance(12, -1, java.awt.Image.SCALE_SMOOTH);
+        icon = new ImageIcon(smallImage);
+
+        return icon;
+
+    }
+
+    /**
+     * Build help menu.
+     * 
+     * @return help menu.
+     */
+    private JMenu buildHelpMenu() {
+        final JMenu helpMenu = new JMenu("Help");
+
+        myInfoItem = new JMenuItem("Race Info...");
+
+        myInfoItem.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(final ActionEvent theEvent) {
+
+                final String message =
+                                "<Current Race Name>\n" + "Track type: <Current Track Type>\n"
+                                       + "Total time: <Total Time of "
+                                       + "Current Race in MM:SS:mmm>\n"
+                                       + "Lap distance: <Current race lap distance>";
+                JOptionPane.showMessageDialog(null, message, "Race Information",
+                                              JOptionPane.INFORMATION_MESSAGE);
+
+            }
+
+        });
+
+        final JMenuItem aboutItem = new JMenuItem("About...");
+
+        aboutItem.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(final ActionEvent theEvent) {
+                final String message =
+                                "Minh Phan\n" + "Autumn 2018\n" + "TCSS 305 Assignment 5";
+                JOptionPane.showMessageDialog(null, message, "Personal Information",
+                                              JOptionPane.PLAIN_MESSAGE, img);
+
+            }
+
+        });
+        myInfoItem.setEnabled(false);
+        helpMenu.add(myInfoItem);
+        helpMenu.add(aboutItem);
+
+        return helpMenu;
+
+    }
+
+    /**
+     * A helper method to make a ToolBar.
+     * 
+     * @return the example Tool Bar
+     */
+    private JToolBar createToolBar() {
+        final JToolBar toolbar = new JToolBar();
+
+        final JButton[] toolbarItems = new JButton[myControlsBar.length];
+
+        for (int i = 0; i < toolbarItems.length; i++) {
+            toolbar.add(myControlsBar[i]);
+            myControlsBar[i].setEnabled(false);
+        }
+
+        return toolbar;
+    }
+
+    /**
+     * Helper method for control icons.
+     * 
+     * @param theImage string of icon image path.
+     * @return icon image path.
+     */
+    private ImageIcon buildControlsBarIcon(final String theImage) {
+
+        /*
+         * Scale the image from 32x32 pixels down to 12x12 pixels.
+         * https://docs.oracle.com/javase/8/docs/api/java/awt/Image.html
+         */
+        ImageIcon icon = new ImageIcon(theImage);
+        final Image largeImage =
+                        icon.getImage().getScaledInstance(24, -1, java.awt.Image.SCALE_SMOOTH);
+        icon = new ImageIcon(largeImage);
+
+        return icon;
+
+    }
+
+    /**
+     * Create the GUI and show it. For thread safety, this method should be invoked from the
+     * event-dispatching thread.
+     */
+    public static void createAndShowGUI() {
+        // Create and set up the window.
+        final JFrame frame = new JFrame("Race Day!");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        frame.setIconImage(img.getImage());
+
+        // Create and set up the content pane.
+        final RaceDayGUI newContentPane = new RaceDayGUI();
+        newContentPane.setOpaque(true); // content panes must be opaque
+        frame.setContentPane(newContentPane);
+        frame.setJMenuBar(newContentPane.createMenu(frame));
+
+        // Display the window.
+        frame.pack();
+        frame.setVisible(true);
+        frame.setResizable(false);
+    }
+
+}

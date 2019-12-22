@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.11" sequence="1" timestamp="1549831259719" analysisTimestamp="1549831249510" release="">
+  <Project projectName="minh1212-bookstore">
+    <Jar>/Users/minhphan/eclipse-workspace/minh1212-bookstore/bin</Jar>
+    <AuxClasspathEntry>/Users/minhphan/eclipse-workspace/minh1212-bookstore/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/minhphan/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/minhphan/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/minhphan/eclipse-workspace/minh1212-bookstore/src</SrcDir>
+  </Project>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE" first="1">
+    <Class classname="model.Cart">
+      <SourceLine classname="model.Cart" sourcefile="Cart.java" sourcepath="model/Cart.java"/>
+    </Class>
+    <Method classname="model.Cart" name="calculateTotal" signature="()Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="model.Cart" start="96" end="124" startBytecode="0" endBytecode="552" sourcefile="Cart.java" sourcepath="model/Cart.java"/>
+    </Method>
+    <SourceLine classname="model.Cart" start="107" end="107" startBytecode="104" endBytecode="104" sourcefile="Cart.java" sourcepath="model/Cart.java"/>
+    <SourceLine classname="model.Cart" start="107" end="107" startBytecode="104" endBytecode="104" sourcefile="Cart.java" sourcepath="model/Cart.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 10 Feb 2019 12:40:48 -0800" total_classes="12" referenced_classes="315" total_bugs="1" total_size="387" num_packages="4" java_version="11" vm_version="11+28" cpu_seconds="78.17" clock_seconds="10.21" peak_mbytes="902.36" alloc_mbytes="1024.00" gc_seconds="0.93" priority_2="1">
+    <PackageStats package="model" total_bugs="1" total_types="3" total_size="135" priority_2="1">
+      <ClassStats class="model.Cart" sourceFile="Cart.java" interface="false" size="51" bugs="1" priority_2="1"/>
+      <ClassStats class="model.Item" sourceFile="Item.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="model.ItemOrder" sourceFile="ItemOrder.java" interface="false" size="23" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="tests" total_bugs="0" total_types="1" total_size="43">
+      <ClassStats class="tests.ItemTest" sourceFile="ItemTest.java" interface="false" size="43" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="utility" total_bugs="0" total_types="1" total_size="32">
+      <ClassStats class="utility.FileLoader" sourceFile="FileLoader.java" interface="false" size="32" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="view" total_bugs="0" total_types="7" total_size="177">
+      <ClassStats class="view.BookstoreFrame" sourceFile="BookstoreFrame.java" interface="false" size="108" bugs="0"/>
+      <ClassStats class="view.BookstoreFrame$1" sourceFile="BookstoreFrame.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="view.BookstoreFrame$2" sourceFile="BookstoreFrame.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="view.BookstoreFrame$3" sourceFile="BookstoreFrame.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="view.BookstoreFrame$4" sourceFile="BookstoreFrame.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="view.BookstoreMain" sourceFile="BookstoreMain.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="view.BookstoreMain$1" sourceFile="BookstoreMain.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1585" invocations="1634" avgMicrosecondsPerInvocation="970" maxMicrosecondsPerInvocation="92987" standardDeviationMicrosecondsPerInvocation="4015"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="1441" invocations="2" avgMicrosecondsPerInvocation="720905" maxMicrosecondsPerInvocation="1304524" standardDeviationMicrosecondsPerInvocation="583619"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="899" invocations="315" avgMicrosecondsPerInvocation="2855" maxMicrosecondsPerInvocation="98833" standardDeviationMicrosecondsPerInvocation="8526"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="809" invocations="315" avgMicrosecondsPerInvocation="2569" maxMicrosecondsPerInvocation="59006" standardDeviationMicrosecondsPerInvocation="6085"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="488" invocations="747" avgMicrosecondsPerInvocation="654" maxMicrosecondsPerInvocation="21275" standardDeviationMicrosecondsPerInvocation="1829"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="478" invocations="1638" avgMicrosecondsPerInvocation="292" maxMicrosecondsPerInvocation="77499" standardDeviationMicrosecondsPerInvocation="2854"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="399" invocations="315" avgMicrosecondsPerInvocation="1268" maxMicrosecondsPerInvocation="59323" standardDeviationMicrosecondsPerInvocation="4511"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="313" invocations="315" avgMicrosecondsPerInvocation="996" maxMicrosecondsPerInvocation="52430" standardDeviationMicrosecondsPerInvocation="3741"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="272" invocations="315" avgMicrosecondsPerInvocation="865" maxMicrosecondsPerInvocation="50410" standardDeviationMicrosecondsPerInvocation="3895"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1549831259719" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

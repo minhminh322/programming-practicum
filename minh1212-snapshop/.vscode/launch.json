@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SnapShopMain",
+            "request": "launch",
+            "mainClass": "gui.SnapShopMain",
+            "projectName": "minh1212-snapshop"
+        }
+    ]
+}

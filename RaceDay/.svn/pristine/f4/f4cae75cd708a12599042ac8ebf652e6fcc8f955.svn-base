@@ -1,0 +1,76 @@
+
+package model;
+
+/**
+ * Store Racer Participants class.
+ * 
+ * @author minhphan
+ * @version Fall 2019.
+ *
+ */
+public class RaceParticipants {
+    /** Racer name. */
+    private String name;
+
+    /** Race ID. */
+    private int theRaceId;
+
+    /** Race start distance. */
+    private double myDistance;
+
+    /**
+     * Constructor with parameters.
+     * 
+     * @param theRaceID race id.
+     * @param theRaceName race name.
+     * @param theDistance race start distance.
+     */
+    public RaceParticipants(final int theRaceID, final String theRaceName,
+                            final double theDistance) {
+
+        theRaceId = theRaceID;
+        name = theRaceName;
+        myDistance = theDistance;
+
+        // System.out.println(myDistance);
+
+    }
+
+    /**
+     * Get raceName.
+     * 
+     * @return race name.
+     */
+    public String getRaceName() {
+        return name;
+    }
+
+    /**
+     * get raceID.
+     * 
+     * @return race id.
+     */
+    public int getRaceID() {
+        return theRaceId;
+    }
+
+    /**
+     * get starting distance.
+     * 
+     * @return starting distance.
+     */
+    public double getStartDistance() {
+        return myDistance;
+    }
+
+    @Override
+    public String toString() {
+        return theRaceId + ": " + name;
+
+    }
+
+    public boolean Idcheck(int ID) {
+        return (ID == theRaceId);
+    }
+
+}

@@ -1,0 +1,36 @@
+
+package model;
+
+public class LineCrossingMessge extends AbstractMessage {
+
+    private int myRaceID;
+
+    private int myNewLap;
+
+    private boolean myIsFinish;
+
+    public LineCrossingMessge(final int theTimeStamp, final int theRaceID, final int theNewLap,
+                              final boolean theIsFinish) {
+        super(theTimeStamp);
+
+        myNewLap = theNewLap;
+
+        myIsFinish = theIsFinish;
+
+        myRaceID = theRaceID;
+
+    }
+
+    public int getNewLap() {
+        return myNewLap;
+    }
+
+    public boolean isFinish() {
+        return myIsFinish;
+    }
+
+    public int getRaceID() {
+        return myRaceID;
+    }
+
+}

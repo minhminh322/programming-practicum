@@ -1,0 +1,34 @@
+
+package model;
+
+/**
+ * Abtract message class.
+ * @author minhphan
+ * @version Fall 2019
+ *
+ */
+public abstract class AbstractMessage implements Message {
+
+    /** Time stamp varialbe. */
+    private int myTimeStamp;
+    
+    /**
+     * Constructor.
+     * @param theTimeStamp time stamps.
+     */
+    public AbstractMessage(final int theTimeStamp) {
+        myTimeStamp = theTimeStamp;
+        
+   //     System.out.println(myTimeStamp);
+
+    }
+
+    /**
+     * 
+     * @return the current time stamp.
+     */
+    public int getTimeStamp() {
+        return myTimeStamp;
+    }
+
+}

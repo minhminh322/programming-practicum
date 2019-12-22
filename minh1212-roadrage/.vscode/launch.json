@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RoadRageMain",
+            "request": "launch",
+            "mainClass": "view.RoadRageMain",
+            "projectName": "minh1212-roadrage"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+
+package controller;
+
+import static model.PropertyChangeEnabledRaceControls.PROPERTY_MAP;
+import static model.PropertyChangeEnabledRaceControls.PROPERTY_TIME;
+
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JCheckBox;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+
+import model.Race;
+
+/**
+ * Swing Timer Panel class.
+ * 
+ * @author minhphan
+ * @version Fall 2018
+ *
+ */
+public class RaceRP extends JPanel implements PropertyChangeListener {
+    /**
+     * A generated serial version UID for object Serialization.
+     * http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html
+     */
+    private static final long serialVersionUID = 8385732728740430466L;
+
+    /** ArrayList of Racers. */
+    private List<String> myRacers;
+
+    JPanel tabInside;
+
+    JScrollPane scrollPane;
+
+    private Race myRace = new Race();
+
+    /**
+     * Construct a Time Panel.
+     */
+    public RaceRP() {
+        super();
+
+        tabInside = new JPanel(new GridLayout(6, 0));
+
+        scrollPane = new JScrollPane(tabInside, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
+                                     JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        setLayout(new BorderLayout());
+
+        setupComponents();
+
+    }
+
+    /**
+     * Setup components methods.
+     */
+    private void setupComponents() {
+
+        final JCheckBox all = new JCheckBox("Select All", true);
+        tabInside.add(all);
+
+    }
+
+    @Override
+    public void propertyChange(final PropertyChangeEvent theEvent) {
+        if (PROPERTY_TIME.equals(theEvent.getPropertyName())) {
+
+        }
+        if (PROPERTY_MAP.equals(theEvent.getPropertyName())) {
+
+            myRace = (Race) theEvent.getNewValue();
+
+            myRacers = new ArrayList<>();
+            myRacers = myRace.getRacerName();
+            // System.out.println(myRace.getRacerName());
+
+            for (int i = 0; i < myRacers.size(); i++) {
+                final JCheckBox button = new JCheckBox(myRacers.get(i), true);
+                tabInside.add(button);
+            }
+            add(scrollPane);
+        }
+    }
+
+}

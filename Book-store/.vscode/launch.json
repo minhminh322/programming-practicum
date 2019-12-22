@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BookstoreMain",
+            "request": "launch",
+            "mainClass": "view.BookstoreMain",
+            "projectName": "minh1212-bookstore"
+        }
+    ]
+}

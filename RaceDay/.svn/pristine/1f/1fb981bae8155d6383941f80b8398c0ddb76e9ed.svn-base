@@ -1,0 +1,8 @@
+
+package model;
+
+public interface Message {
+
+    int getTimeStamp();
+
+}

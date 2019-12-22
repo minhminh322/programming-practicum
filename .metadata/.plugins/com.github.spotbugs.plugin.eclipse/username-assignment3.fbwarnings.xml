@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.11" sequence="1" timestamp="1549831258649" analysisTimestamp="1549831255744" release="">
+  <Project projectName="username-assignment3">
+    <Jar>/Users/minhphan/eclipse-workspace/hw3-project.zip_expanded/username-assignment3/bin</Jar>
+    <AuxClasspathEntry>/Users/minhphan/eclipse-workspace/hw3-project.zip_expanded/username-assignment3/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/minhphan/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/minhphan/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/minhphan/eclipse-workspace/hw3-project.zip_expanded/username-assignment3/src</SrcDir>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="programs.PostfixTesterMain">
+      <SourceLine classname="programs.PostfixTesterMain" sourcefile="PostfixTesterMain.java" sourcepath="programs/PostfixTesterMain.java"/>
+    </Class>
+    <Method classname="programs.PostfixTesterMain" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="programs.PostfixTesterMain" start="41" end="79" startBytecode="0" endBytecode="443" sourcefile="PostfixTesterMain.java" sourcepath="programs/PostfixTesterMain.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="566" end="567" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="programs.PostfixTesterMain" start="41" end="41" startBytecode="7" endBytecode="7" sourcefile="PostfixTesterMain.java" sourcepath="programs/PostfixTesterMain.java"/>
+    <SourceLine classname="programs.PostfixTesterMain" start="41" end="41" startBytecode="7" endBytecode="7" sourcefile="PostfixTesterMain.java" sourcepath="programs/PostfixTesterMain.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="structures.AbstractArrayList">
+      <SourceLine classname="structures.AbstractArrayList" sourcefile="AbstractArrayList.java" sourcepath="structures/AbstractArrayList.java"/>
+    </Class>
+    <Method classname="structures.AbstractArrayList" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="structures.AbstractArrayList" start="255" end="261" startBytecode="0" endBytecode="161" sourcefile="AbstractArrayList.java" sourcepath="structures/AbstractArrayList.java"/>
+    </Method>
+    <SourceLine classname="structures.AbstractArrayList" start="259" end="259" startBytecode="8" endBytecode="8" sourcefile="AbstractArrayList.java" sourcepath="structures/AbstractArrayList.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 10 Feb 2019 12:40:54 -0800" total_classes="17" referenced_classes="66" total_bugs="2" total_size="533" num_packages="3" java_version="11" vm_version="11+28" cpu_seconds="22.67" clock_seconds="2.91" peak_mbytes="860.93" alloc_mbytes="1024.00" gc_seconds="0.20" priority_2="1" priority_1="1">
+    <PackageStats package="exceptions" total_bugs="0" total_types="2" total_size="10">
+      <ClassStats class="exceptions.ElementNotFoundException" sourceFile="ElementNotFoundException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="exceptions.EmptyCollectionException" sourceFile="EmptyCollectionException.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="programs" total_bugs="1" total_types="4" total_size="160" priority_1="1">
+      <ClassStats class="programs.ExpressionTree" sourceFile="ExpressionTree.java" interface="false" size="75" bugs="0"/>
+      <ClassStats class="programs.ExpressionTreeOp" sourceFile="ExpressionTreeOp.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="programs.PostfixEvaluator" sourceFile="PostfixEvaluator.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="programs.PostfixTesterMain" sourceFile="PostfixTesterMain.java" interface="false" size="30" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="structures" total_bugs="1" total_types="11" total_size="363" priority_2="1">
+      <ClassStats class="structures.AbstractArrayList" sourceFile="AbstractArrayList.java" interface="false" size="78" bugs="1" priority_2="1"/>
+      <ClassStats class="structures.AbstractArrayList$ArrayListIterator" sourceFile="AbstractArrayList.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="structures.ArrayStack" sourceFile="ArrayStack.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="structures.ArrayUnorderedList" sourceFile="ArrayUnorderedList.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="structures.BinaryTreeADT" sourceFile="BinaryTreeADT.java" interface="true" size="12" bugs="0"/>
+      <ClassStats class="structures.BinaryTreeNode" sourceFile="BinaryTreeNode.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="structures.LinkedBinaryTree" sourceFile="LinkedBinaryTree.java" interface="false" size="85" bugs="0"/>
+      <ClassStats class="structures.LinkedBinaryTree$TreeIterator" sourceFile="LinkedBinaryTree.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="structures.ListADT" sourceFile="ListADT.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="structures.StackADT" sourceFile="StackADT.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="structures.UnorderedListADT" sourceFile="UnorderedListADT.java" interface="true" size="4" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="498" invocations="617" avgMicrosecondsPerInvocation="808" maxMicrosecondsPerInvocation="54329" standardDeviationMicrosecondsPerInvocation="3186"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="219" invocations="2" avgMicrosecondsPerInvocation="109799" maxMicrosecondsPerInvocation="189771" standardDeviationMicrosecondsPerInvocation="79972"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="201" invocations="66" avgMicrosecondsPerInvocation="3051" maxMicrosecondsPerInvocation="35235" standardDeviationMicrosecondsPerInvocation="6649"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="148" invocations="297" avgMicrosecondsPerInvocation="499" maxMicrosecondsPerInvocation="14316" standardDeviationMicrosecondsPerInvocation="1298"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="147" invocations="66" avgMicrosecondsPerInvocation="2237" maxMicrosecondsPerInvocation="24532" standardDeviationMicrosecondsPerInvocation="4692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="124" invocations="620" avgMicrosecondsPerInvocation="200" maxMicrosecondsPerInvocation="57919" standardDeviationMicrosecondsPerInvocation="2673"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="103" invocations="66" avgMicrosecondsPerInvocation="1563" maxMicrosecondsPerInvocation="16492" standardDeviationMicrosecondsPerInvocation="3812"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="97" invocations="85" avgMicrosecondsPerInvocation="1147" maxMicrosecondsPerInvocation="27830" standardDeviationMicrosecondsPerInvocation="3528"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="91" invocations="66" avgMicrosecondsPerInvocation="1393" maxMicrosecondsPerInvocation="20310" standardDeviationMicrosecondsPerInvocation="3484"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="91" invocations="84" avgMicrosecondsPerInvocation="1090" maxMicrosecondsPerInvocation="13197" standardDeviationMicrosecondsPerInvocation="2535"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="90" invocations="66" avgMicrosecondsPerInvocation="1373" maxMicrosecondsPerInvocation="16648" standardDeviationMicrosecondsPerInvocation="2912"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="81" invocations="85" avgMicrosecondsPerInvocation="952" maxMicrosecondsPerInvocation="13561" standardDeviationMicrosecondsPerInvocation="2092"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="68" invocations="84" avgMicrosecondsPerInvocation="818" maxMicrosecondsPerInvocation="17104" standardDeviationMicrosecondsPerInvocation="2242"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="58" invocations="60" avgMicrosecondsPerInvocation="980" maxMicrosecondsPerInvocation="7668" standardDeviationMicrosecondsPerInvocation="1742"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantPoolGenFactory" totalMilliseconds="58" invocations="17" avgMicrosecondsPerInvocation="3449" maxMicrosecondsPerInvocation="57468" standardDeviationMicrosecondsPerInvocation="13504"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="51" invocations="84" avgMicrosecondsPerInvocation="609" maxMicrosecondsPerInvocation="5306" standardDeviationMicrosecondsPerInvocation="969"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="49" invocations="84" avgMicrosecondsPerInvocation="584" maxMicrosecondsPerInvocation="5056" standardDeviationMicrosecondsPerInvocation="983"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1549831258648" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

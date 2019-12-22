@@ -1,0 +1,70 @@
+package view;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import javax.swing.BorderFactory;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import track.VisibleRaceTrack;
+
+public class RaceDayView extends JPanel implements PropertyChangeListener {
+    
+    /**
+     * 
+     */
+    private static final long serialVersionUID = -2858418648849976577L;
+
+    private RaceTrack myRaceTrack;
+    
+    private RaceLeaderboard myRaceLeader;
+    
+    private RaceStatus myRaceStatus;
+    
+
+    public RaceDayView() {
+        
+        super();
+        
+        myRaceTrack = new RaceTrack();
+        
+        myRaceLeader = new RaceLeaderboard();
+        
+        myRaceStatus = new RaceStatus();
+        
+        setupComponents();
+        // TODO Auto-generated constructor stub
+    }
+    
+    private void setupComponents() {
+        setLayout(new BorderLayout());
+
+        JPanel trackPanel = new JPanel(new BorderLayout());
+//        trackPanel.setPreferredSize(new Dimension(520,420));
+//        
+//        JLabel trackLabel = new JLabel("Race Track");
+//        trackLabel.setFont(new Font("Georgia", Font.PLAIN, 14));
+//        trackPanel.add(trackLabel, BorderLayout.NORTH);
+     //   trackPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        
+//        trackPanel.add(myRaceTrack, BorderLayout.CENTER);
+        
+        add(myRaceTrack, BorderLayout.CENTER);
+
+        add(myRaceLeader, BorderLayout.LINE_END);
+        
+        add(myRaceStatus, BorderLayout.SOUTH);
+
+    }
+
+    @Override
+    public void propertyChange(PropertyChangeEvent evt) {
+        // TODO Auto-generated method stub
+        
+    }
+
+
+}

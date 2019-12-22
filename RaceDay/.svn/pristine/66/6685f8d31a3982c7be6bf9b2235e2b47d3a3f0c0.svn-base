@@ -1,0 +1,366 @@
+/*
+ * TCSS 305 - Assignment 5: RaceDay
+ */
+
+package model;
+
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+/**
+ * Represents an Race object.
+ * 
+ * @author minhphan
+ * @version Fall 2019
+ *
+ */
+public final class Race implements PropertyChangeEnabledRaceControls {
+
+    /** The default starting time. */
+    public static final int DEFAULT_START_TIME = 0;
+    /** The separator for formatted. */
+    public static final String SEPARATOR = ":";
+    /** An error message for illegal arguments. */
+    private static final String ERROR_MESSAGE = "Time may not be less than 0.";
+    /** Scanner variable. */
+    private static Scanner scanner;
+
+    /** Stores this objects time. */
+    private int myTime;
+
+    /**
+     * Manager for Property Change Listeners.
+     */
+    private final PropertyChangeSupport myPcs;
+    
+    /** Scanner variable. */
+    private Scanner myInput;
+    /**
+     * Construct race object with a start time of 0.
+     */
+    public Race() {
+        this(DEFAULT_START_TIME);
+    }
+
+    /**
+     * Construct a race object with a specific start time.
+     * 
+     * @param theStartTime the start time for this object
+     * @throws IllegalArgumentException if theStartTime is < 0
+     */
+    public Race(final int theStartTime) {
+        super();
+
+        if (theStartTime < 0) {
+            throw new IllegalArgumentException(ERROR_MESSAGE);
+
+        }
+        myPcs = new PropertyChangeSupport(this);
+
+        myTime = theStartTime;
+
+    }
+
+    @Override
+    public void advance() {
+        advance(1);
+    }
+
+    @Override
+    public void advance(final int theMillisecond) {
+        changeTime(myTime + theMillisecond);
+
+    }
+
+    @Override
+    public void moveTo(final int theMillisecond) {
+        if (theMillisecond < 0) {
+            throw new IllegalArgumentException(ERROR_MESSAGE);
+        }
+        changeTime(theMillisecond);
+
+    }
+
+    /**
+     * Helper method to change the value of time and notify observers. Functional
+     * decomposition.
+     * 
+     * @param theMillisecond the time to change to
+     */
+    public void changeTime(final int theMillisecond) {
+        final int old = myTime;
+        myTime = theMillisecond;
+        myPcs.firePropertyChange(PROPERTY_TIME, old, myTime);
+
+    }
+
+    @Override
+    public void toggleParticipant(final int theParticpantID, final boolean theToggle) {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public void loadRace(final File theRaceFile) throws IOException {
+        checkFiles(theRaceFile);
+        checkHeader(theRaceFile);
+        
+        
+    }
+    /** Scan the header of the file.
+     * 
+     * @param theInput get the file.
+     * @throws IOException throw exception.
+     */
+    private void checkHeader(final File theInput) throws IOException {
+        
+        
+        final List<RaceInformation> information = new ArrayList<RaceInformation>();
+        final ParticipantsList list = new ParticipantsList();
+        final FileReader reader = new FileReader(theInput);
+        myInput = new Scanner(reader);
+
+        myInput.useDelimiter(SEPARATOR);
+        String[] tokens;
+        tokens = myInput.nextLine().split(SEPARATOR);
+        final String raceName = tokens[1];
+        tokens = myInput.nextLine().split(SEPARATOR);
+        final String trackGeometry = tokens[1];
+        tokens = myInput.nextLine().split(SEPARATOR);
+        @SuppressWarnings("unused")
+        final int width = Integer.valueOf(tokens[1]);
+        tokens = myInput.nextLine().split(SEPARATOR);
+        @SuppressWarnings("unused")
+        final int height = Integer.valueOf(tokens[1]);
+        tokens = myInput.nextLine().split(SEPARATOR);
+        final int distanceOneLap = Integer.valueOf(tokens[1]);
+        tokens = myInput.nextLine().split(SEPARATOR);
+        final int timeTotal = Integer.valueOf(tokens[1]);
+        tokens = myInput.nextLine().split(SEPARATOR);
+        final int participant = Integer.valueOf(tokens[1]);
+
+        information.add(new RaceInformation(raceName, trackGeometry, timeTotal,
+                                            distanceOneLap));
+
+        for (int lineCount = 0; lineCount < participant; lineCount++) {
+            final String temp = myInput.nextLine();
+            final int raceId = Integer.valueOf(temp.split(SEPARATOR)
+                                               [0].replaceAll("[^0-9]", ""));
+            final String name = temp.split(SEPARATOR)[1];
+            final double starts = Double.valueOf(temp.split(SEPARATOR)[2]);
+            final RaceParticipants p = new RaceParticipants(raceId, name, starts);
+            list.add(p);
+        }
+        list.getListIds();
+        list.getListName();
+        list.getListStart();
+    }
+    
+    /**
+     * Check the whole list of files.
+     * @param theInput get the file.
+     * @throws IOException throw exception.
+     */
+    private void checkFiles(final File theInput) throws IOException {
+        final FileReader reader = new FileReader(theInput);
+        myInput = new Scanner(reader);
+        String line;
+
+        int i = 0;
+        int participants = 0;
+        int countParticipants = 0;
+
+        while (myInput.hasNextLine()) {
+            line = myInput.nextLine();
+
+            final Scanner s = extracted(line).useDelimiter(SEPARATOR);
+
+            final StringTokenizer tokens = new StringTokenizer(line, SEPARATOR);
+
+            final int countTokens = tokens.countTokens();
+
+            if (i == 0 && !(s.next()).startsWith("#RACE")) {
+                extracted();
+            } else if (i == 0 && countTokens != 2) {
+                extracted();
+            } else if (i == 1 && !s.next().startsWith("#TRACK")) {
+                extracted();
+            } else if (i == 1 && countTokens != 2) {
+                extracted();
+            } else if (i == 2 && !s.next().startsWith("#WIDTH")) {
+                extracted();
+            } else if (i == 2 && countTokens != 2) {
+                extracted();
+            } else if (i == 3 && !s.next().startsWith("#HEIGHT")) {
+                extracted();
+            } else if (i == 3 && countTokens != 2) {
+                extracted();
+            } else if (i == 4 && !s.next().startsWith("#DISTANCE")) {
+                extracted();
+            } else if (i == 4 && countTokens != 2) {
+                extracted();
+            } else if (i == 5 && !s.next().startsWith("#TIME")) {
+                extracted();
+            } else if (i == 5 && countTokens != 2) {
+                extracted();
+            } else if (i == 6 && !s.next().startsWith("#PARTICIPANTS")) {
+                extracted();
+            } else if (i == 6 && countTokens != 2) {
+                extracted();
+            }
+
+            if (line.startsWith("#PARTICIPANTS")) {
+               // System.out.println(line);
+                participants = s.nextInt();
+                line = myInput.nextLine();
+                while (!line.startsWith("$L")) {
+                    if (!line.startsWith("#")) {
+                        extracted();
+                    }
+                  //  System.out.println(line);
+                    line = myInput.nextLine();
+
+                    countParticipants++;
+                }
+                if (countParticipants != participants) {
+                    extracted();
+                }
+
+            }
+
+            if (line.startsWith("$L")) {
+
+                final StringTokenizer temptok = new StringTokenizer(line, SEPARATOR);
+
+                final int counttemp = temptok.countTokens();
+
+                if (counttemp != (participants + 2)) {
+                    extracted();
+
+                }
+
+            }
+
+            if (line.startsWith("$T")) {
+                final StringTokenizer temptok = new StringTokenizer(line, SEPARATOR);
+
+                final int counttemp = temptok.countTokens();
+
+                if (counttemp != 5) {
+                    extracted();
+
+                }
+
+            }
+
+            if (line.startsWith("$C")) {
+                final StringTokenizer temptok = new StringTokenizer(line, SEPARATOR);
+
+                final int counttemp = temptok.countTokens();
+
+                if (counttemp != 5) {
+                    extracted();
+
+                }
+
+            }
+
+           // System.out.println(line);
+
+            i++;
+        }
+
+    }
+    /**
+     * Extracted scanner method.
+     * @param line.
+     * @return new line.
+     */
+    private static Scanner extracted(final String theLine) {
+        return new Scanner(theLine);
+    }
+
+    /**
+     * Extracted IOException method.
+     * @throws IOException
+     */
+    private void extracted() throws IOException {
+        throw new IOException();
+    }
+    
+ 
+
+    /**
+     * Reads race information from a file and returns a List of Item objects.
+     * 
+     * @param theInput the name of the file to load into a List.
+     * @return a List of objects created from data in an myInput file
+     */
+    public static List<List<Message>> readList(final Scanner theInput) {
+        final List<List<Message>> rceList = new ArrayList<List<Message>>();
+
+        while (theInput.hasNextLine()) {
+            final List<Message> message = new ArrayList<Message>();
+            final String line = theInput.nextLine();
+            scanner = extracted(line);
+            final Scanner split = scanner.useDelimiter(SEPARATOR);
+
+            final String messageType = split.next();
+            final int timeStamp = split.nextInt();
+
+            if (messageType.charAt(1) == 'T') {
+                final int raceId = split.nextInt();
+                final double distance = split.nextDouble();
+                final int lap = split.nextInt();
+                message.add(new TelementryMessge(timeStamp, raceId, distance, lap));
+
+            } else if (messageType.charAt(1) == 'C') {
+                final int raceId = split.nextInt();
+                final int newLap = split.nextInt();
+                final boolean isFinish = split.nextBoolean();
+                message.add(new LineCrossingMessge(timeStamp, raceId, newLap, isFinish));
+            } else if (messageType.charAt(1) == 'L') {
+                break;
+            }
+
+            rceList.add(message);
+
+        }
+
+        return rceList;
+
+    }
+
+    @Override
+    public void addPropertyChangeListener(final PropertyChangeListener theListener) {
+        myPcs.addPropertyChangeListener(theListener);
+    }
+
+    @Override
+    public void addPropertyChangeListener(final String thePropertyName,
+                                          final PropertyChangeListener theListener) {
+        myPcs.addPropertyChangeListener(thePropertyName, theListener);
+
+    }
+
+    @Override
+    public void removePropertyChangeListener(final PropertyChangeListener theListener) {
+        myPcs.removePropertyChangeListener(theListener);
+
+    }
+
+    @Override
+    public void removePropertyChangeListener(final String thePropertyName,
+                                             final PropertyChangeListener theListener) {
+        myPcs.removePropertyChangeListener(thePropertyName, theListener);
+
+    }
+
+}

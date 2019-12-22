@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1544653099638" analysisTimestamp="1544653099314" release="">
+  <Project projectName="FirstTimerExample">
+    <Jar>/Users/minhphan/eclipse-workspace/FirstTimerExample/bin</Jar>
+    <AuxClasspathEntry>/Users/minhphan/eclipse-workspace/FirstTimerExample/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/minhphan/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/minhphan/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <SrcDir>/Users/minhphan/eclipse-workspace/FirstTimerExample/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 12 Dec 2018 14:18:19 -0800" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="11" vm_version="11+28" cpu_seconds="2.00" clock_seconds="0.33" peak_mbytes="463.79" alloc_mbytes="1024.00" gc_seconds="0.01">
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="288" invocations="2" avgMicrosecondsPerInvocation="144374" maxMicrosecondsPerInvocation="183820" standardDeviationMircosecondsPerInvocation="39444"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1544653099632" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

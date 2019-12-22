@@ -1,0 +1,16 @@
+1543724376122	Convert local variable 'raceIds' to field
+1543724383698	Convert local variable 'split' to field
+1543724389376	Convert local variable 'input' to field
+1543724584167	Convert local variable 'Ids' to field
+1543724591088	Convert local variable 'Names' to field
+1543724594396	Convert local variable 'Time' to field
+1543727682898	Move compilation unit
+1543734484700	Extract method 'extracted'
+1543734499039	Extract method 'extracted'
+1543735028222	Delete element
+1543977748668	Encapsulate field 'myTrackWidth'
+1543977760357	Encapsulate field 'myTrackHeight'
+1544058807352	Delete element
+1544139713485	Delete element
+1544176037297	Convert local variable 'a' to field
+1544176145323	Convert local variable 'a' to field

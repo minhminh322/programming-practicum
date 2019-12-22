@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1544601591260" analysisTimestamp="1544601591085" release="">
+  <Project projectName="BigDecimal examples">
+    <Jar>/Users/minhphan/eclipse-workspace/BigDecimal examples/bin</Jar>
+    <AuxClasspathEntry>/Users/minhphan/eclipse-workspace/BigDecimal examples/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/minhphan/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/minhphan/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <SrcDir>/Users/minhphan/eclipse-workspace/BigDecimal examples/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 11 Dec 2018 23:59:50 -0800" total_classes="0" referenced_classes="1" total_bugs="0" total_size="0" num_packages="0" java_version="11" vm_version="11+28" cpu_seconds="0.63" clock_seconds="0.18" peak_mbytes="477.54" alloc_mbytes="1024.00" gc_seconds="0.01">
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="52" invocations="2" avgMicrosecondsPerInvocation="26483" maxMicrosecondsPerInvocation="36917" standardDeviationMircosecondsPerInvocation="10434"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="17" invocations="1" avgMicrosecondsPerInvocation="17055" maxMicrosecondsPerInvocation="17055" standardDeviationMircosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="14" invocations="153" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="10771" standardDeviationMircosecondsPerInvocation="872"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="11" invocations="1" avgMicrosecondsPerInvocation="11419" maxMicrosecondsPerInvocation="11419" standardDeviationMircosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="11" invocations="1" avgMicrosecondsPerInvocation="11065" maxMicrosecondsPerInvocation="11065" standardDeviationMircosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1544601591260" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
