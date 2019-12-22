@@ -1,0 +1,24 @@
+
+
+Assignment name: Assignment 4
+TCSS 305: Programming Practicum, Autumn 2018
+
+Name: Minh Phan	
+UWNetID: minh1212
+Subversion Revision Number:11
+
+Assignment Overview:
+Assignment 2 is about practicing and writing graphical user interface components in Java using Swing. The program is the graphical user interface (GUI) for an application that displays and manipulates images.The starter code includes a complete and correct back end version of snap shop. Those includes all algorithm, processing classes need for program to run. Our job is writing the front end that display and manipulates images. Also, there are classes and interfaces that are provided for the use.
+
+Technical Impression:
+To finish the assignment, I had to complete the SnapShopGUI in the guy package that contains the implementation of the graphical user interface. First of all, I plan the hand code with the big frame, following with two panels on north and south, and one label in the center for display images. By using array list to get list of filters and from provided interface Filter, I could add FilterButton into the FilterPanel. Doing the same thing with OptionButton, we got OptionPanel. For the ImageLabel setup to be the center, I used both setHorizontal and setVertical Alignment in the center. The most challenging stuff would be option buttons method. I had to call JFileChooser package, then set Open/Save Dialog. We need to setup the default directory and open the same directory when the user left previously. However, following the hint in the guideline, I could easily import images and set icon for image. Adding ActionListeners is a bit tricky because I need to deal with a set of button. So, I use array list to get buttons, then add Action Listner to each buttons. Lastly, I use setEnabled for enabled/disabled button be matched the requirement of assignment. I was struggled to open Images to the label, but after reading hint, I was able to set images as an icon easily. After completed this assignment, I have more confident about my java coding skill, especially the GUI, front end part, which the one I haven't had any experience before.
+
+Unresolved problems in my submission:
+Nope
+
+Citations and Collaborations:
+GUI for application tutorial channels on Youtube. I also discussed with Minh Nguyen about getting filter button using array.
+
+Questions:
+No
+

@@ -1,0 +1,25 @@
+
+
+Assignment name: Assignment 3
+TCSS 305: Programming Practicum, Autumn 2018
+
+Name: Minh Phan	
+UWNetID: minh1212
+Subversion Revision Number:9
+
+Assignment Overview:
+Assignment 2 is about practicing and writing inheritance, polymorphism, interfaces, and abstract classes. The program is a simulator of city streets, traffic lights, and vehicles.The starter code includes a complete and correct graphical user interface (GUI). The GUI shows pictures for the map terrain and vehicles. Our job is writing the back end that included Vehicle parent and child classes. Each child classes that inherit from parent class and their unique.
+
+Technical Impression:
+To finish the assignment, I had to complete the abstract classes and six specified vehicles class that given. The parent class is implemented from the provided interface. Using inheritance and abstract techniques are taught in class this week, so those are the best review assignment. I figure out that the child class would inherit most of method from parent class except using canPass() and chooseDirection()  Also, following by the hints and suggestions, I learnt how to implement each method from abstract class. Also, improving the problem solving skills by analyzing behavior about each vehicles. Choosing the way to put all behavior into the program was very challenging for me. The most difficult one probably Bicycle and Human class, because their unique is different from other vehicles. It took me 2 days to really understand the assignment, especially how each vehicle's running rules. Then, few more days for reading Enumeration types, Inheritance, and polymorphism documents. I was struggled to implement random direction, so I took time to do research and read Core Java textbook. I came up with using nested if/else statement and while loops, even though, my program is still got warning for complexity code. For the test case, I followed the given Human test class. However, I haven't got full coverage yet. After completed this assignment, I have more confident about my java coding skill, solving problems skills, especially knowledge about Inheritance and Abstraction.
+
+Unresolved problems in my submission:
+Truck Test couldn't get 100% coverage.
+Got Cyclomatic complexity warning in Truck and Human class. I was trying to put helper method on Bicycle, but not having enough time for others.
+
+Citations and Collaborations:
+Inheritance, polymorphism, and abstraction tutorial channels on Youtube. I also discussed with Minh Nguyen about helper methods.
+
+Questions:
+No
+

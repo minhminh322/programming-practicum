@@ -4,19 +4,19 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-ALPHA_OFFSET	SnapShop/src/filters/GrayscaleFilter.java	/^    private static final int ALPHA_OFFSET = 24;$/;"	f	class:GrayscaleFilter	file:
-ARRAY_ERROR	SnapShop/src/image/PixelImage.java	/^    private static final String ARRAY_ERROR = "Array size is invalid.";$/;"	f	class:PixelImage	file:
-AbstractFilter	SnapShop/src/filters/AbstractFilter.java	/^    protected AbstractFilter() {$/;"	m	class:AbstractFilter
-AbstractFilter	SnapShop/src/filters/AbstractFilter.java	/^    public AbstractFilter(final String theDescription) {$/;"	m	class:AbstractFilter
-AbstractFilter	SnapShop/src/filters/AbstractFilter.java	/^public abstract class AbstractFilter implements Filter {$/;"	c
+ALPHA_OFFSET	minh1212-snapshop/src/filters/GrayscaleFilter.java	/^    private static final int ALPHA_OFFSET = 24;$/;"	f	class:GrayscaleFilter	file:
+ARRAY_ERROR	minh1212-snapshop/src/image/PixelImage.java	/^    private static final String ARRAY_ERROR = "Array size is invalid.";$/;"	f	class:PixelImage	file:
+AbstractFilter	minh1212-snapshop/src/filters/AbstractFilter.java	/^    protected AbstractFilter() {$/;"	m	class:AbstractFilter
+AbstractFilter	minh1212-snapshop/src/filters/AbstractFilter.java	/^    public AbstractFilter(final String theDescription) {$/;"	m	class:AbstractFilter
+AbstractFilter	minh1212-snapshop/src/filters/AbstractFilter.java	/^public abstract class AbstractFilter implements Filter {$/;"	c
 AbstractMessage	RaceDay/src/model/AbstractMessage.java	/^    public AbstractMessage(final int theTimeStamp) {$/;"	m	class:AbstractMessage
 AbstractMessage	RaceDay/src/model/AbstractMessage.java	/^public abstract class AbstractMessage implements Message {$/;"	c
-AbstractVehicle	RoadRage/src/model/AbstractVehicle.java	/^    protected AbstractVehicle(final int theX, final int theY, $/;"	m	class:AbstractVehicle
-AbstractVehicle	RoadRage/src/model/AbstractVehicle.java	/^public abstract class AbstractVehicle implements Vehicle {$/;"	c
-AbstractWeightedFilter	SnapShop/src/filters/AbstractWeightedFilter.java	/^    public AbstractWeightedFilter(final String theDescription, final int[][] theWeights) {$/;"	m	class:AbstractWeightedFilter
-AbstractWeightedFilter	SnapShop/src/filters/AbstractWeightedFilter.java	/^public abstract class AbstractWeightedFilter extends AbstractFilter {$/;"	c
-Atv	RoadRage/src/model/Atv.java	/^    public Atv(final int theX, final int theY, final Direction theDir) {$/;"	m	class:Atv
-Atv	RoadRage/src/model/Atv.java	/^public class Atv extends AbstractVehicle {$/;"	c
+AbstractVehicle	minh1212-roadrage/src/model/AbstractVehicle.java	/^    protected AbstractVehicle(final int theX, final int theY, $/;"	m	class:AbstractVehicle
+AbstractVehicle	minh1212-roadrage/src/model/AbstractVehicle.java	/^public abstract class AbstractVehicle implements Vehicle {$/;"	c
+AbstractWeightedFilter	minh1212-snapshop/src/filters/AbstractWeightedFilter.java	/^    public AbstractWeightedFilter(final String theDescription, final int[][] theWeights) {$/;"	m	class:AbstractWeightedFilter
+AbstractWeightedFilter	minh1212-snapshop/src/filters/AbstractWeightedFilter.java	/^public abstract class AbstractWeightedFilter extends AbstractFilter {$/;"	c
+Atv	minh1212-roadrage/src/model/Atv.java	/^    public Atv(final int theX, final int theY, final Direction theDir) {$/;"	m	class:Atv
+Atv	minh1212-roadrage/src/model/Atv.java	/^public class Atv extends AbstractVehicle {$/;"	c
 BORDER_SIZE	RaceDay/src/controller/RaceDayController.java	/^    private static final int BORDER_SIZE = 10;$/;"	f	class:RaceDayController	file:
 BORDER_SIZE	RaceDay/src/view/RaceTrack.java	/^    private static final Border BORDER_SIZE = BorderFactory.createEmptyBorder(5, 10, 5, 5);$/;"	f	class:RaceTrack	file:
 BUTTON_ICON_CLEAR	RaceDay/src/controller/RaceDayController.java	/^    private static final String BUTTON_ICON_CLEAR = ".\/images\/ic_clear.png";$/;"	f	class:RaceDayController	file:
@@ -35,116 +35,116 @@ BUTTON_TEXT_RESTART	RaceDay/src/controller/RaceDayController.java	/^    private 
 BUTTON_TEXT_SINGLERACE	RaceDay/src/controller/RaceDayController.java	/^    private static final String BUTTON_TEXT_SINGLERACE = "Single Race";$/;"	f	class:RaceDayController	file:
 BUTTON_TEXT_TIMESFOUR	RaceDay/src/controller/RaceDayController.java	/^    private static final String BUTTON_TEXT_TIMESFOUR = "Times Four";$/;"	f	class:RaceDayController	file:
 BUTTON_TEXT_TIMESONE	RaceDay/src/controller/RaceDayController.java	/^    private static final String BUTTON_TEXT_TIMESONE = "Times One";$/;"	f	class:RaceDayController	file:
-Bicycle	RoadRage/src/model/Bicycle.java	/^    public Bicycle(final int theX, final int theY, final Direction theDir) {$/;"	m	class:Bicycle
-Bicycle	RoadRage/src/model/Bicycle.java	/^public class Bicycle extends AbstractVehicle {$/;"	c
-BookstoreFrame	BookStore/src/view/BookstoreFrame.java	/^    public BookstoreFrame(final Map<String, List<Item>> theCampusInventories, $/;"	m	class:BookstoreFrame
-BookstoreFrame	BookStore/src/view/BookstoreFrame.java	/^public final class BookstoreFrame extends JFrame {$/;"	c
-BookstoreMain	BookStore/src/view/BookstoreMain.java	/^    private BookstoreMain() {$/;"	m	class:BookstoreMain	file:
-BookstoreMain	BookStore/src/view/BookstoreMain.java	/^public final class BookstoreMain {$/;"	c
-CAMPUS_INVINTORIES	BookStore/src/view/BookstoreMain.java	/^    private static final Map<String, List<Item>> CAMPUS_INVINTORIES = new HashMap<>();   $/;"	f	class:BookstoreMain	file:
-CITY_FILE	RoadRage/src/view/util/FileLoader.java	/^    private static final String CITY_FILE = "city_map1.txt";$/;"	f	class:FileLoader	file:
-COLOR_1	BookStore/src/view/BookstoreFrame.java	/^    private static final Color COLOR_1 = new Color(199, 153, 0); \/\/ UW Gold$/;"	f	class:BookstoreFrame	file:
-COLOR_2	BookStore/src/view/BookstoreFrame.java	/^    private static final Color COLOR_2 = new Color(57, 39, 91); \/\/ UW Purple$/;"	f	class:BookstoreFrame	file:
-CONFIG_FILE	BookStore/src/view/BookstoreMain.java	/^    private static final String CONFIG_FILE = "config.txt";$/;"	f	class:BookstoreMain	file:
-COUNT_TO_3	RoadRage/src/model/Taxi.java	/^    private static final int COUNT_TO_3 = 3;   $/;"	f	class:Taxi	file:
-CROSSWALK	RoadRage/src/model/Terrain.java	/^    CROSSWALK('#');$/;"	e	enum:Terrain	file:
-CROSSWALK_SCALE	RoadRage/src/view/RoadRagePanel.java	/^    private static final double CROSSWALK_SCALE = .25;$/;"	f	class:RoadRagePanel	file:
-Car	RoadRage/src/model/Car.java	/^    public Car(final int theX, final int theY, final Direction theDir) {$/;"	m	class:Car
-Car	RoadRage/src/model/Car.java	/^public class Car extends AbstractVehicle {$/;"	c
-Cart	BookStore/src/model/Cart.java	/^    public Cart() {$/;"	m	class:Cart
-Cart	BookStore/src/model/Cart.java	/^public class Cart {$/;"	c
-Circle	Testing/src/shapes/Circle.java	/^    public Circle() {$/;"	m	class:Circle
-Circle	Testing/src/shapes/Circle.java	/^    public Circle(final double theRadius,$/;"	m	class:Circle
-Circle	Testing/src/shapes/Circle.java	/^public class Circle {$/;"	c
-CircleTest	Testing/src/test/CircleTest.java	/^public class CircleTest {$/;"	c
-DEATH_TIME	RoadRage/src/model/Atv.java	/^    private static final int DEATH_TIME = 25;$/;"	f	class:Atv	file:
-DEATH_TIME	RoadRage/src/model/Bicycle.java	/^    private static final int DEATH_TIME = 35;$/;"	f	class:Bicycle	file:
-DEATH_TIME	RoadRage/src/model/Car.java	/^    private static final int DEATH_TIME = 15;$/;"	f	class:Car	file:
-DEATH_TIME	RoadRage/src/model/Human.java	/^    private static final int DEATH_TIME = 45;$/;"	f	class:Human	file:
-DEATH_TIME	RoadRage/src/model/Taxi.java	/^    private static final int DEATH_TIME = 15;$/;"	f	class:Taxi	file:
-DEATH_TIME	RoadRage/src/model/Truck.java	/^    private static final int DEATH_TIME = 0;$/;"	f	class:Truck	file:
-DEBUG_FLAG	RoadRage/src/view/RoadRageGUI.java	/^        public static final String DEBUG_FLAG = "debug flag";$/;"	f	class:RoadRageGUI.Properties
-DEBUG_OFFSET	RoadRage/src/view/RoadRagePanel.java	/^    private static final int DEBUG_OFFSET = 10;$/;"	f	class:RoadRagePanel	file:
-DEFAULT_BULKPRICE	BookStore/src/model/Item.java	/^    private static final BigDecimal DEFAULT_BULKPRICE = BigDecimal.ZERO;$/;"	f	class:Item	file:
-DEFAULT_BULKQUANTITY	BookStore/src/model/Item.java	/^    private static final int DEFAULT_BULKQUANTITY = 0;$/;"	f	class:Item	file:
-DEFAULT_CENTER	Testing/src/shapes/Circle.java	/^    public static final Point DEFAULT_CENTER = new Point(0, 0); \/\/ origin$/;"	f	class:Circle
-DEFAULT_COLOR	Testing/src/shapes/Circle.java	/^    public static final Color DEFAULT_COLOR = Color.BLACK;$/;"	f	class:Circle
-DEFAULT_RADIUS	Testing/src/shapes/Circle.java	/^    public static final double DEFAULT_RADIUS = 1.0; \/\/ unit circle$/;"	f	class:Circle
+Bicycle	minh1212-roadrage/src/model/Bicycle.java	/^    public Bicycle(final int theX, final int theY, final Direction theDir) {$/;"	m	class:Bicycle
+Bicycle	minh1212-roadrage/src/model/Bicycle.java	/^public class Bicycle extends AbstractVehicle {$/;"	c
+BookstoreFrame	Book-store/src/view/BookstoreFrame.java	/^    public BookstoreFrame(final Map<String, List<Item>> theCampusInventories, $/;"	m	class:BookstoreFrame
+BookstoreFrame	Book-store/src/view/BookstoreFrame.java	/^public final class BookstoreFrame extends JFrame {$/;"	c
+BookstoreMain	Book-store/src/view/BookstoreMain.java	/^    private BookstoreMain() {$/;"	m	class:BookstoreMain	file:
+BookstoreMain	Book-store/src/view/BookstoreMain.java	/^public final class BookstoreMain {$/;"	c
+CAMPUS_INVINTORIES	Book-store/src/view/BookstoreMain.java	/^    private static final Map<String, List<Item>> CAMPUS_INVINTORIES = new HashMap<>();   $/;"	f	class:BookstoreMain	file:
+CITY_FILE	minh1212-roadrage/src/view/util/FileLoader.java	/^    private static final String CITY_FILE = "city_map1.txt";$/;"	f	class:FileLoader	file:
+COLOR_1	Book-store/src/view/BookstoreFrame.java	/^    private static final Color COLOR_1 = new Color(199, 153, 0); \/\/ UW Gold$/;"	f	class:BookstoreFrame	file:
+COLOR_2	Book-store/src/view/BookstoreFrame.java	/^    private static final Color COLOR_2 = new Color(57, 39, 91); \/\/ UW Purple$/;"	f	class:BookstoreFrame	file:
+CONFIG_FILE	Book-store/src/view/BookstoreMain.java	/^    private static final String CONFIG_FILE = "config.txt";$/;"	f	class:BookstoreMain	file:
+COUNT_TO_3	minh1212-roadrage/src/model/Taxi.java	/^    private static final int COUNT_TO_3 = 3;   $/;"	f	class:Taxi	file:
+CROSSWALK	minh1212-roadrage/src/model/Terrain.java	/^    CROSSWALK('#');$/;"	e	enum:Terrain	file:
+CROSSWALK_SCALE	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private static final double CROSSWALK_SCALE = .25;$/;"	f	class:RoadRagePanel	file:
+Car	minh1212-roadrage/src/model/Car.java	/^    public Car(final int theX, final int theY, final Direction theDir) {$/;"	m	class:Car
+Car	minh1212-roadrage/src/model/Car.java	/^public class Car extends AbstractVehicle {$/;"	c
+Cart	Book-store/src/model/Cart.java	/^    public Cart() {$/;"	m	class:Cart
+Cart	Book-store/src/model/Cart.java	/^public class Cart {$/;"	c
+Circle	minh1212-testing/src/shapes/Circle.java	/^    public Circle() {$/;"	m	class:Circle
+Circle	minh1212-testing/src/shapes/Circle.java	/^    public Circle(final double theRadius,$/;"	m	class:Circle
+Circle	minh1212-testing/src/shapes/Circle.java	/^public class Circle {$/;"	c
+CircleTest	minh1212-testing/src/test/CircleTest.java	/^public class CircleTest {$/;"	c
+DEATH_TIME	minh1212-roadrage/src/model/Atv.java	/^    private static final int DEATH_TIME = 25;$/;"	f	class:Atv	file:
+DEATH_TIME	minh1212-roadrage/src/model/Bicycle.java	/^    private static final int DEATH_TIME = 35;$/;"	f	class:Bicycle	file:
+DEATH_TIME	minh1212-roadrage/src/model/Car.java	/^    private static final int DEATH_TIME = 15;$/;"	f	class:Car	file:
+DEATH_TIME	minh1212-roadrage/src/model/Human.java	/^    private static final int DEATH_TIME = 45;$/;"	f	class:Human	file:
+DEATH_TIME	minh1212-roadrage/src/model/Taxi.java	/^    private static final int DEATH_TIME = 15;$/;"	f	class:Taxi	file:
+DEATH_TIME	minh1212-roadrage/src/model/Truck.java	/^    private static final int DEATH_TIME = 0;$/;"	f	class:Truck	file:
+DEBUG_FLAG	minh1212-roadrage/src/view/RoadRageGUI.java	/^        public static final String DEBUG_FLAG = "debug flag";$/;"	f	class:RoadRageGUI.Properties
+DEBUG_OFFSET	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private static final int DEBUG_OFFSET = 10;$/;"	f	class:RoadRagePanel	file:
+DEFAULT_BULKPRICE	Book-store/src/model/Item.java	/^    private static final BigDecimal DEFAULT_BULKPRICE = BigDecimal.ZERO;$/;"	f	class:Item	file:
+DEFAULT_BULKQUANTITY	Book-store/src/model/Item.java	/^    private static final int DEFAULT_BULKQUANTITY = 0;$/;"	f	class:Item	file:
+DEFAULT_CENTER	minh1212-testing/src/shapes/Circle.java	/^    public static final Point DEFAULT_CENTER = new Point(0, 0); \/\/ origin$/;"	f	class:Circle
+DEFAULT_COLOR	minh1212-testing/src/shapes/Circle.java	/^    public static final Color DEFAULT_COLOR = Color.BLACK;$/;"	f	class:Circle
+DEFAULT_RADIUS	minh1212-testing/src/shapes/Circle.java	/^    public static final double DEFAULT_RADIUS = 1.0; \/\/ unit circle$/;"	f	class:Circle
 DEFAULT_START_TIME	RaceDay/src/model/Race.java	/^    public static final int DEFAULT_START_TIME = 0;$/;"	f	class:Race
-Direction	RoadRage/src/model/Direction.java	/^    Direction(final char theLetter) {$/;"	m	class:Direction
-Direction	RoadRage/src/model/Direction.java	/^public enum Direction {$/;"	g
-EAST	RoadRage/src/model/Direction.java	/^    EAST('E');$/;"	e	enum:Direction	file:
+Direction	minh1212-roadrage/src/model/Direction.java	/^    Direction(final char theLetter) {$/;"	m	class:Direction
+Direction	minh1212-roadrage/src/model/Direction.java	/^public enum Direction {$/;"	g
+EAST	minh1212-roadrage/src/model/Direction.java	/^    EAST('E');$/;"	e	enum:Direction	file:
 ERROR_MESSAGE	RaceDay/src/model/Race.java	/^    private static final String ERROR_MESSAGE = "Time may not be less than 0.";$/;"	f	class:Race	file:
-EdgeDetectFilter	SnapShop/src/filters/EdgeDetectFilter.java	/^    public EdgeDetectFilter() {$/;"	m	class:EdgeDetectFilter
-EdgeDetectFilter	SnapShop/src/filters/EdgeDetectFilter.java	/^public class EdgeDetectFilter extends AbstractFilter {$/;"	c
-EdgeHighlightFilter	SnapShop/src/filters/EdgeHighlightFilter.java	/^    public EdgeHighlightFilter() {$/;"	m	class:EdgeHighlightFilter
-EdgeHighlightFilter	SnapShop/src/filters/EdgeHighlightFilter.java	/^public class EdgeHighlightFilter extends AbstractWeightedFilter {$/;"	c
-FILE_LOCATION	BookStore/src/view/BookstoreMain.java	/^    private static final String FILE_LOCATION = "files\/";$/;"	f	class:BookstoreMain	file:
-FILTER_SUFFIX	SnapShop/src/filters/AbstractFilter.java	/^    private static final String FILTER_SUFFIX = "Filter";$/;"	f	class:AbstractFilter	file:
-FONT	RoadRage/src/view/RoadRagePanel.java	/^    private static final Font FONT = new Font("SansSerif", Font.BOLD, 9);$/;"	f	class:RoadRagePanel	file:
-FileLoader	BookStore/src/utility/FileLoader.java	/^    private FileLoader() {$/;"	m	class:FileLoader	file:
-FileLoader	BookStore/src/utility/FileLoader.java	/^public final class FileLoader {$/;"	c
-FileLoader	RoadRage/src/view/util/FileLoader.java	/^    private FileLoader() { }$/;"	m	class:FileLoader	file:
-FileLoader	RoadRage/src/view/util/FileLoader.java	/^public final class FileLoader {$/;"	c
-Filter	SnapShop/src/filters/Filter.java	/^public interface Filter {$/;"	i
-FlipHorizontalFilter	SnapShop/src/filters/FlipHorizontalFilter.java	/^    public FlipHorizontalFilter() {$/;"	m	class:FlipHorizontalFilter
-FlipHorizontalFilter	SnapShop/src/filters/FlipHorizontalFilter.java	/^public class FlipHorizontalFilter extends AbstractFilter {$/;"	c
-FlipVerticalFilter	SnapShop/src/filters/FlipVerticalFilter.java	/^    public FlipVerticalFilter() {$/;"	m	class:FlipVerticalFilter
-FlipVerticalFilter	SnapShop/src/filters/FlipVerticalFilter.java	/^public class FlipVerticalFilter extends AbstractFilter {$/;"	c
-GRASS	RoadRage/src/model/Terrain.java	/^    GRASS('-'),$/;"	e	enum:Terrain	file:
-GREEN	RoadRage/src/model/Light.java	/^    GREEN,$/;"	e	enum:Light	file:
-GREEN_OFFSET	SnapShop/src/filters/GrayscaleFilter.java	/^    private static final int GREEN_OFFSET = 8;$/;"	f	class:GrayscaleFilter	file:
+EdgeDetectFilter	minh1212-snapshop/src/filters/EdgeDetectFilter.java	/^    public EdgeDetectFilter() {$/;"	m	class:EdgeDetectFilter
+EdgeDetectFilter	minh1212-snapshop/src/filters/EdgeDetectFilter.java	/^public class EdgeDetectFilter extends AbstractFilter {$/;"	c
+EdgeHighlightFilter	minh1212-snapshop/src/filters/EdgeHighlightFilter.java	/^    public EdgeHighlightFilter() {$/;"	m	class:EdgeHighlightFilter
+EdgeHighlightFilter	minh1212-snapshop/src/filters/EdgeHighlightFilter.java	/^public class EdgeHighlightFilter extends AbstractWeightedFilter {$/;"	c
+FILE_LOCATION	Book-store/src/view/BookstoreMain.java	/^    private static final String FILE_LOCATION = "files\/";$/;"	f	class:BookstoreMain	file:
+FILTER_SUFFIX	minh1212-snapshop/src/filters/AbstractFilter.java	/^    private static final String FILTER_SUFFIX = "Filter";$/;"	f	class:AbstractFilter	file:
+FONT	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private static final Font FONT = new Font("SansSerif", Font.BOLD, 9);$/;"	f	class:RoadRagePanel	file:
+FileLoader	Book-store/src/utility/FileLoader.java	/^    private FileLoader() {$/;"	m	class:FileLoader	file:
+FileLoader	Book-store/src/utility/FileLoader.java	/^public final class FileLoader {$/;"	c
+FileLoader	minh1212-roadrage/src/view/util/FileLoader.java	/^    private FileLoader() { }$/;"	m	class:FileLoader	file:
+FileLoader	minh1212-roadrage/src/view/util/FileLoader.java	/^public final class FileLoader {$/;"	c
+Filter	minh1212-snapshop/src/filters/Filter.java	/^public interface Filter {$/;"	i
+FlipHorizontalFilter	minh1212-snapshop/src/filters/FlipHorizontalFilter.java	/^    public FlipHorizontalFilter() {$/;"	m	class:FlipHorizontalFilter
+FlipHorizontalFilter	minh1212-snapshop/src/filters/FlipHorizontalFilter.java	/^public class FlipHorizontalFilter extends AbstractFilter {$/;"	c
+FlipVerticalFilter	minh1212-snapshop/src/filters/FlipVerticalFilter.java	/^    public FlipVerticalFilter() {$/;"	m	class:FlipVerticalFilter
+FlipVerticalFilter	minh1212-snapshop/src/filters/FlipVerticalFilter.java	/^public class FlipVerticalFilter extends AbstractFilter {$/;"	c
+GRASS	minh1212-roadrage/src/model/Terrain.java	/^    GRASS('-'),$/;"	e	enum:Terrain	file:
+GREEN	minh1212-roadrage/src/model/Light.java	/^    GREEN,$/;"	e	enum:Light	file:
+GREEN_OFFSET	minh1212-snapshop/src/filters/GrayscaleFilter.java	/^    private static final int GREEN_OFFSET = 8;$/;"	f	class:GrayscaleFilter	file:
 GRID_COLS	RaceDay/src/controller/RaceRP.java	/^    private static final int GRID_COLS = 0;$/;"	f	class:RaceRP	file:
 GRID_ROW	RaceDay/src/controller/RaceRP.java	/^    private static final int GRID_ROW = 6;$/;"	f	class:RaceRP	file:
-GrayscaleFilter	SnapShop/src/filters/GrayscaleFilter.java	/^    public GrayscaleFilter() {$/;"	m	class:GrayscaleFilter
-GrayscaleFilter	SnapShop/src/filters/GrayscaleFilter.java	/^public class GrayscaleFilter extends AbstractFilter {$/;"	c
-Human	RoadRage/src/model/Human.java	/^    public Human(final int theX, final int theY, final Direction theDir) {$/;"	m	class:Human
-Human	RoadRage/src/model/Human.java	/^public class Human extends AbstractVehicle {$/;"	c
-HumanTest	RoadRage/src/tests/HumanTest.java	/^public class HumanTest {$/;"	c
-INITIAL_FRAMES_PER_SECOND	RoadRage/src/view/RoadRageGUI.java	/^    private static final int INITIAL_FRAMES_PER_SECOND = 10;$/;"	f	class:RoadRageGUI	file:
-Item	BookStore/src/model/Item.java	/^    public Item(final String theName, final BigDecimal thePrice) {$/;"	m	class:Item
-Item	BookStore/src/model/Item.java	/^    public Item(final String theName, final BigDecimal thePrice, final int theBulkQuantity,$/;"	m	class:Item
-Item	BookStore/src/model/Item.java	/^public final class Item {$/;"	c
-ItemOrder	BookStore/src/model/ItemOrder.java	/^    public ItemOrder(final Item theItem, final int theQuantity) {$/;"	m	class:ItemOrder
-ItemOrder	BookStore/src/model/ItemOrder.java	/^public final class ItemOrder {$/;"	c
-ItemTest	BookStore/src/tests/ItemTest.java	/^public class ItemTest {$/;"	c
-KIT	BookStore/src/view/BookstoreFrame.java	/^    private static final Toolkit KIT = Toolkit.getDefaultToolkit();$/;"	f	class:BookstoreFrame	file:
-KIT	RoadRage/src/view/RoadRageGUI.java	/^    private static final Toolkit KIT = Toolkit.getDefaultToolkit();$/;"	f	class:RoadRageGUI	file:
+GrayscaleFilter	minh1212-snapshop/src/filters/GrayscaleFilter.java	/^    public GrayscaleFilter() {$/;"	m	class:GrayscaleFilter
+GrayscaleFilter	minh1212-snapshop/src/filters/GrayscaleFilter.java	/^public class GrayscaleFilter extends AbstractFilter {$/;"	c
+Human	minh1212-roadrage/src/model/Human.java	/^    public Human(final int theX, final int theY, final Direction theDir) {$/;"	m	class:Human
+Human	minh1212-roadrage/src/model/Human.java	/^public class Human extends AbstractVehicle {$/;"	c
+HumanTest	minh1212-roadrage/src/tests/HumanTest.java	/^public class HumanTest {$/;"	c
+INITIAL_FRAMES_PER_SECOND	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private static final int INITIAL_FRAMES_PER_SECOND = 10;$/;"	f	class:RoadRageGUI	file:
+Item	Book-store/src/model/Item.java	/^    public Item(final String theName, final BigDecimal thePrice) {$/;"	m	class:Item
+Item	Book-store/src/model/Item.java	/^    public Item(final String theName, final BigDecimal thePrice, final int theBulkQuantity,$/;"	m	class:Item
+Item	Book-store/src/model/Item.java	/^public final class Item {$/;"	c
+ItemOrder	Book-store/src/model/ItemOrder.java	/^    public ItemOrder(final Item theItem, final int theQuantity) {$/;"	m	class:ItemOrder
+ItemOrder	Book-store/src/model/ItemOrder.java	/^public final class ItemOrder {$/;"	c
+ItemTest	Book-store/src/tests/ItemTest.java	/^public class ItemTest {$/;"	c
+KIT	Book-store/src/view/BookstoreFrame.java	/^    private static final Toolkit KIT = Toolkit.getDefaultToolkit();$/;"	f	class:BookstoreFrame	file:
+KIT	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private static final Toolkit KIT = Toolkit.getDefaultToolkit();$/;"	f	class:RoadRageGUI	file:
 LAYOUT	RaceDay/src/view/RaceStatus.java	/^    private static final GridLayout LAYOUT = new GridLayout(1, 3);$/;"	f	class:RaceStatus	file:
 LEADERBOARD_SIZE	RaceDay/src/view/RaceTrack.java	/^    private static final Dimension LEADERBOARD_SIZE = new Dimension(170, 50);$/;"	f	class:RaceTrack	file:
-LIGHT	RoadRage/src/model/Terrain.java	/^    LIGHT('+'),$/;"	e	enum:Terrain	file:
-LIGHT_CHANGE_TICKS	RoadRage/src/view/RoadRagePanel.java	/^    private static final int LIGHT_CHANGE_TICKS = 19;$/;"	f	class:RoadRagePanel	file:
+LIGHT	minh1212-roadrage/src/model/Terrain.java	/^    LIGHT('+'),$/;"	e	enum:Terrain	file:
+LIGHT_CHANGE_TICKS	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private static final int LIGHT_CHANGE_TICKS = 19;$/;"	f	class:RoadRagePanel	file:
 LeaderboardMessge	RaceDay/src/model/LeaderboardMessge.java	/^    public LeaderboardMessge(final int theTimeStamp, final List<Integer> theList) {$/;"	m	class:LeaderboardMessge
 LeaderboardMessge	RaceDay/src/model/LeaderboardMessge.java	/^public class LeaderboardMessge extends AbstractMessage {$/;"	c
-Light	RoadRage/src/model/Light.java	/^public enum Light {$/;"	g
+Light	minh1212-roadrage/src/model/Light.java	/^public enum Light {$/;"	g
 LineCrossingMessge	RaceDay/src/model/LineCrossingMessge.java	/^    public LineCrossingMessge(final int theTimeStamp, final int theRaceID, final int theNewLap,$/;"	m	class:LineCrossingMessge
 LineCrossingMessge	RaceDay/src/model/LineCrossingMessge.java	/^public class LineCrossingMessge extends AbstractMessage {$/;"	c
 MAJOR_TICK_SPACING	RaceDay/src/controller/RaceDayController.java	/^    private static final int MAJOR_TICK_SPACING = 60000;$/;"	f	class:RaceDayController	file:
-MAJOR_TICK_SPACING	RoadRage/src/view/RoadRageGUI.java	/^    private static final int MAJOR_TICK_SPACING = 10;$/;"	f	class:RoadRageGUI	file:
-MARKER_SIZE	RoadRage/src/view/RoadRagePanel.java	/^    private static final int MARKER_SIZE = 10;$/;"	f	class:RoadRagePanel	file:
-MASK	SnapShop/src/filters/GrayscaleFilter.java	/^    private static final int MASK = 0xff;$/;"	f	class:GrayscaleFilter	file:
-MAX_COLOR_VALUE	SnapShop/src/image/Pixel.java	/^    public static final int MAX_COLOR_VALUE = 255;$/;"	f	class:Pixel
-MAX_FRAMES_PER_SECOND	RoadRage/src/view/RoadRageGUI.java	/^    private static final int MAX_FRAMES_PER_SECOND = 60;$/;"	f	class:RoadRageGUI	file:
+MAJOR_TICK_SPACING	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private static final int MAJOR_TICK_SPACING = 10;$/;"	f	class:RoadRageGUI	file:
+MARKER_SIZE	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private static final int MARKER_SIZE = 10;$/;"	f	class:RoadRagePanel	file:
+MASK	minh1212-snapshop/src/filters/GrayscaleFilter.java	/^    private static final int MASK = 0xff;$/;"	f	class:GrayscaleFilter	file:
+MAX_COLOR_VALUE	minh1212-snapshop/src/image/Pixel.java	/^    public static final int MAX_COLOR_VALUE = 255;$/;"	f	class:Pixel
+MAX_FRAMES_PER_SECOND	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private static final int MAX_FRAMES_PER_SECOND = 60;$/;"	f	class:RoadRageGUI	file:
 MILLIS_PER_SEC	RaceDay/src/controller/RaceTimer.java	/^    public static final int MILLIS_PER_SEC = 1000;$/;"	f	class:RaceTimer
 MILLIS_PER_SEC	RaceDay/src/view/RaceStatus.java	/^    private static final int MILLIS_PER_SEC = 1000;$/;"	f	class:RaceStatus	file:
 MILLIS_PER_SEC	RaceDay/src/view/RaceTrack.java	/^    private static final int MILLIS_PER_SEC = 1000;$/;"	f	class:RaceTrack	file:
 MINOR_TICK_SPACING	RaceDay/src/controller/RaceDayController.java	/^    private static final int MINOR_TICK_SPACING = 10000;$/;"	f	class:RaceDayController	file:
-MINOR_TICK_SPACING	RoadRage/src/view/RoadRageGUI.java	/^    private static final int MINOR_TICK_SPACING = 1;$/;"	f	class:RoadRageGUI	file:
-MIN_COLOR_VALUE	SnapShop/src/image/Pixel.java	/^    public static final int MIN_COLOR_VALUE = 0;$/;"	f	class:Pixel
+MINOR_TICK_SPACING	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private static final int MINOR_TICK_SPACING = 1;$/;"	f	class:RoadRageGUI	file:
+MIN_COLOR_VALUE	minh1212-snapshop/src/image/Pixel.java	/^    public static final int MIN_COLOR_VALUE = 0;$/;"	f	class:Pixel
 MIN_PER_HOUR	RaceDay/src/controller/RaceTimer.java	/^    public static final int MIN_PER_HOUR = 60;$/;"	f	class:RaceTimer
 MIN_PER_HOUR	RaceDay/src/view/RaceStatus.java	/^    private static final int MIN_PER_HOUR = 60;$/;"	f	class:RaceStatus	file:
 MIN_PER_HOUR	RaceDay/src/view/RaceTrack.java	/^    private static final int MIN_PER_HOUR = 60;$/;"	f	class:RaceTrack	file:
 MULTIPLE_BY_FOUR	RaceDay/src/controller/RaceDayController.java	/^    private static final int MULTIPLE_BY_FOUR = 4;$/;"	f	class:RaceDayController	file:
 MULTIPLE_BY_ONE	RaceDay/src/controller/RaceDayController.java	/^    private static final int MULTIPLE_BY_ONE = 1;$/;"	f	class:RaceDayController	file:
-MY_DELAY_NUMERATOR	RoadRage/src/view/RoadRageGUI.java	/^    private static final int MY_DELAY_NUMERATOR = 1000;$/;"	f	class:RoadRageGUI	file:
+MY_DELAY_NUMERATOR	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private static final int MY_DELAY_NUMERATOR = 1000;$/;"	f	class:RoadRageGUI	file:
 Main	RaceDay/src/application/Main.java	/^    private Main() { }$/;"	m	class:Main	file:
 Main	RaceDay/src/application/Main.java	/^public final class Main {$/;"	c
 Message	RaceDay/src/model/Message.java	/^public interface Message {$/;"	i
 NEW_LINE	RaceDay/src/controller/RaceDayController.java	/^    private static final String NEW_LINE = "\\n";$/;"	f	class:RaceDayController	file:
-NORTH	RoadRage/src/model/Direction.java	/^    NORTH('N'),$/;"	e	enum:Direction	file:
+NORTH	minh1212-roadrage/src/model/Direction.java	/^    NORTH('N'),$/;"	e	enum:Direction	file:
 NUM	RaceDay/src/controller/RaceDayController.java	/^    private static final Integer NUM = 3;$/;"	f	class:RaceDayController	file:
-NUM_CHANNELS	SnapShop/src/image/Pixel.java	/^    public static final int NUM_CHANNELS = 3;$/;"	f	class:Pixel
-NUM_COLORS	SnapShop/src/filters/GrayscaleFilter.java	/^    private static final int NUM_COLORS = 3;$/;"	f	class:GrayscaleFilter	file:
+NUM_CHANNELS	minh1212-snapshop/src/image/Pixel.java	/^    public static final int NUM_CHANNELS = 3;$/;"	f	class:Pixel
+NUM_COLORS	minh1212-snapshop/src/filters/GrayscaleFilter.java	/^    private static final int NUM_COLORS = 3;$/;"	f	class:GrayscaleFilter	file:
 OFF_SET	RaceDay/src/view/RaceTrack.java	/^    private static final int OFF_SET = 40;$/;"	f	class:RaceTrack	file:
 ONE_DIGIT_FORMAT	RaceDay/src/controller/RaceTimer.java	/^    public static final DecimalFormat ONE_DIGIT_FORMAT = new DecimalFormat("0");$/;"	f	class:RaceTimer
 ONE_DIGIT_FORMAT	RaceDay/src/view/RaceStatus.java	/^    private static final DecimalFormat ONE_DIGIT_FORMAT = new DecimalFormat("0");$/;"	f	class:RaceStatus	file:
@@ -158,20 +158,20 @@ PROPERTY_PARTICIPANT	RaceDay/src/model/PropertyChangeEnabledRaceControls.java	/^
 PROPERTY_TIME	RaceDay/src/model/PropertyChangeEnabledRaceControls.java	/^    String PROPERTY_TIME = "the time step";$/;"	f	interface:PropertyChangeEnabledRaceControls
 ParticipantsList	RaceDay/src/model/ParticipantsList.java	/^    public ParticipantsList() {$/;"	m	class:ParticipantsList
 ParticipantsList	RaceDay/src/model/ParticipantsList.java	/^public class ParticipantsList {$/;"	c
-Pixel	SnapShop/src/image/Pixel.java	/^    public Pixel() {$/;"	m	class:Pixel
-Pixel	SnapShop/src/image/Pixel.java	/^    public Pixel(final int theRed, final int theGreen, final int theBlue) {$/;"	m	class:Pixel
-Pixel	SnapShop/src/image/Pixel.java	/^public class Pixel {$/;"	c
-PixelImage	SnapShop/src/image/PixelImage.java	/^    private PixelImage(final int theWidth, final int theHeight, final int theType) {$/;"	m	class:PixelImage	file:
-PixelImage	SnapShop/src/image/PixelImage.java	/^public final class PixelImage extends BufferedImage {$/;"	c
-Properties	RoadRage/src/view/RoadRageGUI.java	/^    public static class Properties {$/;"	c	class:RoadRageGUI
+Pixel	minh1212-snapshop/src/image/Pixel.java	/^    public Pixel() {$/;"	m	class:Pixel
+Pixel	minh1212-snapshop/src/image/Pixel.java	/^    public Pixel(final int theRed, final int theGreen, final int theBlue) {$/;"	m	class:Pixel
+Pixel	minh1212-snapshop/src/image/Pixel.java	/^public class Pixel {$/;"	c
+PixelImage	minh1212-snapshop/src/image/PixelImage.java	/^    private PixelImage(final int theWidth, final int theHeight, final int theType) {$/;"	m	class:PixelImage	file:
+PixelImage	minh1212-snapshop/src/image/PixelImage.java	/^public final class PixelImage extends BufferedImage {$/;"	c
+Properties	minh1212-roadrage/src/view/RoadRageGUI.java	/^    public static class Properties {$/;"	c	class:RoadRageGUI
 PropertyChangeEnabledRaceControls	RaceDay/src/model/PropertyChangeEnabledRaceControls.java	/^public interface PropertyChangeEnabledRaceControls extends RaceControls {$/;"	i
 RACE_PARTICIPANT	RaceDay/src/controller/RaceDayController.java	/^    private static final String RACE_PARTICIPANT = "Race Participants";$/;"	f	class:RaceDayController	file:
-RANDOM	RoadRage/src/model/Direction.java	/^    private static final Random RANDOM = new Random();$/;"	f	class:Direction	file:
+RANDOM	minh1212-roadrage/src/model/Direction.java	/^    private static final Random RANDOM = new Random();$/;"	f	class:Direction	file:
 REC_X	RaceDay/src/view/RaceTrack.java	/^    private static final int REC_X = 10;$/;"	f	class:RaceTrack	file:
 REC_Y	RaceDay/src/view/RaceTrack.java	/^    private static final int REC_Y = 20;$/;"	f	class:RaceTrack	file:
-RED	RoadRage/src/model/Light.java	/^    RED;$/;"	e	enum:Light	file:
-RED_OFFSET	SnapShop/src/filters/GrayscaleFilter.java	/^    private static final int RED_OFFSET = 16;$/;"	f	class:GrayscaleFilter	file:
-RESET_COMMAND	RoadRage/src/view/RoadRageGUI.java	/^    private static final String RESET_COMMAND = "Reset";$/;"	f	class:RoadRageGUI	file:
+RED	minh1212-roadrage/src/model/Light.java	/^    RED;$/;"	e	enum:Light	file:
+RED_OFFSET	minh1212-snapshop/src/filters/GrayscaleFilter.java	/^    private static final int RED_OFFSET = 16;$/;"	f	class:GrayscaleFilter	file:
+RESET_COMMAND	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private static final String RESET_COMMAND = "Reset";$/;"	f	class:RoadRageGUI	file:
 Race	RaceDay/src/model/Race.java	/^    public Race() {$/;"	m	class:Race
 Race	RaceDay/src/model/Race.java	/^    public Race(final int theStartTime) {$/;"	m	class:Race
 Race	RaceDay/src/model/Race.java	/^public final class Race implements PropertyChangeEnabledRaceControls {$/;"	c
@@ -201,14 +201,14 @@ RacerList	RaceDay/src/view/RacerList.java	/^    public RacerList() {$/;"	m	class
 RacerList	RaceDay/src/view/RacerList.java	/^public class RacerList {$/;"	c
 RacerShape	RaceDay/src/view/RacerShape.java	/^    public RacerShape(final Ellipse2D theRacerShape, final int theRacerID, final Color theColor$/;"	m	class:RacerShape
 RacerShape	RaceDay/src/view/RacerShape.java	/^public class RacerShape {$/;"	c
-RoadRageGUI	RoadRage/src/view/RoadRageGUI.java	/^    public RoadRageGUI() {$/;"	m	class:RoadRageGUI
-RoadRageGUI	RoadRage/src/view/RoadRageGUI.java	/^public class RoadRageGUI extends JFrame implements ActionListener {$/;"	c
-RoadRageMain	RoadRage/src/view/RoadRageMain.java	/^    private RoadRageMain() {$/;"	m	class:RoadRageMain	file:
-RoadRageMain	RoadRage/src/view/RoadRageMain.java	/^public final class RoadRageMain {$/;"	c
-RoadRagePanel	RoadRage/src/view/RoadRagePanel.java	/^    public RoadRagePanel(final Terrain[][] theGrid, final List<Vehicle> theVehicles) {$/;"	m	class:RoadRagePanel
-RoadRagePanel	RoadRage/src/view/RoadRagePanel.java	/^public class RoadRagePanel extends JPanel implements PropertyChangeListener {$/;"	c
-SCREEN_SIZE	BookStore/src/view/BookstoreFrame.java	/^    private static final Dimension SCREEN_SIZE = KIT.getScreenSize();$/;"	f	class:BookstoreFrame	file:
-SCREEN_SIZE	RoadRage/src/view/RoadRageGUI.java	/^    private static final Dimension SCREEN_SIZE = KIT.getScreenSize();$/;"	f	class:RoadRageGUI	file:
+RoadRageGUI	minh1212-roadrage/src/view/RoadRageGUI.java	/^    public RoadRageGUI() {$/;"	m	class:RoadRageGUI
+RoadRageGUI	minh1212-roadrage/src/view/RoadRageGUI.java	/^public class RoadRageGUI extends JFrame implements ActionListener {$/;"	c
+RoadRageMain	minh1212-roadrage/src/view/RoadRageMain.java	/^    private RoadRageMain() {$/;"	m	class:RoadRageMain	file:
+RoadRageMain	minh1212-roadrage/src/view/RoadRageMain.java	/^public final class RoadRageMain {$/;"	c
+RoadRagePanel	minh1212-roadrage/src/view/RoadRagePanel.java	/^    public RoadRagePanel(final Terrain[][] theGrid, final List<Vehicle> theVehicles) {$/;"	m	class:RoadRagePanel
+RoadRagePanel	minh1212-roadrage/src/view/RoadRagePanel.java	/^public class RoadRagePanel extends JPanel implements PropertyChangeListener {$/;"	c
+SCREEN_SIZE	Book-store/src/view/BookstoreFrame.java	/^    private static final Dimension SCREEN_SIZE = KIT.getScreenSize();$/;"	f	class:BookstoreFrame	file:
+SCREEN_SIZE	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private static final Dimension SCREEN_SIZE = KIT.getScreenSize();$/;"	f	class:RoadRageGUI	file:
 SEC_PER_MIN	RaceDay/src/controller/RaceTimer.java	/^    public static final int SEC_PER_MIN = 60;$/;"	f	class:RaceTimer
 SEC_PER_MIN	RaceDay/src/view/RaceStatus.java	/^    private static final int SEC_PER_MIN = 60;$/;"	f	class:RaceStatus	file:
 SEC_PER_MIN	RaceDay/src/view/RaceTrack.java	/^    private static final int SEC_PER_MIN = 60;$/;"	f	class:RaceTrack	file:
@@ -220,78 +220,78 @@ SEPARATOR	RaceDay/src/view/RaceStatus.java	/^    private static final String SEP
 SEPARATOR	RaceDay/src/view/RaceTrack.java	/^    private static final String SEPARATOR = ":";$/;"	f	class:RaceTrack	file:
 SLIDER_HEIGHT	RaceDay/src/controller/RaceDayController.java	/^    private static final Integer SLIDER_HEIGHT = 50;$/;"	f	class:RaceDayController	file:
 SLIDER_WIDTH	RaceDay/src/controller/RaceDayController.java	/^    private static final Integer SLIDER_WIDTH = 465;$/;"	f	class:RaceDayController	file:
-SOUTH	RoadRage/src/model/Direction.java	/^    SOUTH('S'),$/;"	e	enum:Direction	file:
+SOUTH	minh1212-roadrage/src/model/Direction.java	/^    SOUTH('S'),$/;"	e	enum:Direction	file:
 SPACE	RaceDay/src/view/RaceTrack.java	/^    private static final String SPACE = "                                              ";$/;"	f	class:RaceTrack	file:
-SQUARE_SIZE	RoadRage/src/view/RoadRagePanel.java	/^    private static final int SQUARE_SIZE = 40;$/;"	f	class:RoadRagePanel	file:
-START_COMMAND	RoadRage/src/view/RoadRageGUI.java	/^    private static final String START_COMMAND = "Start";$/;"	f	class:RoadRageGUI	file:
-STEP_COMMAND	RoadRage/src/view/RoadRageGUI.java	/^    private static final String STEP_COMMAND = "Step";$/;"	f	class:RoadRageGUI	file:
-STOP_COMMAND	RoadRage/src/view/RoadRageGUI.java	/^    private static final String STOP_COMMAND = "Stop";$/;"	f	class:RoadRageGUI	file:
-STREET	RoadRage/src/model/Terrain.java	/^    STREET('|'),$/;"	e	enum:Terrain	file:
-STROKE	RoadRage/src/view/RoadRagePanel.java	/^    private static final BasicStroke STROKE = new BasicStroke(3, BasicStroke.CAP_BUTT,$/;"	f	class:RoadRagePanel	file:
+SQUARE_SIZE	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private static final int SQUARE_SIZE = 40;$/;"	f	class:RoadRagePanel	file:
+START_COMMAND	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private static final String START_COMMAND = "Start";$/;"	f	class:RoadRageGUI	file:
+STEP_COMMAND	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private static final String STEP_COMMAND = "Step";$/;"	f	class:RoadRageGUI	file:
+STOP_COMMAND	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private static final String STOP_COMMAND = "Stop";$/;"	f	class:RoadRageGUI	file:
+STREET	minh1212-roadrage/src/model/Terrain.java	/^    STREET('|'),$/;"	e	enum:Terrain	file:
+STROKE	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private static final BasicStroke STROKE = new BasicStroke(3, BasicStroke.CAP_BUTT,$/;"	f	class:RoadRagePanel	file:
 STROKE_WIDTH	RaceDay/src/view/RaceTrack.java	/^    private static final int STROKE_WIDTH = 25;$/;"	f	class:RaceTrack	file:
-SharpenFilter	SnapShop/src/filters/SharpenFilter.java	/^    public SharpenFilter() {$/;"	m	class:SharpenFilter
-SharpenFilter	SnapShop/src/filters/SharpenFilter.java	/^public class SharpenFilter extends AbstractWeightedFilter {$/;"	c
+SharpenFilter	minh1212-snapshop/src/filters/SharpenFilter.java	/^    public SharpenFilter() {$/;"	m	class:SharpenFilter
+SharpenFilter	minh1212-snapshop/src/filters/SharpenFilter.java	/^public class SharpenFilter extends AbstractWeightedFilter {$/;"	c
 SingleAction	RaceDay/src/controller/SingleAction.java	/^    public SingleAction(final String theText, final String theIcon, final Runnable theAction) {$/;"	m	class:SingleAction
 SingleAction	RaceDay/src/controller/SingleAction.java	/^public class SingleAction extends AbstractAction {$/;"	c
-SnapShopGUI	SnapShop/src/gui/SnapShopGUI.java	/^    public SnapShopGUI() {$/;"	m	class:SnapShopGUI
-SnapShopGUI	SnapShop/src/gui/SnapShopGUI.java	/^public class SnapShopGUI {$/;"	c
-SnapShopMain	SnapShop/src/gui/SnapShopMain.java	/^    private SnapShopMain() {$/;"	m	class:SnapShopMain	file:
-SnapShopMain	SnapShop/src/gui/SnapShopMain.java	/^public final class SnapShopMain {$/;"	c
-SoftenFilter	SnapShop/src/filters/SoftenFilter.java	/^    public SoftenFilter() {$/;"	m	class:SoftenFilter
-SoftenFilter	SnapShop/src/filters/SoftenFilter.java	/^public class SoftenFilter extends AbstractWeightedFilter {$/;"	c
+SnapShopGUI	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    public SnapShopGUI() {$/;"	m	class:SnapShopGUI
+SnapShopGUI	minh1212-snapshop/src/gui/SnapShopGUI.java	/^public class SnapShopGUI {$/;"	c
+SnapShopMain	minh1212-snapshop/src/gui/SnapShopMain.java	/^    private SnapShopMain() {$/;"	m	class:SnapShopMain	file:
+SnapShopMain	minh1212-snapshop/src/gui/SnapShopMain.java	/^public final class SnapShopMain {$/;"	c
+SoftenFilter	minh1212-snapshop/src/filters/SoftenFilter.java	/^    public SoftenFilter() {$/;"	m	class:SoftenFilter
+SoftenFilter	minh1212-snapshop/src/filters/SoftenFilter.java	/^public class SoftenFilter extends AbstractWeightedFilter {$/;"	c
 TAB_HEIGHT	RaceDay/src/controller/RaceDayController.java	/^    private static final Integer TAB_HEIGHT = 207;$/;"	f	class:RaceDayController	file:
 TAB_WIDTH	RaceDay/src/controller/RaceDayController.java	/^    private static final Integer TAB_WIDTH = 590;$/;"	f	class:RaceDayController	file:
 TEXT_AREA_COLS	RaceDay/src/controller/RaceDOS.java	/^    private static final int TEXT_AREA_COLS = 50;$/;"	f	class:RaceDOS	file:
 TEXT_AREA_ROWS	RaceDay/src/controller/RaceDOS.java	/^    private static final int TEXT_AREA_ROWS = 10;$/;"	f	class:RaceDOS	file:
-TEXT_FIELD_WIDTH	BookStore/src/view/BookstoreFrame.java	/^    private static final int TEXT_FIELD_WIDTH = 12;$/;"	f	class:BookstoreFrame	file:
+TEXT_FIELD_WIDTH	Book-store/src/view/BookstoreFrame.java	/^    private static final int TEXT_FIELD_WIDTH = 12;$/;"	f	class:BookstoreFrame	file:
 THREE_DIGIT_FORMAT	RaceDay/src/controller/RaceTimer.java	/^    public static final DecimalFormat THREE_DIGIT_FORMAT = new DecimalFormat("000");$/;"	f	class:RaceTimer
 THREE_DIGIT_FORMAT	RaceDay/src/view/RaceStatus.java	/^    private static final DecimalFormat THREE_DIGIT_FORMAT = new DecimalFormat("000");$/;"	f	class:RaceStatus	file:
 THREE_DIGIT_FORMAT	RaceDay/src/view/RaceTrack.java	/^    private static final DecimalFormat THREE_DIGIT_FORMAT = new DecimalFormat("000");$/;"	f	class:RaceTrack	file:
 TIMER_FREQUENCY	RaceDay/src/controller/RaceDayController.java	/^    private static final int TIMER_FREQUENCY = 30;$/;"	f	class:RaceDayController	file:
-TIME_STEP	RoadRage/src/view/RoadRageGUI.java	/^        public static final String TIME_STEP = "time stamp";$/;"	f	class:RoadRageGUI.Properties
-TITLE	RoadRage/src/view/RoadRageGUI.java	/^    private static final String TITLE = "Road Rage";$/;"	f	class:RoadRageGUI	file:
-TOLERANCE	BookStore/src/model/Item.java	/^    private static final double TOLERANCE = .000001;$/;"	f	class:Item	file:
-TOLERANCE	BookStore/src/tests/ItemTest.java	/^    private static final double TOLERANCE = .000001;$/;"	f	class:ItemTest	file:
-TOLERANCE	Testing/src/test/CircleTest.java	/^    private static final double TOLERANCE = .000001;$/;"	f	class:CircleTest	file:
+TIME_STEP	minh1212-roadrage/src/view/RoadRageGUI.java	/^        public static final String TIME_STEP = "time stamp";$/;"	f	class:RoadRageGUI.Properties
+TITLE	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private static final String TITLE = "Road Rage";$/;"	f	class:RoadRageGUI	file:
+TOLERANCE	Book-store/src/model/Item.java	/^    private static final double TOLERANCE = .000001;$/;"	f	class:Item	file:
+TOLERANCE	Book-store/src/tests/ItemTest.java	/^    private static final double TOLERANCE = .000001;$/;"	f	class:ItemTest	file:
+TOLERANCE	minh1212-testing/src/test/CircleTest.java	/^    private static final double TOLERANCE = .000001;$/;"	f	class:CircleTest	file:
 TRACK_HEIGHT	RaceDay/src/view/RaceTrack.java	/^    private static final int TRACK_HEIGHT = 400;$/;"	f	class:RaceTrack	file:
 TRACK_SIZE	RaceDay/src/view/RaceStatus.java	/^    private static final Dimension TRACK_SIZE = new Dimension(650, 35);$/;"	f	class:RaceStatus	file:
 TRACK_SIZE	RaceDay/src/view/RaceTrack.java	/^    private static final Dimension TRACK_SIZE = new Dimension(500, 400);$/;"	f	class:RaceTrack	file:
 TRACK_WIDTH	RaceDay/src/view/RaceTrack.java	/^    private static final int TRACK_WIDTH = 500;$/;"	f	class:RaceTrack	file:
-TRAIL	RoadRage/src/model/Terrain.java	/^    TRAIL('.'),$/;"	e	enum:Terrain	file:
-TRIES_FOR_RANDOMNESS	RoadRage/src/tests/HumanTest.java	/^    private static final int TRIES_FOR_RANDOMNESS = 50;$/;"	f	class:HumanTest	file:
-TRIES_FOR_RANDOMNESS	RoadRage/src/tests/TruckTest.java	/^    private static final int TRIES_FOR_RANDOMNESS = 50;$/;"	f	class:TruckTest	file:
+TRAIL	minh1212-roadrage/src/model/Terrain.java	/^    TRAIL('.'),$/;"	e	enum:Terrain	file:
+TRIES_FOR_RANDOMNESS	minh1212-roadrage/src/tests/HumanTest.java	/^    private static final int TRIES_FOR_RANDOMNESS = 50;$/;"	f	class:HumanTest	file:
+TRIES_FOR_RANDOMNESS	minh1212-roadrage/src/tests/TruckTest.java	/^    private static final int TRIES_FOR_RANDOMNESS = 50;$/;"	f	class:TruckTest	file:
 TWO_DIGIT_FORMAT	RaceDay/src/controller/RaceTimer.java	/^    public static final DecimalFormat TWO_DIGIT_FORMAT = new DecimalFormat("00");$/;"	f	class:RaceTimer
 TWO_DIGIT_FORMAT	RaceDay/src/view/RaceStatus.java	/^    private static final DecimalFormat TWO_DIGIT_FORMAT = new DecimalFormat("00");$/;"	f	class:RaceStatus	file:
 TWO_DIGIT_FORMAT	RaceDay/src/view/RaceTrack.java	/^    private static final DecimalFormat TWO_DIGIT_FORMAT = new DecimalFormat("00");$/;"	f	class:RaceTrack	file:
-Taxi	RoadRage/src/model/Taxi.java	/^    public Taxi(final int theX, final int theY, final Direction theDir) {$/;"	m	class:Taxi
-Taxi	RoadRage/src/model/Taxi.java	/^public class Taxi extends AbstractVehicle {$/;"	c
+Taxi	minh1212-roadrage/src/model/Taxi.java	/^    public Taxi(final int theX, final int theY, final Direction theDir) {$/;"	m	class:Taxi
+Taxi	minh1212-roadrage/src/model/Taxi.java	/^public class Taxi extends AbstractVehicle {$/;"	c
 TeleList	RaceDay/src/model/TeleList.java	/^    public TeleList() {$/;"	m	class:TeleList
 TeleList	RaceDay/src/model/TeleList.java	/^public class TeleList {$/;"	c
 TelementryMessge	RaceDay/src/model/TelementryMessge.java	/^    public TelementryMessge(final int theTimeStamp, final int theRaceID,$/;"	m	class:TelementryMessge
 TelementryMessge	RaceDay/src/model/TelementryMessge.java	/^public class TelementryMessge extends AbstractMessage {$/;"	c
-Terrain	RoadRage/src/model/Terrain.java	/^    Terrain(final char theLetter) {$/;"	m	class:Terrain
-Terrain	RoadRage/src/model/Terrain.java	/^public enum Terrain {$/;"	g
+Terrain	minh1212-roadrage/src/model/Terrain.java	/^    Terrain(final char theLetter) {$/;"	m	class:Terrain
+Terrain	minh1212-roadrage/src/model/Terrain.java	/^public enum Terrain {$/;"	g
 ToggleAction	RaceDay/src/controller/ToggleAction.java	/^    public ToggleAction(final String theFirstText,$/;"	m	class:ToggleAction
 ToggleAction	RaceDay/src/controller/ToggleAction.java	/^public class ToggleAction extends AbstractAction {$/;"	c
-Truck	RoadRage/src/model/Truck.java	/^    public Truck(final int theX, final int theY, final Direction theDir) {$/;"	m	class:Truck
-Truck	RoadRage/src/model/Truck.java	/^public class Truck extends AbstractVehicle {$/;"	c
-TruckTest	RoadRage/src/tests/TruckTest.java	/^public class TruckTest {$/;"	c
-Vehicle	RoadRage/src/model/Vehicle.java	/^public interface Vehicle {$/;"	i
-WALL	RoadRage/src/model/Terrain.java	/^    WALL('X'),$/;"	e	enum:Terrain	file:
-WEIGHTS	SnapShop/src/filters/EdgeDetectFilter.java	/^    private static final int[][] WEIGHTS = {{-1, -1, -1}, {-1, 8, -1}, {-1, -1, -1}};$/;"	f	class:EdgeDetectFilter	file:
-WEIGHTS	SnapShop/src/filters/EdgeHighlightFilter.java	/^    private static final int[][] WEIGHTS = {{-1, -1, -1}, {-1, 9, -1}, {-1, -1, -1}};$/;"	f	class:EdgeHighlightFilter	file:
-WEIGHTS	SnapShop/src/filters/SharpenFilter.java	/^    private static final int[][] WEIGHTS = {{-1, -2, -1}, {-2, 28, -2}, {-1, -2, -1}};$/;"	f	class:SharpenFilter	file:
-WEIGHTS	SnapShop/src/filters/SoftenFilter.java	/^    private static final int[][] WEIGHTS = {{1, 2, 1}, {2, 4, 2}, {1, 2, 1}};$/;"	f	class:SoftenFilter	file:
-WEST	RoadRage/src/model/Direction.java	/^    WEST('W'),$/;"	e	enum:Direction	file:
-YELLOW	RoadRage/src/model/Light.java	/^    YELLOW,$/;"	e	enum:Light	file:
+Truck	minh1212-roadrage/src/model/Truck.java	/^    public Truck(final int theX, final int theY, final Direction theDir) {$/;"	m	class:Truck
+Truck	minh1212-roadrage/src/model/Truck.java	/^public class Truck extends AbstractVehicle {$/;"	c
+TruckTest	minh1212-roadrage/src/tests/TruckTest.java	/^public class TruckTest {$/;"	c
+Vehicle	minh1212-roadrage/src/model/Vehicle.java	/^public interface Vehicle {$/;"	i
+WALL	minh1212-roadrage/src/model/Terrain.java	/^    WALL('X'),$/;"	e	enum:Terrain	file:
+WEIGHTS	minh1212-snapshop/src/filters/EdgeDetectFilter.java	/^    private static final int[][] WEIGHTS = {{-1, -1, -1}, {-1, 8, -1}, {-1, -1, -1}};$/;"	f	class:EdgeDetectFilter	file:
+WEIGHTS	minh1212-snapshop/src/filters/EdgeHighlightFilter.java	/^    private static final int[][] WEIGHTS = {{-1, -1, -1}, {-1, 9, -1}, {-1, -1, -1}};$/;"	f	class:EdgeHighlightFilter	file:
+WEIGHTS	minh1212-snapshop/src/filters/SharpenFilter.java	/^    private static final int[][] WEIGHTS = {{-1, -2, -1}, {-2, 28, -2}, {-1, -2, -1}};$/;"	f	class:SharpenFilter	file:
+WEIGHTS	minh1212-snapshop/src/filters/SoftenFilter.java	/^    private static final int[][] WEIGHTS = {{1, 2, 1}, {2, 4, 2}, {1, 2, 1}};$/;"	f	class:SoftenFilter	file:
+WEST	minh1212-roadrage/src/model/Direction.java	/^    WEST('W'),$/;"	e	enum:Direction	file:
+YELLOW	minh1212-roadrage/src/model/Light.java	/^    YELLOW,$/;"	e	enum:Light	file:
 actionPerformed	RaceDay/src/controller/SingleAction.java	/^    public void actionPerformed(final ActionEvent theEvent) {$/;"	m	class:SingleAction
 actionPerformed	RaceDay/src/controller/ToggleAction.java	/^    public void actionPerformed(final ActionEvent theEvent) {$/;"	m	class:ToggleAction
-actionPerformed	RoadRage/src/view/RoadRageGUI.java	/^    public void actionPerformed(final ActionEvent theEvent) {$/;"	m	class:RoadRageGUI
-add	BookStore/src/model/Cart.java	/^    public void add(final ItemOrder theOrder) {$/;"	m	class:Cart
+actionPerformed	minh1212-roadrage/src/view/RoadRageGUI.java	/^    public void actionPerformed(final ActionEvent theEvent) {$/;"	m	class:RoadRageGUI
+add	Book-store/src/model/Cart.java	/^    public void add(final ItemOrder theOrder) {$/;"	m	class:Cart
 add	RaceDay/src/model/ParticipantsList.java	/^    public void add(final RaceParticipants theRacer) {$/;"	m	class:ParticipantsList
 add	RaceDay/src/model/TeleList.java	/^    public void add(final TelementryMessge theRacer) {$/;"	m	class:TeleList
 add	RaceDay/src/view/RacerList.java	/^    public void add(final RacerShape theRacer) {$/;"	m	class:RacerList
-addItem	BookStore/src/view/BookstoreFrame.java	/^    private void addItem(final Item theItem, final JPanel thePanel) {$/;"	m	class:BookstoreFrame	file:
+addItem	Book-store/src/view/BookstoreFrame.java	/^    private void addItem(final Item theItem, final JPanel thePanel) {$/;"	m	class:BookstoreFrame	file:
 addPropertyChangeListener	RaceDay/src/model/PropertyChangeEnabledRaceControls.java	/^    void addPropertyChangeListener(PropertyChangeListener theListener);$/;"	m	interface:PropertyChangeEnabledRaceControls
 addPropertyChangeListener	RaceDay/src/model/PropertyChangeEnabledRaceControls.java	/^    void addPropertyChangeListener(String thePropertyName, PropertyChangeListener theListener);$/;"	m	interface:PropertyChangeEnabledRaceControls
 addPropertyChangeListener	RaceDay/src/model/Race.java	/^    public void addPropertyChangeListener(final PropertyChangeListener theListener) {$/;"	m	class:Race
@@ -301,39 +301,39 @@ advance	RaceDay/src/model/Race.java	/^    public void advance() {$/;"	m	class:Ra
 advance	RaceDay/src/model/Race.java	/^    public void advance(final int theMillisecond) {$/;"	m	class:Race
 advance	RaceDay/src/model/RaceControls.java	/^    void advance();$/;"	m	interface:RaceControls
 advance	RaceDay/src/model/RaceControls.java	/^    void advance(int theMillisecond);$/;"	m	interface:RaceControls
-advance	RoadRage/src/model/Light.java	/^    public Light advance() {$/;"	m	class:Light
-advanceAnimation	RoadRage/src/view/RoadRagePanel.java	/^    private void advanceAnimation() {$/;"	m	class:RoadRagePanel	file:
-advanceTimeStep	RoadRage/src/view/RoadRageGUI.java	/^    private void advanceTimeStep() {$/;"	m	class:RoadRageGUI	file:
+advance	minh1212-roadrage/src/model/Light.java	/^    public Light advance() {$/;"	m	class:Light
+advanceAnimation	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private void advanceAnimation() {$/;"	m	class:RoadRagePanel	file:
+advanceTimeStep	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private void advanceTimeStep() {$/;"	m	class:RoadRageGUI	file:
 application	RaceDay/src/application/Main.java	/^package application;$/;"	p
 buildControlsMenu	RaceDay/src/controller/RaceDayController.java	/^    private JMenu buildControlsMenu() {$/;"	m	class:RaceDayController	file:
 buildFileMenu	RaceDay/src/controller/RaceDayController.java	/^    private JMenu buildFileMenu(final JFrame theFrame) {$/;"	m	class:RaceDayController	file:
 buildHelpMenu	RaceDay/src/controller/RaceDayController.java	/^    private JMenu buildHelpMenu() {$/;"	m	class:RaceDayController	file:
-calculateArea	Testing/src/shapes/Circle.java	/^    public double calculateArea() {$/;"	m	class:Circle
-calculateCircumference	Testing/src/shapes/Circle.java	/^    public double calculateCircumference() {$/;"	m	class:Circle
-calculateDiameter	Testing/src/shapes/Circle.java	/^    public double calculateDiameter() {$/;"	m	class:Circle
-calculateTotal	BookStore/src/model/Cart.java	/^    public BigDecimal calculateTotal() {$/;"	m	class:Cart
-canBicycle	RoadRage/src/model/Bicycle.java	/^    private boolean canBicycle(final Terrain theTerrain) {$/;"	m	class:Bicycle	file:
-canPass	RoadRage/src/model/Atv.java	/^    public boolean canPass(final Terrain theTerrain, final Light theLight) {$/;"	m	class:Atv
-canPass	RoadRage/src/model/Bicycle.java	/^    public boolean canPass(final Terrain theTerrain, final Light theLight) {$/;"	m	class:Bicycle
-canPass	RoadRage/src/model/Car.java	/^    public boolean canPass(final Terrain theTerrain, final Light theLight) {$/;"	m	class:Car
-canPass	RoadRage/src/model/Human.java	/^    public boolean canPass(final Terrain theTerrain, final Light theLight) {$/;"	m	class:Human
-canPass	RoadRage/src/model/Taxi.java	/^    public boolean canPass(final Terrain theTerrain, final Light theLight) {$/;"	m	class:Taxi
-canPass	RoadRage/src/model/Truck.java	/^    public boolean canPass(final Terrain theTerrain, final Light theLight) {$/;"	m	class:Truck
-canPass	RoadRage/src/model/Vehicle.java	/^    boolean canPass(Terrain theTerrain, Light theLight);$/;"	m	interface:Vehicle
+calculateArea	minh1212-testing/src/shapes/Circle.java	/^    public double calculateArea() {$/;"	m	class:Circle
+calculateCircumference	minh1212-testing/src/shapes/Circle.java	/^    public double calculateCircumference() {$/;"	m	class:Circle
+calculateDiameter	minh1212-testing/src/shapes/Circle.java	/^    public double calculateDiameter() {$/;"	m	class:Circle
+calculateTotal	Book-store/src/model/Cart.java	/^    public BigDecimal calculateTotal() {$/;"	m	class:Cart
+canBicycle	minh1212-roadrage/src/model/Bicycle.java	/^    private boolean canBicycle(final Terrain theTerrain) {$/;"	m	class:Bicycle	file:
+canPass	minh1212-roadrage/src/model/Atv.java	/^    public boolean canPass(final Terrain theTerrain, final Light theLight) {$/;"	m	class:Atv
+canPass	minh1212-roadrage/src/model/Bicycle.java	/^    public boolean canPass(final Terrain theTerrain, final Light theLight) {$/;"	m	class:Bicycle
+canPass	minh1212-roadrage/src/model/Car.java	/^    public boolean canPass(final Terrain theTerrain, final Light theLight) {$/;"	m	class:Car
+canPass	minh1212-roadrage/src/model/Human.java	/^    public boolean canPass(final Terrain theTerrain, final Light theLight) {$/;"	m	class:Human
+canPass	minh1212-roadrage/src/model/Taxi.java	/^    public boolean canPass(final Terrain theTerrain, final Light theLight) {$/;"	m	class:Taxi
+canPass	minh1212-roadrage/src/model/Truck.java	/^    public boolean canPass(final Terrain theTerrain, final Light theLight) {$/;"	m	class:Truck
+canPass	minh1212-roadrage/src/model/Vehicle.java	/^    boolean canPass(Terrain theTerrain, Light theLight);$/;"	m	interface:Vehicle
 changeTime	RaceDay/src/model/Race.java	/^    public void changeTime(final int theMillisecond) {$/;"	m	class:Race
-checkColorValue	SnapShop/src/image/Pixel.java	/^    private void checkColorValue(final int theValue) throws IllegalArgumentException {$/;"	m	class:Pixel	file:
-checkWeights	SnapShop/src/filters/AbstractFilter.java	/^    private void checkWeights(final int[][] theWeights) throws IllegalArgumentException {$/;"	m	class:AbstractFilter	file:
-chooseDirection	RoadRage/src/model/Atv.java	/^    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {$/;"	m	class:Atv
-chooseDirection	RoadRage/src/model/Bicycle.java	/^    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {$/;"	m	class:Bicycle
-chooseDirection	RoadRage/src/model/Car.java	/^    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {$/;"	m	class:Car
-chooseDirection	RoadRage/src/model/Human.java	/^    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {$/;"	m	class:Human
-chooseDirection	RoadRage/src/model/Taxi.java	/^    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {$/;"	m	class:Taxi
-chooseDirection	RoadRage/src/model/Truck.java	/^    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {$/;"	m	class:Truck
-chooseDirection	RoadRage/src/model/Vehicle.java	/^    Direction chooseDirection(Map<Direction, Terrain> theNeighbors);$/;"	m	interface:Vehicle
-clear	BookStore/src/model/Cart.java	/^    public void clear() {$/;"	m	class:Cart
-closeImage	SnapShop/src/gui/SnapShopGUI.java	/^    public void closeImage() {$/;"	m	class:SnapShopGUI
-collide	RoadRage/src/model/AbstractVehicle.java	/^    public void collide(final Vehicle theOther) {$/;"	m	class:AbstractVehicle
-collide	RoadRage/src/model/Vehicle.java	/^    void collide(Vehicle theOther);$/;"	m	interface:Vehicle
+checkColorValue	minh1212-snapshop/src/image/Pixel.java	/^    private void checkColorValue(final int theValue) throws IllegalArgumentException {$/;"	m	class:Pixel	file:
+checkWeights	minh1212-snapshop/src/filters/AbstractFilter.java	/^    private void checkWeights(final int[][] theWeights) throws IllegalArgumentException {$/;"	m	class:AbstractFilter	file:
+chooseDirection	minh1212-roadrage/src/model/Atv.java	/^    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {$/;"	m	class:Atv
+chooseDirection	minh1212-roadrage/src/model/Bicycle.java	/^    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {$/;"	m	class:Bicycle
+chooseDirection	minh1212-roadrage/src/model/Car.java	/^    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {$/;"	m	class:Car
+chooseDirection	minh1212-roadrage/src/model/Human.java	/^    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {$/;"	m	class:Human
+chooseDirection	minh1212-roadrage/src/model/Taxi.java	/^    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {$/;"	m	class:Taxi
+chooseDirection	minh1212-roadrage/src/model/Truck.java	/^    public Direction chooseDirection(final Map<Direction, Terrain> theNeighbors) {$/;"	m	class:Truck
+chooseDirection	minh1212-roadrage/src/model/Vehicle.java	/^    Direction chooseDirection(Map<Direction, Terrain> theNeighbors);$/;"	m	interface:Vehicle
+clear	Book-store/src/model/Cart.java	/^    public void clear() {$/;"	m	class:Cart
+closeImage	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    public void closeImage() {$/;"	m	class:SnapShopGUI
+collide	minh1212-roadrage/src/model/AbstractVehicle.java	/^    public void collide(final Vehicle theOther) {$/;"	m	class:AbstractVehicle
+collide	minh1212-roadrage/src/model/Vehicle.java	/^    void collide(Vehicle theOther);$/;"	m	interface:Vehicle
 controller	RaceDay/src/controller/RaceDOS.java	/^package controller;$/;"	p
 controller	RaceDay/src/controller/RaceDayController.java	/^package controller;$/;"	p
 controller	RaceDay/src/controller/RaceRP.java	/^package controller;$/;"	p
@@ -342,72 +342,72 @@ controller	RaceDay/src/controller/SingleAction.java	/^package controller;$/;"	p
 controller	RaceDay/src/controller/ToggleAction.java	/^package controller;$/;"	p
 createActions	RaceDay/src/controller/RaceDayController.java	/^    private void createActions() {$/;"	m	class:RaceDayController	file:
 createAndShowGUI	RaceDay/src/controller/RaceDayController.java	/^    public static void createAndShowGUI() {$/;"	m	class:RaceDayController
-createFilterButton	SnapShop/src/gui/SnapShopGUI.java	/^    private JButton createFilterButton(final Filter theFilter) {$/;"	m	class:SnapShopGUI	file:
-createFilterButton	SnapShop/src/gui/SnapShopGUI.java	/^    public void createFilterButton() {$/;"	m	class:SnapShopGUI
+createFilterButton	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    private JButton createFilterButton(final Filter theFilter) {$/;"	m	class:SnapShopGUI	file:
+createFilterButton	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    public void createFilterButton() {$/;"	m	class:SnapShopGUI
 createMenu	RaceDay/src/controller/RaceDayController.java	/^    private JMenuBar createMenu(final JFrame theFrame) {$/;"	m	class:RaceDayController	file:
-createOptionButton	SnapShop/src/gui/SnapShopGUI.java	/^    public void createOptionButton() {$/;"	m	class:SnapShopGUI
+createOptionButton	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    public void createOptionButton() {$/;"	m	class:SnapShopGUI
 createToolBar	RaceDay/src/controller/RaceDayController.java	/^    private JToolBar createToolBar() {$/;"	m	class:RaceDayController	file:
-drawCrossWalkLines	RoadRage/src/view/RoadRagePanel.java	/^    private void drawCrossWalkLines(final Graphics2D theGraphics,$/;"	m	class:RoadRagePanel	file:
-drawDebugInfo	RoadRage/src/view/RoadRagePanel.java	/^    private void drawDebugInfo(final Graphics2D theGraphics, final Vehicle theVehicle) {$/;"	m	class:RoadRagePanel	file:
-drawDebugInfo	RoadRage/src/view/RoadRagePanel.java	/^    private void drawDebugInfo(final Graphics2D theGraphics, final int theX, final int theY) {$/;"	m	class:RoadRagePanel	file:
-drawMap	RoadRage/src/view/RoadRagePanel.java	/^    private void drawMap(final Graphics2D theGraphics) {$/;"	m	class:RoadRagePanel	file:
-drawStreetLines	RoadRage/src/view/RoadRagePanel.java	/^    private void drawStreetLines(final Graphics2D theGraphics,$/;"	m	class:RoadRagePanel	file:
-dx	RoadRage/src/model/Direction.java	/^    public int dx() {$/;"	m	class:Direction
-dy	RoadRage/src/model/Direction.java	/^    public int dy() {$/;"	m	class:Direction
-equals	BookStore/src/model/Item.java	/^    public boolean equals(final Object theOther) {$/;"	m	class:Item
+drawCrossWalkLines	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private void drawCrossWalkLines(final Graphics2D theGraphics,$/;"	m	class:RoadRagePanel	file:
+drawDebugInfo	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private void drawDebugInfo(final Graphics2D theGraphics, final Vehicle theVehicle) {$/;"	m	class:RoadRagePanel	file:
+drawDebugInfo	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private void drawDebugInfo(final Graphics2D theGraphics, final int theX, final int theY) {$/;"	m	class:RoadRagePanel	file:
+drawMap	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private void drawMap(final Graphics2D theGraphics) {$/;"	m	class:RoadRagePanel	file:
+drawStreetLines	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private void drawStreetLines(final Graphics2D theGraphics,$/;"	m	class:RoadRagePanel	file:
+dx	minh1212-roadrage/src/model/Direction.java	/^    public int dx() {$/;"	m	class:Direction
+dy	minh1212-roadrage/src/model/Direction.java	/^    public int dy() {$/;"	m	class:Direction
+equals	Book-store/src/model/Item.java	/^    public boolean equals(final Object theOther) {$/;"	m	class:Item
 extracted	RaceDay/src/model/Race.java	/^    private static Scanner extracted(final String theLine) {$/;"	m	class:Race	file:
-filter	SnapShop/src/filters/AbstractWeightedFilter.java	/^    public void filter(final PixelImage theImage) {$/;"	m	class:AbstractWeightedFilter
-filter	SnapShop/src/filters/EdgeDetectFilter.java	/^    public void filter(final PixelImage theImage) {$/;"	m	class:EdgeDetectFilter
-filter	SnapShop/src/filters/Filter.java	/^    void filter(PixelImage theImage);$/;"	m	interface:Filter
-filter	SnapShop/src/filters/FlipHorizontalFilter.java	/^    public void filter(final PixelImage theImage) {$/;"	m	class:FlipHorizontalFilter
-filter	SnapShop/src/filters/FlipVerticalFilter.java	/^    public void filter(final PixelImage theImage) {$/;"	m	class:FlipVerticalFilter
-filter	SnapShop/src/filters/GrayscaleFilter.java	/^    public void filter(final PixelImage theImage) {$/;"	m	class:GrayscaleFilter
-filters	SnapShop/src/filters/AbstractFilter.java	/^package filters;$/;"	p
-filters	SnapShop/src/filters/AbstractWeightedFilter.java	/^package filters;$/;"	p
-filters	SnapShop/src/filters/EdgeDetectFilter.java	/^package filters;$/;"	p
-filters	SnapShop/src/filters/EdgeHighlightFilter.java	/^package filters;$/;"	p
-filters	SnapShop/src/filters/Filter.java	/^package filters;$/;"	p
-filters	SnapShop/src/filters/FlipHorizontalFilter.java	/^package filters;$/;"	p
-filters	SnapShop/src/filters/FlipVerticalFilter.java	/^package filters;$/;"	p
-filters	SnapShop/src/filters/GrayscaleFilter.java	/^package filters;$/;"	p
-filters	SnapShop/src/filters/SharpenFilter.java	/^package filters;$/;"	p
-filters	SnapShop/src/filters/SoftenFilter.java	/^package filters;$/;"	p
+filter	minh1212-snapshop/src/filters/AbstractWeightedFilter.java	/^    public void filter(final PixelImage theImage) {$/;"	m	class:AbstractWeightedFilter
+filter	minh1212-snapshop/src/filters/EdgeDetectFilter.java	/^    public void filter(final PixelImage theImage) {$/;"	m	class:EdgeDetectFilter
+filter	minh1212-snapshop/src/filters/Filter.java	/^    void filter(PixelImage theImage);$/;"	m	interface:Filter
+filter	minh1212-snapshop/src/filters/FlipHorizontalFilter.java	/^    public void filter(final PixelImage theImage) {$/;"	m	class:FlipHorizontalFilter
+filter	minh1212-snapshop/src/filters/FlipVerticalFilter.java	/^    public void filter(final PixelImage theImage) {$/;"	m	class:FlipVerticalFilter
+filter	minh1212-snapshop/src/filters/GrayscaleFilter.java	/^    public void filter(final PixelImage theImage) {$/;"	m	class:GrayscaleFilter
+filters	minh1212-snapshop/src/filters/AbstractFilter.java	/^package filters;$/;"	p
+filters	minh1212-snapshop/src/filters/AbstractWeightedFilter.java	/^package filters;$/;"	p
+filters	minh1212-snapshop/src/filters/EdgeDetectFilter.java	/^package filters;$/;"	p
+filters	minh1212-snapshop/src/filters/EdgeHighlightFilter.java	/^package filters;$/;"	p
+filters	minh1212-snapshop/src/filters/Filter.java	/^package filters;$/;"	p
+filters	minh1212-snapshop/src/filters/FlipHorizontalFilter.java	/^package filters;$/;"	p
+filters	minh1212-snapshop/src/filters/FlipVerticalFilter.java	/^package filters;$/;"	p
+filters	minh1212-snapshop/src/filters/GrayscaleFilter.java	/^package filters;$/;"	p
+filters	minh1212-snapshop/src/filters/SharpenFilter.java	/^package filters;$/;"	p
+filters	minh1212-snapshop/src/filters/SoftenFilter.java	/^package filters;$/;"	p
 formatTime	RaceDay/src/controller/RaceTimer.java	/^    public static String formatTime(final long theTime) {$/;"	m	class:RaceTimer
 formatTime	RaceDay/src/view/RaceStatus.java	/^    public static String formatTime(final long theTime) {$/;"	m	class:RaceStatus
 formatTime	RaceDay/src/view/RaceTrack.java	/^    public static String formatTime(final long theTime) {$/;"	m	class:RaceTrack
 frame	RaceDay/src/controller/RaceDayController.java	/^    private static JFrame frame;  $/;"	f	class:RaceDayController	file:
-generateNeighbors	RoadRage/src/view/RoadRagePanel.java	/^    private Map<Direction, Terrain> generateNeighbors(final Vehicle theMover) {$/;"	m	class:RoadRagePanel	file:
-getBlue	SnapShop/src/image/Pixel.java	/^    public int getBlue() {$/;"	m	class:Pixel
+generateNeighbors	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private Map<Direction, Terrain> generateNeighbors(final Vehicle theMover) {$/;"	m	class:RoadRagePanel	file:
+getBlue	minh1212-snapshop/src/image/Pixel.java	/^    public int getBlue() {$/;"	m	class:Pixel
 getBoard	RaceDay/src/model/LeaderboardMessge.java	/^    public List<Integer> getBoard() {$/;"	m	class:LeaderboardMessge
-getBulkPrice	BookStore/src/model/Item.java	/^    public BigDecimal getBulkPrice() {$/;"	m	class:Item
-getBulkQuantity	BookStore/src/model/Item.java	/^    public int getBulkQuantity() {$/;"	m	class:Item
-getCenter	Testing/src/shapes/Circle.java	/^    public final Point getCenter() {$/;"	m	class:Circle
+getBulkPrice	Book-store/src/model/Item.java	/^    public BigDecimal getBulkPrice() {$/;"	m	class:Item
+getBulkQuantity	Book-store/src/model/Item.java	/^    public int getBulkQuantity() {$/;"	m	class:Item
+getCenter	minh1212-testing/src/shapes/Circle.java	/^    public final Point getCenter() {$/;"	m	class:Circle
 getColor	RaceDay/src/view/RacerShape.java	/^    public Color getColor() {$/;"	m	class:RacerShape
-getColor	Testing/src/shapes/Circle.java	/^    public final Color getColor() {$/;"	m	class:Circle
+getColor	minh1212-testing/src/shapes/Circle.java	/^    public final Color getColor() {$/;"	m	class:Circle
 getColorList	RaceDay/src/view/RacerList.java	/^    public List<Color> getColorList() {$/;"	m	class:RacerList
-getDeathTime	RoadRage/src/model/AbstractVehicle.java	/^    public int getDeathTime() {$/;"	m	class:AbstractVehicle
-getDeathTime	RoadRage/src/model/Vehicle.java	/^    int getDeathTime();$/;"	m	interface:Vehicle
-getDescription	SnapShop/src/filters/AbstractFilter.java	/^    public String getDescription() {$/;"	m	class:AbstractFilter
-getDescription	SnapShop/src/filters/Filter.java	/^    String getDescription();$/;"	m	interface:Filter
-getDirection	RoadRage/src/model/AbstractVehicle.java	/^    public Direction getDirection() {$/;"	m	class:AbstractVehicle
-getDirection	RoadRage/src/model/Vehicle.java	/^    Direction getDirection();$/;"	m	interface:Vehicle
+getDeathTime	minh1212-roadrage/src/model/AbstractVehicle.java	/^    public int getDeathTime() {$/;"	m	class:AbstractVehicle
+getDeathTime	minh1212-roadrage/src/model/Vehicle.java	/^    int getDeathTime();$/;"	m	interface:Vehicle
+getDescription	minh1212-snapshop/src/filters/AbstractFilter.java	/^    public String getDescription() {$/;"	m	class:AbstractFilter
+getDescription	minh1212-snapshop/src/filters/Filter.java	/^    String getDescription();$/;"	m	interface:Filter
+getDirection	minh1212-roadrage/src/model/AbstractVehicle.java	/^    public Direction getDirection() {$/;"	m	class:AbstractVehicle
+getDirection	minh1212-roadrage/src/model/Vehicle.java	/^    Direction getDirection();$/;"	m	interface:Vehicle
 getDistance	RaceDay/src/model/Race.java	/^    public List<Double> getDistance() {$/;"	m	class:Race
 getDistance	RaceDay/src/model/TelementryMessge.java	/^    public double getDistance() {$/;"	m	class:TelementryMessge
 getDistanceList	RaceDay/src/model/ParticipantsList.java	/^    public List<Double> getDistanceList() {$/;"	m	class:ParticipantsList
-getGreen	SnapShop/src/image/Pixel.java	/^    public int getGreen() {$/;"	m	class:Pixel
-getImageFileName	RoadRage/src/model/AbstractVehicle.java	/^    public String getImageFileName() {$/;"	m	class:AbstractVehicle
-getImageFileName	RoadRage/src/model/Vehicle.java	/^    String getImageFileName();$/;"	m	interface:Vehicle
-getItem	BookStore/src/model/ItemOrder.java	/^    public Item getItem() {$/;"	m	class:ItemOrder
+getGreen	minh1212-snapshop/src/image/Pixel.java	/^    public int getGreen() {$/;"	m	class:Pixel
+getImageFileName	minh1212-roadrage/src/model/AbstractVehicle.java	/^    public String getImageFileName() {$/;"	m	class:AbstractVehicle
+getImageFileName	minh1212-roadrage/src/model/Vehicle.java	/^    String getImageFileName();$/;"	m	interface:Vehicle
+getItem	Book-store/src/model/ItemOrder.java	/^    public Item getItem() {$/;"	m	class:ItemOrder
 getLap	RaceDay/src/model/TelementryMessge.java	/^    public int getLap() {$/;"	m	class:TelementryMessge
 getList	RaceDay/src/view/RacerList.java	/^    public List<RacerShape> getList() {$/;"	m	class:RacerList
 getMap	RaceDay/src/model/Race.java	/^    public Map<Integer, List<Message>> getMap() {$/;"	m	class:Race
 getNameList	RaceDay/src/model/ParticipantsList.java	/^    public List<String> getNameList() {$/;"	m	class:ParticipantsList
 getNewLap	RaceDay/src/model/LineCrossingMessge.java	/^    public int getNewLap() {$/;"	m	class:LineCrossingMessge
 getOneDistance	RaceDay/src/model/RaceInformation.java	/^    public int getOneDistance() {$/;"	m	class:RaceInformation
-getPixelData	SnapShop/src/image/PixelImage.java	/^    public Pixel[][] getPixelData() {$/;"	m	class:PixelImage
+getPixelData	minh1212-snapshop/src/image/PixelImage.java	/^    public Pixel[][] getPixelData() {$/;"	m	class:PixelImage
 getPreferredSize	RaceDay/src/view/RaceTrack.java	/^    public Dimension getPreferredSize() {$/;"	m	class:RaceTrack
-getPrice	BookStore/src/model/Item.java	/^    public BigDecimal getPrice() {$/;"	m	class:Item
-getQuantity	BookStore/src/model/ItemOrder.java	/^    public int getQuantity() {$/;"	m	class:ItemOrder
+getPrice	Book-store/src/model/Item.java	/^    public BigDecimal getPrice() {$/;"	m	class:Item
+getQuantity	Book-store/src/model/ItemOrder.java	/^    public int getQuantity() {$/;"	m	class:ItemOrder
 getRaceID	RaceDay/src/model/LineCrossingMessge.java	/^    public int getRaceID() {$/;"	m	class:LineCrossingMessge
 getRaceID	RaceDay/src/model/RaceParticipants.java	/^    public int getRaceID() {$/;"	m	class:RaceParticipants
 getRaceID	RaceDay/src/model/TelementryMessge.java	/^    public int getRaceID() {$/;"	m	class:TelementryMessge
@@ -419,8 +419,8 @@ getRacerID	RaceDay/src/view/RacerShape.java	/^    public int getRacerID() {$/;"	
 getRacerList	RaceDay/src/model/Race.java	/^    public ParticipantsList getRacerList() {     $/;"	m	class:Race
 getRacerName	RaceDay/src/model/Race.java	/^    public List<String> getRacerName() {$/;"	m	class:Race
 getRacerShape	RaceDay/src/view/RacerShape.java	/^    public Ellipse2D getRacerShape() {$/;"	m	class:RacerShape
-getRadius	Testing/src/shapes/Circle.java	/^    public final double getRadius() {$/;"	m	class:Circle
-getRed	SnapShop/src/image/Pixel.java	/^    public int getRed() {$/;"	m	class:Pixel
+getRadius	minh1212-testing/src/shapes/Circle.java	/^    public final double getRadius() {$/;"	m	class:Circle
+getRed	minh1212-snapshop/src/image/Pixel.java	/^    public int getRed() {$/;"	m	class:Pixel
 getShapeList	RaceDay/src/view/RacerList.java	/^    public List<java.awt.geom.Ellipse2D> getShapeList() {$/;"	m	class:RacerList
 getStartDistance	RaceDay/src/model/RaceParticipants.java	/^    public double getStartDistance() {$/;"	m	class:RaceParticipants
 getTeleDistanceList	RaceDay/src/model/TeleList.java	/^    public List<Double> getTeleDistanceList() {$/;"	m	class:TeleList
@@ -432,42 +432,42 @@ getTimeString	RaceDay/src/model/RaceInformation.java	/^    public String getTime
 getTotalTime	RaceDay/src/model/RaceInformation.java	/^    public int getTotalTime() {$/;"	m	class:RaceInformation
 getTrackGeometry	RaceDay/src/model/RaceInformation.java	/^    public String getTrackGeometry() {$/;"	m	class:RaceInformation
 getTrackName	RaceDay/src/model/RaceInformation.java	/^    public String getTrackName() {$/;"	m	class:RaceInformation
-getX	RoadRage/src/model/AbstractVehicle.java	/^    public int getX() {$/;"	m	class:AbstractVehicle
-getX	RoadRage/src/model/Vehicle.java	/^    int getX();$/;"	m	interface:Vehicle
-getY	RoadRage/src/model/AbstractVehicle.java	/^    public int getY() {$/;"	m	class:AbstractVehicle
-getY	RoadRage/src/model/Vehicle.java	/^    int getY();$/;"	m	interface:Vehicle
-gui	SnapShop/src/gui/SnapShopGUI.java	/^package gui;$/;"	p
-gui	SnapShop/src/gui/SnapShopMain.java	/^package gui;$/;"	p
+getX	minh1212-roadrage/src/model/AbstractVehicle.java	/^    public int getX() {$/;"	m	class:AbstractVehicle
+getX	minh1212-roadrage/src/model/Vehicle.java	/^    int getX();$/;"	m	interface:Vehicle
+getY	minh1212-roadrage/src/model/AbstractVehicle.java	/^    public int getY() {$/;"	m	class:AbstractVehicle
+getY	minh1212-roadrage/src/model/Vehicle.java	/^    int getY();$/;"	m	interface:Vehicle
+gui	minh1212-snapshop/src/gui/SnapShopGUI.java	/^package gui;$/;"	p
+gui	minh1212-snapshop/src/gui/SnapShopMain.java	/^package gui;$/;"	p
 handleTimer	RaceDay/src/controller/RaceDayController.java	/^    private void handleTimer(final ActionEvent theEvent) {$/;"	m	class:RaceDayController	file:
-hashCode	BookStore/src/model/Item.java	/^    public int hashCode() {$/;"	m	class:Item
-image	SnapShop/src/image/Pixel.java	/^package image;$/;"	p
-image	SnapShop/src/image/PixelImage.java	/^package image;$/;"	p
+hashCode	Book-store/src/model/Item.java	/^    public int hashCode() {$/;"	m	class:Item
+image	minh1212-snapshop/src/image/Pixel.java	/^package image;$/;"	p
+image	minh1212-snapshop/src/image/PixelImage.java	/^package image;$/;"	p
 img	RaceDay/src/controller/RaceDayController.java	/^    private static ImageIcon img = new ImageIcon(".\/images\/raceday.png");$/;"	f	class:RaceDayController	file:
-initGUI	RoadRage/src/view/RoadRageGUI.java	/^    private void initGUI() {$/;"	m	class:RoadRageGUI	file:
-isAlive	RoadRage/src/model/AbstractVehicle.java	/^    public boolean isAlive() {$/;"	m	class:AbstractVehicle
-isAlive	RoadRage/src/model/Vehicle.java	/^    boolean isAlive();$/;"	m	interface:Vehicle
-isBulk	BookStore/src/model/Item.java	/^    public boolean isBulk() {$/;"	m	class:Item
+initGUI	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private void initGUI() {$/;"	m	class:RoadRageGUI	file:
+isAlive	minh1212-roadrage/src/model/AbstractVehicle.java	/^    public boolean isAlive() {$/;"	m	class:AbstractVehicle
+isAlive	minh1212-roadrage/src/model/Vehicle.java	/^    boolean isAlive();$/;"	m	interface:Vehicle
+isBulk	Book-store/src/model/Item.java	/^    public boolean isBulk() {$/;"	m	class:Item
 isFinish	RaceDay/src/model/LineCrossingMessge.java	/^    public boolean isFinish() {$/;"	m	class:LineCrossingMessge
 isRepeat	RaceDay/src/controller/RaceDayController.java	/^    private void isRepeat() {$/;"	m	class:RaceDayController	file:
-isValidIndex	RoadRage/src/view/RoadRagePanel.java	/^    private boolean isValidIndex(final int theY, final int theX) {$/;"	m	class:RoadRagePanel	file:
-left	RoadRage/src/model/Direction.java	/^    public Direction left() {$/;"	m	class:Direction
-letter	RoadRage/src/model/Direction.java	/^    public char letter() {$/;"	m	class:Direction
-listenerButton	SnapShop/src/gui/SnapShopGUI.java	/^    public void listenerButton() {$/;"	m	class:SnapShopGUI
-load	SnapShop/src/image/PixelImage.java	/^    public static PixelImage load(final File theFile) throws IOException {$/;"	m	class:PixelImage
+isValidIndex	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private boolean isValidIndex(final int theY, final int theX) {$/;"	m	class:RoadRagePanel	file:
+left	minh1212-roadrage/src/model/Direction.java	/^    public Direction left() {$/;"	m	class:Direction
+letter	minh1212-roadrage/src/model/Direction.java	/^    public char letter() {$/;"	m	class:Direction
+listenerButton	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    public void listenerButton() {$/;"	m	class:SnapShopGUI
+load	minh1212-snapshop/src/image/PixelImage.java	/^    public static PixelImage load(final File theFile) throws IOException {$/;"	m	class:PixelImage
 loadRace	RaceDay/src/model/Race.java	/^    public void loadRace(final File theRaceFile) throws IOException {$/;"	m	class:Race
 loadRace	RaceDay/src/model/RaceControls.java	/^    void loadRace(File theRaceFile) throws IOException;$/;"	m	interface:RaceControls
 loadingRace	RaceDay/src/controller/RaceDayController.java	/^    public void loadingRace() {$/;"	m	class:RaceDayController
-main	BookStore/src/view/BookstoreMain.java	/^    public static void main(final String... theArgs) {$/;"	m	class:BookstoreMain
+main	Book-store/src/view/BookstoreMain.java	/^    public static void main(final String... theArgs) {$/;"	m	class:BookstoreMain
 main	RaceDay/src/application/Main.java	/^    public static void main(final String[] theArgs) {$/;"	m	class:Main
-main	RoadRage/src/view/RoadRageMain.java	/^    public static void main(final String... theArgs) {$/;"	m	class:RoadRageMain
-main	SnapShop/src/gui/SnapShopMain.java	/^    public static void main(final String[] theArgs) {$/;"	m	class:SnapShopMain
-makeButton	RoadRage/src/view/RoadRageGUI.java	/^    private JButton makeButton(final String theText) {$/;"	m	class:RoadRageGUI	file:
-makeCheckBoxPanel	BookStore/src/view/BookstoreFrame.java	/^    private JPanel makeCheckBoxPanel() {$/;"	m	class:BookstoreFrame	file:
-makeItemsPanel	BookStore/src/view/BookstoreFrame.java	/^    private JPanel makeItemsPanel(final List<Item> theItems) {$/;"	m	class:BookstoreFrame	file:
-makeTotalPanel	BookStore/src/view/BookstoreFrame.java	/^    private JPanel makeTotalPanel() {$/;"	m	class:BookstoreFrame	file:
-model	BookStore/src/model/Cart.java	/^package model;$/;"	p
-model	BookStore/src/model/Item.java	/^package model;$/;"	p
-model	BookStore/src/model/ItemOrder.java	/^package model;$/;"	p
+main	minh1212-roadrage/src/view/RoadRageMain.java	/^    public static void main(final String... theArgs) {$/;"	m	class:RoadRageMain
+main	minh1212-snapshop/src/gui/SnapShopMain.java	/^    public static void main(final String[] theArgs) {$/;"	m	class:SnapShopMain
+makeButton	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private JButton makeButton(final String theText) {$/;"	m	class:RoadRageGUI	file:
+makeCheckBoxPanel	Book-store/src/view/BookstoreFrame.java	/^    private JPanel makeCheckBoxPanel() {$/;"	m	class:BookstoreFrame	file:
+makeItemsPanel	Book-store/src/view/BookstoreFrame.java	/^    private JPanel makeItemsPanel(final List<Item> theItems) {$/;"	m	class:BookstoreFrame	file:
+makeTotalPanel	Book-store/src/view/BookstoreFrame.java	/^    private JPanel makeTotalPanel() {$/;"	m	class:BookstoreFrame	file:
+model	Book-store/src/model/Cart.java	/^package model;$/;"	p
+model	Book-store/src/model/Item.java	/^package model;$/;"	p
+model	Book-store/src/model/ItemOrder.java	/^package model;$/;"	p
 model	RaceDay/src/model/AbstractMessage.java	/^package model;$/;"	p
 model	RaceDay/src/model/LeaderboardMessge.java	/^package model;$/;"	p
 model	RaceDay/src/model/LineCrossingMessge.java	/^package model;$/;"	p
@@ -480,104 +480,104 @@ model	RaceDay/src/model/RaceInformation.java	/^package model;$/;"	p
 model	RaceDay/src/model/RaceParticipants.java	/^package model;$/;"	p
 model	RaceDay/src/model/TeleList.java	/^package model;$/;"	p
 model	RaceDay/src/model/TelementryMessge.java	/^package model;$/;"	p
-model	RoadRage/src/model/AbstractVehicle.java	/^package model;$/;"	p
-model	RoadRage/src/model/Atv.java	/^package model;$/;"	p
-model	RoadRage/src/model/Bicycle.java	/^package model;$/;"	p
-model	RoadRage/src/model/Car.java	/^package model;$/;"	p
-model	RoadRage/src/model/Direction.java	/^package model;$/;"	p
-model	RoadRage/src/model/Human.java	/^package model;$/;"	p
-model	RoadRage/src/model/Light.java	/^package model;$/;"	p
-model	RoadRage/src/model/Taxi.java	/^package model;$/;"	p
-model	RoadRage/src/model/Terrain.java	/^package model;$/;"	p
-model	RoadRage/src/model/Truck.java	/^package model;$/;"	p
-model	RoadRage/src/model/Vehicle.java	/^package model;$/;"	p
+model	minh1212-roadrage/src/model/AbstractVehicle.java	/^package model;$/;"	p
+model	minh1212-roadrage/src/model/Atv.java	/^package model;$/;"	p
+model	minh1212-roadrage/src/model/Bicycle.java	/^package model;$/;"	p
+model	minh1212-roadrage/src/model/Car.java	/^package model;$/;"	p
+model	minh1212-roadrage/src/model/Direction.java	/^package model;$/;"	p
+model	minh1212-roadrage/src/model/Human.java	/^package model;$/;"	p
+model	minh1212-roadrage/src/model/Light.java	/^package model;$/;"	p
+model	minh1212-roadrage/src/model/Taxi.java	/^package model;$/;"	p
+model	minh1212-roadrage/src/model/Terrain.java	/^package model;$/;"	p
+model	minh1212-roadrage/src/model/Truck.java	/^package model;$/;"	p
+model	minh1212-roadrage/src/model/Vehicle.java	/^package model;$/;"	p
 moveTo	RaceDay/src/model/Race.java	/^    public void moveTo(final int theMillisecond) {$/;"	m	class:Race
 moveTo	RaceDay/src/model/RaceControls.java	/^    void moveTo(int theMillisecond);$/;"	m	interface:RaceControls
 myAction	RaceDay/src/controller/SingleAction.java	/^    private final Runnable myAction;$/;"	f	class:SingleAction	file:
 myActions	RaceDay/src/controller/RaceDayController.java	/^    private final List<Action> myActions;$/;"	f	class:RaceDayController	file:
-myBlue	SnapShop/src/image/Pixel.java	/^    private int myBlue;$/;"	f	class:Pixel	file:
+myBlue	minh1212-snapshop/src/image/Pixel.java	/^    private int myBlue;$/;"	f	class:Pixel	file:
 myBoard	RaceDay/src/model/LeaderboardMessge.java	/^    private List<Integer> myBoard = new ArrayList<Integer>();$/;"	f	class:LeaderboardMessge	file:
-myBulkprice	BookStore/src/model/Item.java	/^    private final BigDecimal myBulkprice;$/;"	f	class:Item	file:
-myBulkquantity	BookStore/src/model/Item.java	/^    private final int myBulkquantity;$/;"	f	class:Item	file:
+myBulkprice	Book-store/src/model/Item.java	/^    private final BigDecimal myBulkprice;$/;"	f	class:Item	file:
+myBulkquantity	Book-store/src/model/Item.java	/^    private final int myBulkquantity;$/;"	f	class:Item	file:
 myButton	RaceDay/src/view/RaceLeaderboard.java	/^    private JButton myButton;$/;"	f	class:RaceLeaderboard	file:
 myButton	RaceDay/src/view/RaceTrack.java	/^    private JButton myButton;$/;"	f	class:RaceTrack	file:
-myCampusInventories	BookStore/src/view/BookstoreFrame.java	/^    private final Map<String, List<Item>> myCampusInventories; $/;"	f	class:BookstoreFrame	file:
-myCart	BookStore/src/model/Cart.java	/^    private ArrayList<ItemOrder> myCart;$/;"	f	class:Cart	file:
-myCenter	Testing/src/shapes/Circle.java	/^    private Point myCenter; \/\/ Note that java.awt.Point is mutable$/;"	f	class:Circle	file:
+myCampusInventories	Book-store/src/view/BookstoreFrame.java	/^    private final Map<String, List<Item>> myCampusInventories; $/;"	f	class:BookstoreFrame	file:
+myCart	Book-store/src/model/Cart.java	/^    private ArrayList<ItemOrder> myCart;$/;"	f	class:Cart	file:
+myCenter	minh1212-testing/src/shapes/Circle.java	/^    private Point myCenter; \/\/ Note that java.awt.Point is mutable$/;"	f	class:Circle	file:
 myChooser	RaceDay/src/controller/RaceDayController.java	/^    private final JFileChooser myChooser = new JFileChooser();$/;"	f	class:RaceDayController	file:
-myChooser	SnapShop/src/gui/SnapShopGUI.java	/^    private final JFileChooser myChooser = new JFileChooser(); $/;"	f	class:SnapShopGUI	file:
-myCircle	Testing/src/test/CircleTest.java	/^    private Circle myCircle;$/;"	f	class:CircleTest	file:
-myCircleTest	Testing/src/test/CircleTest.java	/^    private Circle myCircleTest;$/;"	f	class:CircleTest	file:
+myChooser	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    private final JFileChooser myChooser = new JFileChooser(); $/;"	f	class:SnapShopGUI	file:
+myCircle	minh1212-testing/src/test/CircleTest.java	/^    private Circle myCircle;$/;"	f	class:CircleTest	file:
+myCircleTest	minh1212-testing/src/test/CircleTest.java	/^    private Circle myCircleTest;$/;"	f	class:CircleTest	file:
 myColor	RaceDay/src/view/RacerShape.java	/^    private Color myColor;$/;"	f	class:RacerShape	file:
-myColor	Testing/src/shapes/Circle.java	/^    private Color myColor;$/;"	f	class:Circle	file:
+myColor	minh1212-testing/src/shapes/Circle.java	/^    private Color myColor;$/;"	f	class:Circle	file:
 myColorList	RaceDay/src/view/RacerList.java	/^    private List<Color> myColorList;$/;"	f	class:RacerList	file:
-myCount	RoadRage/src/model/Taxi.java	/^    private int myCount;$/;"	f	class:Taxi	file:
-myCurrentCampus	BookStore/src/view/BookstoreFrame.java	/^    private final String myCurrentCampus;$/;"	f	class:BookstoreFrame	file:
-myDeathTime	RoadRage/src/model/AbstractVehicle.java	/^    private int myDeathTime;$/;"	f	class:AbstractVehicle	file:
-myDeathTimeRevise	RoadRage/src/model/AbstractVehicle.java	/^    private int myDeathTimeRevise;$/;"	f	class:AbstractVehicle	file:
-myDebugFlag	RoadRage/src/view/RoadRagePanel.java	/^    private boolean myDebugFlag;$/;"	f	class:RoadRagePanel	file:
-myDelay	RoadRage/src/view/RoadRageGUI.java	/^    private int myDelay;$/;"	f	class:RoadRageGUI	file:
-myDescription	SnapShop/src/filters/AbstractFilter.java	/^    private String myDescription;$/;"	f	class:AbstractFilter	file:
-myDir	RoadRage/src/model/AbstractVehicle.java	/^    private Direction myDir;$/;"	f	class:AbstractVehicle	file:
+myCount	minh1212-roadrage/src/model/Taxi.java	/^    private int myCount;$/;"	f	class:Taxi	file:
+myCurrentCampus	Book-store/src/view/BookstoreFrame.java	/^    private final String myCurrentCampus;$/;"	f	class:BookstoreFrame	file:
+myDeathTime	minh1212-roadrage/src/model/AbstractVehicle.java	/^    private int myDeathTime;$/;"	f	class:AbstractVehicle	file:
+myDeathTimeRevise	minh1212-roadrage/src/model/AbstractVehicle.java	/^    private int myDeathTimeRevise;$/;"	f	class:AbstractVehicle	file:
+myDebugFlag	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private boolean myDebugFlag;$/;"	f	class:RoadRagePanel	file:
+myDelay	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private int myDelay;$/;"	f	class:RoadRageGUI	file:
+myDescription	minh1212-snapshop/src/filters/AbstractFilter.java	/^    private String myDescription;$/;"	f	class:AbstractFilter	file:
+myDir	minh1212-roadrage/src/model/AbstractVehicle.java	/^    private Direction myDir;$/;"	f	class:AbstractVehicle	file:
 myDistance	RaceDay/src/model/RaceParticipants.java	/^    private double myDistance;$/;"	f	class:RaceParticipants	file:
 myDistance	RaceDay/src/model/TelementryMessge.java	/^    private double myDistance;$/;"	f	class:TelementryMessge	file:
 myDistanceList	RaceDay/src/model/ParticipantsList.java	/^    private List<Double> myDistanceList;$/;"	f	class:ParticipantsList	file:
 myDistanceList	RaceDay/src/model/TeleList.java	/^    private List<Double> myDistanceList;$/;"	f	class:TeleList	file:
 myDos	RaceDay/src/controller/RaceDOS.java	/^    private static JTextArea myDos;$/;"	f	class:RaceDOS	file:
 myFile	RaceDay/src/controller/RaceDayController.java	/^    private File myFile = new File(".");$/;"	f	class:RaceDayController	file:
-myFile	SnapShop/src/gui/SnapShopGUI.java	/^    private File myFile = new File(".");$/;"	f	class:SnapShopGUI	file:
-myFilterButton	SnapShop/src/gui/SnapShopGUI.java	/^    private List<JButton> myFilterButton;$/;"	f	class:SnapShopGUI	file:
-myFilterList	SnapShop/src/gui/SnapShopGUI.java	/^    private Filter[] myFilterList;$/;"	f	class:SnapShopGUI	file:
-myFiltersPanel	SnapShop/src/gui/SnapShopGUI.java	/^    private final JPanel myFiltersPanel = new JPanel();$/;"	f	class:SnapShopGUI	file:
+myFile	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    private File myFile = new File(".");$/;"	f	class:SnapShopGUI	file:
+myFilterButton	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    private List<JButton> myFilterButton;$/;"	f	class:SnapShopGUI	file:
+myFilterList	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    private Filter[] myFilterList;$/;"	f	class:SnapShopGUI	file:
+myFiltersPanel	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    private final JPanel myFiltersPanel = new JPanel();$/;"	f	class:SnapShopGUI	file:
 myFirstAction	RaceDay/src/controller/ToggleAction.java	/^    private final Runnable myFirstAction;$/;"	f	class:ToggleAction	file:
 myFirstIcon	RaceDay/src/controller/ToggleAction.java	/^    private final String myFirstIcon;$/;"	f	class:ToggleAction	file:
 myFirstText	RaceDay/src/controller/ToggleAction.java	/^    private final String myFirstText;$/;"	f	class:ToggleAction	file:
 myFlag	RaceDay/src/controller/ToggleAction.java	/^    private boolean myFlag;$/;"	f	class:ToggleAction	file:
-myFrame	SnapShop/src/gui/SnapShopGUI.java	/^    private final JFrame myFrame = new JFrame();$/;"	f	class:SnapShopGUI	file:
-myGreen	SnapShop/src/image/Pixel.java	/^    private int myGreen;$/;"	f	class:Pixel	file:
-myGrid	RoadRage/src/view/RoadRagePanel.java	/^    private final Terrain[][] myGrid;$/;"	f	class:RoadRagePanel	file:
+myFrame	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    private final JFrame myFrame = new JFrame();$/;"	f	class:SnapShopGUI	file:
+myGreen	minh1212-snapshop/src/image/Pixel.java	/^    private int myGreen;$/;"	f	class:Pixel	file:
+myGrid	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private final Terrain[][] myGrid;$/;"	f	class:RoadRagePanel	file:
 myIcon	RaceDay/src/controller/SingleAction.java	/^    private final String myIcon;$/;"	f	class:SingleAction	file:
-myImage	SnapShop/src/gui/SnapShopGUI.java	/^    private PixelImage myImage;$/;"	f	class:SnapShopGUI	file:
-myImageLabel	SnapShop/src/gui/SnapShopGUI.java	/^    private final JLabel myImageLabel = new JLabel();$/;"	f	class:SnapShopGUI	file:
+myImage	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    private PixelImage myImage;$/;"	f	class:SnapShopGUI	file:
+myImageLabel	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    private final JLabel myImageLabel = new JLabel();$/;"	f	class:SnapShopGUI	file:
 myInfoItem	RaceDay/src/controller/RaceDayController.java	/^    private JMenuItem myInfoItem;$/;"	f	class:RaceDayController	file:
 myInformation	RaceDay/src/model/Race.java	/^    private List<RaceInformation> myInformation;$/;"	f	class:Race	file:
-myInitialDir	RoadRage/src/model/AbstractVehicle.java	/^    private final Direction myInitialDir;$/;"	f	class:AbstractVehicle	file:
-myInitialX	RoadRage/src/model/AbstractVehicle.java	/^    private final int myInitialX;$/;"	f	class:AbstractVehicle	file:
-myInitialY	RoadRage/src/model/AbstractVehicle.java	/^    private final int myInitialY;$/;"	f	class:AbstractVehicle	file:
+myInitialDir	minh1212-roadrage/src/model/AbstractVehicle.java	/^    private final Direction myInitialDir;$/;"	f	class:AbstractVehicle	file:
+myInitialX	minh1212-roadrage/src/model/AbstractVehicle.java	/^    private final int myInitialX;$/;"	f	class:AbstractVehicle	file:
+myInitialY	minh1212-roadrage/src/model/AbstractVehicle.java	/^    private final int myInitialY;$/;"	f	class:AbstractVehicle	file:
 myInput	RaceDay/src/model/Race.java	/^    private Scanner myInput;$/;"	f	class:Race	file:
 myIsFinish	RaceDay/src/model/LineCrossingMessge.java	/^    private boolean myIsFinish;$/;"	f	class:LineCrossingMessge	file:
-myItem	BookStore/src/model/ItemOrder.java	/^    private final Item myItem;$/;"	f	class:ItemOrder	file:
-myItemTest	BookStore/src/tests/ItemTest.java	/^    private Item myItemTest;$/;"	f	class:ItemTest	file:
-myItemTest1	BookStore/src/tests/ItemTest.java	/^    private Item myItemTest1;$/;"	f	class:ItemTest	file:
-myItemTest2	BookStore/src/tests/ItemTest.java	/^    private Item myItemTest2;$/;"	f	class:ItemTest	file:
-myItems	BookStore/src/view/BookstoreFrame.java	/^    private final Cart myItems;$/;"	f	class:BookstoreFrame	file:
+myItem	Book-store/src/model/ItemOrder.java	/^    private final Item myItem;$/;"	f	class:ItemOrder	file:
+myItemTest	Book-store/src/tests/ItemTest.java	/^    private Item myItemTest;$/;"	f	class:ItemTest	file:
+myItemTest1	Book-store/src/tests/ItemTest.java	/^    private Item myItemTest1;$/;"	f	class:ItemTest	file:
+myItemTest2	Book-store/src/tests/ItemTest.java	/^    private Item myItemTest2;$/;"	f	class:ItemTest	file:
+myItems	Book-store/src/view/BookstoreFrame.java	/^    private final Cart myItems;$/;"	f	class:BookstoreFrame	file:
 myLap	RaceDay/src/model/TelementryMessge.java	/^    private int myLap;$/;"	f	class:TelementryMessge	file:
 myLeader	RaceDay/src/model/Race.java	/^    private LeaderboardMessge myLeader;$/;"	f	class:Race	file:
 myLeader	RaceDay/src/view/RaceTrack.java	/^    private JPanel myLeader;$/;"	f	class:RaceTrack	file:
-myLetter	RoadRage/src/model/Direction.java	/^    private final char myLetter;$/;"	f	class:Direction	file:
-myLetter	RoadRage/src/model/Terrain.java	/^    private char myLetter;$/;"	f	class:Terrain	file:
-myLight	RoadRage/src/view/RoadRagePanel.java	/^    private Light myLight;$/;"	f	class:RoadRagePanel	file:
-myLightColor	RoadRage/src/view/RoadRagePanel.java	/^    private Color myLightColor;$/;"	f	class:RoadRagePanel	file:
+myLetter	minh1212-roadrage/src/model/Direction.java	/^    private final char myLetter;$/;"	f	class:Direction	file:
+myLetter	minh1212-roadrage/src/model/Terrain.java	/^    private char myLetter;$/;"	f	class:Terrain	file:
+myLight	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private Light myLight;$/;"	f	class:RoadRagePanel	file:
+myLightColor	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private Color myLightColor;$/;"	f	class:RoadRagePanel	file:
 myList	RaceDay/src/view/RaceTrack.java	/^    private RacerList myList;$/;"	f	class:RaceTrack	file:
-myLiveVehicle	RoadRage/src/model/AbstractVehicle.java	/^    private boolean myLiveVehicle;$/;"	f	class:AbstractVehicle	file:
+myLiveVehicle	minh1212-roadrage/src/model/AbstractVehicle.java	/^    private boolean myLiveVehicle;$/;"	f	class:AbstractVehicle	file:
 myLoadRace	RaceDay/src/controller/RaceDayController.java	/^    private Race myLoadRace;$/;"	f	class:RaceDayController	file:
 myMapList	RaceDay/src/model/Race.java	/^    private Map<Integer, List<Message>> myMapList;$/;"	f	class:Race	file:
-myMembership	BookStore/src/model/Cart.java	/^    private boolean myMembership;$/;"	f	class:Cart	file:
+myMembership	Book-store/src/model/Cart.java	/^    private boolean myMembership;$/;"	f	class:Cart	file:
 myMessage	RaceDay/src/model/Race.java	/^    private List<Message> myMessage;$/;"	f	class:Race	file:
 myMutiplier	RaceDay/src/controller/RaceDayController.java	/^    private int myMutiplier = 1;$/;"	f	class:RaceDayController	file:
-myName	BookStore/src/model/Item.java	/^    private final String myName;$/;"	f	class:Item	file:
+myName	Book-store/src/model/Item.java	/^    private final String myName;$/;"	f	class:Item	file:
 myNameList	RaceDay/src/model/ParticipantsList.java	/^    private List<String> myNameList;$/;"	f	class:ParticipantsList	file:
 myNewLap	RaceDay/src/model/LineCrossingMessge.java	/^    private int myNewLap;$/;"	f	class:LineCrossingMessge	file:
 myOneDistance	RaceDay/src/model/RaceInformation.java	/^    private static int myOneDistance;$/;"	f	class:RaceInformation	file:
-myOptionButton	SnapShop/src/gui/SnapShopGUI.java	/^    private final JButton[] myOptionButton;$/;"	f	class:SnapShopGUI	file:
-myOptionPanel	SnapShop/src/gui/SnapShopGUI.java	/^    private final JPanel myOptionPanel = new JPanel();$/;"	f	class:SnapShopGUI	file:
+myOptionButton	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    private final JButton[] myOptionButton;$/;"	f	class:SnapShopGUI	file:
+myOptionPanel	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    private final JPanel myOptionPanel = new JPanel();$/;"	f	class:SnapShopGUI	file:
 myParticipant	RaceDay/src/view/RaceStatus.java	/^    private JLabel myParticipant;$/;"	f	class:RaceStatus	file:
 myParticipant	RaceDay/src/view/RaceTrack.java	/^    private JLabel myParticipant;$/;"	f	class:RaceTrack	file:
 myPcs	RaceDay/src/model/Race.java	/^    private final PropertyChangeSupport myPcs;$/;"	f	class:Race	file:
-myPcs	RoadRage/src/view/RoadRageGUI.java	/^    private final PropertyChangeSupport myPcs;$/;"	f	class:RoadRageGUI	file:
-myPrice	BookStore/src/model/Item.java	/^    private final BigDecimal myPrice;$/;"	f	class:Item	file:
-myQuantities	BookStore/src/view/BookstoreFrame.java	/^    private final List<JTextField> myQuantities;$/;"	f	class:BookstoreFrame	file:
-myQuantity	BookStore/src/model/ItemOrder.java	/^    private final int myQuantity;$/;"	f	class:ItemOrder	file:
+myPcs	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private final PropertyChangeSupport myPcs;$/;"	f	class:RoadRageGUI	file:
+myPrice	Book-store/src/model/Item.java	/^    private final BigDecimal myPrice;$/;"	f	class:Item	file:
+myQuantities	Book-store/src/view/BookstoreFrame.java	/^    private final List<JTextField> myQuantities;$/;"	f	class:BookstoreFrame	file:
+myQuantity	Book-store/src/model/ItemOrder.java	/^    private final int myQuantity;$/;"	f	class:ItemOrder	file:
 myRace	RaceDay/src/controller/RaceDOS.java	/^    private Race myRace = new Race();$/;"	f	class:RaceDOS	file:
 myRace	RaceDay/src/controller/RaceRP.java	/^    private Race myRace = new Race();$/;"	f	class:RaceRP	file:
 myRace	RaceDay/src/view/RaceLeaderboard.java	/^    private Race myRace;$/;"	f	class:RaceLeaderboard	file:
@@ -607,16 +607,16 @@ myRacerList	RaceDay/src/view/RacerList.java	/^    private List<RacerShape> myRac
 myRacerShape	RaceDay/src/view/RacerShape.java	/^    private Ellipse2D myRacerShape;$/;"	f	class:RacerShape	file:
 myRacers	RaceDay/src/controller/RaceRP.java	/^    private List<String> myRacers;$/;"	f	class:RaceRP	file:
 myRacers	RaceDay/src/view/RaceTrack.java	/^    private RacerShape myRacers;$/;"	f	class:RaceTrack	file:
-myRadius	Testing/src/shapes/Circle.java	/^    private double myRadius;$/;"	f	class:Circle	file:
+myRadius	minh1212-testing/src/shapes/Circle.java	/^    private double myRadius;$/;"	f	class:Circle	file:
 myRectangle	RaceDay/src/view/RaceTrack.java	/^    private Shape myRectangle;$/;"	f	class:RaceTrack	file:
-myRed	SnapShop/src/image/Pixel.java	/^    private int myRed;$/;"	f	class:Pixel	file:
+myRed	minh1212-snapshop/src/image/Pixel.java	/^    private int myRed;$/;"	f	class:Pixel	file:
 myScrollPane	RaceDay/src/controller/RaceRP.java	/^    private JScrollPane myScrollPane;$/;"	f	class:RaceRP	file:
 mySecondAction	RaceDay/src/controller/ToggleAction.java	/^    private final Runnable mySecondAction;$/;"	f	class:ToggleAction	file:
 mySecondIcon	RaceDay/src/controller/ToggleAction.java	/^    private final String mySecondIcon;$/;"	f	class:ToggleAction	file:
 mySecondText	RaceDay/src/controller/ToggleAction.java	/^    private final String mySecondText;$/;"	f	class:ToggleAction	file:
 myShapeList	RaceDay/src/view/RacerList.java	/^    private List<java.awt.geom.Ellipse2D> myShapeList;$/;"	f	class:RacerList	file:
 mySlider	RaceDay/src/controller/RaceDayController.java	/^    private JSlider mySlider;$/;"	f	class:RaceDayController	file:
-mySlider	RoadRage/src/view/RoadRageGUI.java	/^    private JSlider mySlider;$/;"	f	class:RoadRageGUI	file:
+mySlider	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private JSlider mySlider;$/;"	f	class:RoadRageGUI	file:
 myStatus	RaceDay/src/view/RaceTrack.java	/^    private JPanel myStatus;$/;"	f	class:RaceTrack	file:
 myTabInside	RaceDay/src/controller/RaceRP.java	/^    private JPanel myTabInside;$/;"	f	class:RaceRP	file:
 myTabs	RaceDay/src/controller/RaceDayController.java	/^    private JTabbedPane myTabs = new JTabbedPane();$/;"	f	class:RaceDayController	file:
@@ -627,31 +627,31 @@ myTime	RaceDay/src/model/Race.java	/^    private int myTime;$/;"	f	class:Race	fi
 myTimeStamp	RaceDay/src/model/AbstractMessage.java	/^    private int myTimeStamp;$/;"	f	class:AbstractMessage	file:
 myTimeStamp	RaceDay/src/model/LeaderboardMessge.java	/^    private int myTimeStamp;$/;"	f	class:LeaderboardMessge	file:
 myTimeStamp	RaceDay/src/model/TelementryMessge.java	/^    private int myTimeStamp;$/;"	f	class:TelementryMessge	file:
-myTimer	RoadRage/src/view/RoadRageGUI.java	/^    private final Timer myTimer;$/;"	f	class:RoadRageGUI	file:
+myTimer	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private final Timer myTimer;$/;"	f	class:RoadRageGUI	file:
 myTimerLabel	RaceDay/src/controller/RaceTimer.java	/^    private static JLabel myTimerLabel;$/;"	f	class:RaceTimer	file:
 myTimerLabel	RaceDay/src/view/RaceStatus.java	/^    private JLabel myTimerLabel;$/;"	f	class:RaceStatus	file:
 myTimerLabel	RaceDay/src/view/RaceTrack.java	/^    private JLabel myTimerLabel;$/;"	f	class:RaceTrack	file:
 myTimers	RaceDay/src/controller/RaceDayController.java	/^    private final Timer myTimers;$/;"	f	class:RaceDayController	file:
-myTimestep	RoadRage/src/view/RoadRageGUI.java	/^    private long myTimestep;$/;"	f	class:RoadRageGUI	file:
-myTimestep	RoadRage/src/view/RoadRagePanel.java	/^    private long myTimestep;$/;"	f	class:RoadRagePanel	file:
-myTotal	BookStore/src/view/BookstoreFrame.java	/^    private final JTextField myTotal;$/;"	f	class:BookstoreFrame	file:
+myTimestep	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private long myTimestep;$/;"	f	class:RoadRageGUI	file:
+myTimestep	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private long myTimestep;$/;"	f	class:RoadRagePanel	file:
+myTotal	Book-store/src/view/BookstoreFrame.java	/^    private final JTextField myTotal;$/;"	f	class:BookstoreFrame	file:
 myTotalTime	RaceDay/src/model/RaceInformation.java	/^    private static int myTotalTime;$/;"	f	class:RaceInformation	file:
 myTrack	RaceDay/src/view/RaceTrack.java	/^    private VisibleRaceTrack myTrack;$/;"	f	class:RaceTrack	file:
 myTrackGeometry	RaceDay/src/model/RaceInformation.java	/^    private static String myTrackGeometry;$/;"	f	class:RaceInformation	file:
 myTrackName	RaceDay/src/model/RaceInformation.java	/^    private static String myTrackName;$/;"	f	class:RaceInformation	file:
-myVehicleName	RoadRage/src/model/AbstractVehicle.java	/^    private final String myVehicleName = getClass().getSimpleName().toLowerCase();$/;"	f	class:AbstractVehicle	file:
-myVehicles	RoadRage/src/view/RoadRagePanel.java	/^    private final List<Vehicle> myVehicles;$/;"	f	class:RoadRagePanel	file:
-myWeights	SnapShop/src/filters/AbstractWeightedFilter.java	/^    private final int[][] myWeights;$/;"	f	class:AbstractWeightedFilter	file:
-myX	RoadRage/src/model/AbstractVehicle.java	/^    private int myX;$/;"	f	class:AbstractVehicle	file:
-myY	RoadRage/src/model/AbstractVehicle.java	/^    private int myY;$/;"	f	class:AbstractVehicle	file:
-normalize	SnapShop/src/filters/AbstractFilter.java	/^    protected int normalize(final int theColor) {$/;"	m	class:AbstractFilter
-openImage	SnapShop/src/gui/SnapShopGUI.java	/^    public void openImage() {$/;"	m	class:SnapShopGUI
+myVehicleName	minh1212-roadrage/src/model/AbstractVehicle.java	/^    private final String myVehicleName = getClass().getSimpleName().toLowerCase();$/;"	f	class:AbstractVehicle	file:
+myVehicles	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private final List<Vehicle> myVehicles;$/;"	f	class:RoadRagePanel	file:
+myWeights	minh1212-snapshop/src/filters/AbstractWeightedFilter.java	/^    private final int[][] myWeights;$/;"	f	class:AbstractWeightedFilter	file:
+myX	minh1212-roadrage/src/model/AbstractVehicle.java	/^    private int myX;$/;"	f	class:AbstractVehicle	file:
+myY	minh1212-roadrage/src/model/AbstractVehicle.java	/^    private int myY;$/;"	f	class:AbstractVehicle	file:
+normalize	minh1212-snapshop/src/filters/AbstractFilter.java	/^    protected int normalize(final int theColor) {$/;"	m	class:AbstractFilter
+openImage	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    public void openImage() {$/;"	m	class:SnapShopGUI
 paintComponent	RaceDay/src/view/RaceTrack.java	/^    public void paintComponent(final Graphics theGraphics) {$/;"	m	class:RaceTrack
-paintComponent	RoadRage/src/view/RoadRagePanel.java	/^    public void paintComponent(final Graphics theGraphics) {$/;"	m	class:RoadRagePanel
+paintComponent	minh1212-roadrage/src/view/RoadRagePanel.java	/^    public void paintComponent(final Graphics theGraphics) {$/;"	m	class:RoadRagePanel
 pause	RaceDay/src/controller/RaceDayController.java	/^    private void pause() {$/;"	m	class:RaceDayController	file:
 play	RaceDay/src/controller/RaceDayController.java	/^    private void play() {$/;"	m	class:RaceDayController	file:
-poke	RoadRage/src/model/AbstractVehicle.java	/^    public void poke() {$/;"	m	class:AbstractVehicle
-poke	RoadRage/src/model/Vehicle.java	/^    void poke();$/;"	m	interface:Vehicle
+poke	minh1212-roadrage/src/model/AbstractVehicle.java	/^    public void poke() {$/;"	m	class:AbstractVehicle
+poke	minh1212-roadrage/src/model/Vehicle.java	/^    void poke();$/;"	m	interface:Vehicle
 propertyChange	RaceDay/src/controller/RaceDOS.java	/^    public void propertyChange(final PropertyChangeEvent theEvent) {$/;"	m	class:RaceDOS
 propertyChange	RaceDay/src/controller/RaceDayController.java	/^    private void propertyChange() {$/;"	m	class:RaceDayController	file:
 propertyChange	RaceDay/src/controller/RaceRP.java	/^    public void propertyChange(final PropertyChangeEvent theEvent) {$/;"	m	class:RaceRP
@@ -659,32 +659,32 @@ propertyChange	RaceDay/src/controller/RaceTimer.java	/^    public void propertyC
 propertyChange	RaceDay/src/view/RaceLeaderboard.java	/^    public void propertyChange(final PropertyChangeEvent theEvent) {$/;"	m	class:RaceLeaderboard
 propertyChange	RaceDay/src/view/RaceStatus.java	/^    public void propertyChange(final PropertyChangeEvent theEvent) {$/;"	m	class:RaceStatus
 propertyChange	RaceDay/src/view/RaceTrack.java	/^    public void propertyChange(final PropertyChangeEvent theEvent) {$/;"	m	class:RaceTrack
-propertyChange	RoadRage/src/view/RoadRagePanel.java	/^    public void propertyChange(final PropertyChangeEvent theEvent) {$/;"	m	class:RoadRagePanel
+propertyChange	minh1212-roadrage/src/view/RoadRagePanel.java	/^    public void propertyChange(final PropertyChangeEvent theEvent) {$/;"	m	class:RoadRagePanel
 raceInfo	RaceDay/src/controller/RaceDayController.java	/^    public void raceInfo() {$/;"	m	class:RaceDayController
 raceLeaderboard	RaceDay/src/view/RaceTrack.java	/^    private void raceLeaderboard() {$/;"	m	class:RaceTrack	file:
 raceStatus	RaceDay/src/view/RaceTrack.java	/^    private void raceStatus() {$/;"	m	class:RaceTrack	file:
 raceTrack	RaceDay/src/view/RaceTrack.java	/^    private void raceTrack() {$/;"	m	class:RaceTrack	file:
-random	RoadRage/src/model/Direction.java	/^    public static Direction random() {$/;"	m	class:Direction
-readCity	RoadRage/src/view/util/FileLoader.java	/^    public static RoadRagePanel readCity(final JFrame theFrame) {$/;"	m	class:FileLoader
-readConfigurationFromFile	BookStore/src/utility/FileLoader.java	/^    public static List<String> readConfigurationFromFile(final String theFile) {$/;"	m	class:FileLoader
-readGrid	RoadRage/src/view/util/FileLoader.java	/^    private static Terrain[][] readGrid(final Scanner theInput) {$/;"	m	class:FileLoader	file:
-readItemsFromFile	BookStore/src/utility/FileLoader.java	/^    public static List<Item> readItemsFromFile(final String theFile) {$/;"	m	class:FileLoader
-readVehicles	RoadRage/src/view/util/FileLoader.java	/^    private static List<Vehicle> readVehicles(final Scanner theInput) {$/;"	m	class:FileLoader	file:
+random	minh1212-roadrage/src/model/Direction.java	/^    public static Direction random() {$/;"	m	class:Direction
+readCity	minh1212-roadrage/src/view/util/FileLoader.java	/^    public static RoadRagePanel readCity(final JFrame theFrame) {$/;"	m	class:FileLoader
+readConfigurationFromFile	Book-store/src/utility/FileLoader.java	/^    public static List<String> readConfigurationFromFile(final String theFile) {$/;"	m	class:FileLoader
+readGrid	minh1212-roadrage/src/view/util/FileLoader.java	/^    private static Terrain[][] readGrid(final Scanner theInput) {$/;"	m	class:FileLoader	file:
+readItemsFromFile	Book-store/src/utility/FileLoader.java	/^    public static List<Item> readItemsFromFile(final String theFile) {$/;"	m	class:FileLoader
+readVehicles	minh1212-roadrage/src/view/util/FileLoader.java	/^    private static List<Vehicle> readVehicles(final Scanner theInput) {$/;"	m	class:FileLoader	file:
 removePropertyChangeListener	RaceDay/src/model/PropertyChangeEnabledRaceControls.java	/^    void removePropertyChangeListener(PropertyChangeListener theListener);$/;"	m	interface:PropertyChangeEnabledRaceControls
 removePropertyChangeListener	RaceDay/src/model/PropertyChangeEnabledRaceControls.java	/^    void removePropertyChangeListener(String thePropertyName,$/;"	m	interface:PropertyChangeEnabledRaceControls
 removePropertyChangeListener	RaceDay/src/model/Race.java	/^    public void removePropertyChangeListener(final PropertyChangeListener theListener) {$/;"	m	class:Race
 removePropertyChangeListener	RaceDay/src/model/Race.java	/^    public void removePropertyChangeListener(final String thePropertyName,$/;"	m	class:Race
 reset	RaceDay/src/controller/RaceDayController.java	/^    private void reset() {$/;"	m	class:RaceDayController	file:
-reset	RoadRage/src/model/AbstractVehicle.java	/^    public void reset() {$/;"	m	class:AbstractVehicle
-reset	RoadRage/src/model/Vehicle.java	/^    void reset();$/;"	m	interface:Vehicle
-reset	RoadRage/src/view/RoadRageGUI.java	/^    private void reset() {$/;"	m	class:RoadRageGUI	file:
-resetVehicles	RoadRage/src/view/RoadRagePanel.java	/^    private void resetVehicles() {$/;"	m	class:RoadRagePanel	file:
-reverse	RoadRage/src/model/Direction.java	/^    public Direction reverse() {$/;"	m	class:Direction
-right	RoadRage/src/model/Direction.java	/^    public Direction right() {$/;"	m	class:Direction
-save	SnapShop/src/image/PixelImage.java	/^    public void save(final File theFile) throws IOException {$/;"	m	class:PixelImage
-saveImage	SnapShop/src/gui/SnapShopGUI.java	/^    public void saveImage() {$/;"	m	class:SnapShopGUI
+reset	minh1212-roadrage/src/model/AbstractVehicle.java	/^    public void reset() {$/;"	m	class:AbstractVehicle
+reset	minh1212-roadrage/src/model/Vehicle.java	/^    void reset();$/;"	m	interface:Vehicle
+reset	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private void reset() {$/;"	m	class:RoadRageGUI	file:
+resetVehicles	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private void resetVehicles() {$/;"	m	class:RoadRagePanel	file:
+reverse	minh1212-roadrage/src/model/Direction.java	/^    public Direction reverse() {$/;"	m	class:Direction
+right	minh1212-roadrage/src/model/Direction.java	/^    public Direction right() {$/;"	m	class:Direction
+save	minh1212-snapshop/src/image/PixelImage.java	/^    public void save(final File theFile) throws IOException {$/;"	m	class:PixelImage
+saveImage	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    public void saveImage() {$/;"	m	class:SnapShopGUI
 scanner	RaceDay/src/model/Race.java	/^    private static Scanner scanner;$/;"	f	class:Race	file:
-serialVersionUID	BookStore/src/view/BookstoreFrame.java	/^    private static final long serialVersionUID = 0;$/;"	f	class:BookstoreFrame	file:
+serialVersionUID	Book-store/src/view/BookstoreFrame.java	/^    private static final long serialVersionUID = 0;$/;"	f	class:BookstoreFrame	file:
 serialVersionUID	RaceDay/src/controller/RaceDOS.java	/^    private static final long serialVersionUID = 8385732728740430466L;$/;"	f	class:RaceDOS	file:
 serialVersionUID	RaceDay/src/controller/RaceDayController.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:RaceDayController	file:
 serialVersionUID	RaceDay/src/controller/RaceRP.java	/^    private static final long serialVersionUID = 8385732728740430466L;$/;"	f	class:RaceRP	file:
@@ -695,112 +695,112 @@ serialVersionUID	RaceDay/src/view/RaceDayView.java	/^    private static final lo
 serialVersionUID	RaceDay/src/view/RaceLeaderboard.java	/^    private static final long serialVersionUID = 3405558915055849185L;$/;"	f	class:RaceLeaderboard	file:
 serialVersionUID	RaceDay/src/view/RaceStatus.java	/^    private static final long serialVersionUID = 7872728925089958093L;$/;"	f	class:RaceStatus	file:
 serialVersionUID	RaceDay/src/view/RaceTrack.java	/^    private static final long serialVersionUID = 5547916873682403421L;$/;"	f	class:RaceTrack	file:
-serialVersionUID	RoadRage/src/view/RoadRageGUI.java	/^    private static final long serialVersionUID = 0;$/;"	f	class:RoadRageGUI	file:
-serialVersionUID	RoadRage/src/view/RoadRagePanel.java	/^    private static final long serialVersionUID = 4269666L;$/;"	f	class:RoadRagePanel	file:
-setBlue	SnapShop/src/image/Pixel.java	/^    public void setBlue(final int theBlue) throws IllegalArgumentException {$/;"	m	class:Pixel
-setCenter	Testing/src/shapes/Circle.java	/^    public final void setCenter(final Point thePoint) {$/;"	m	class:Circle
-setColor	Testing/src/shapes/Circle.java	/^    public final void setColor(final Color theColor) {$/;"	m	class:Circle
-setDebugFlag	RoadRage/src/view/RoadRageGUI.java	/^    private void setDebugFlag(final boolean theFlag) {$/;"	m	class:RoadRageGUI	file:
-setDirection	RoadRage/src/model/AbstractVehicle.java	/^    public void setDirection(final Direction theDir) {$/;"	m	class:AbstractVehicle
-setDirection	RoadRage/src/model/Vehicle.java	/^    void setDirection(Direction theDir);$/;"	m	interface:Vehicle
+serialVersionUID	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private static final long serialVersionUID = 0;$/;"	f	class:RoadRageGUI	file:
+serialVersionUID	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private static final long serialVersionUID = 4269666L;$/;"	f	class:RoadRagePanel	file:
+setBlue	minh1212-snapshop/src/image/Pixel.java	/^    public void setBlue(final int theBlue) throws IllegalArgumentException {$/;"	m	class:Pixel
+setCenter	minh1212-testing/src/shapes/Circle.java	/^    public final void setCenter(final Point thePoint) {$/;"	m	class:Circle
+setColor	minh1212-testing/src/shapes/Circle.java	/^    public final void setColor(final Color theColor) {$/;"	m	class:Circle
+setDebugFlag	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private void setDebugFlag(final boolean theFlag) {$/;"	m	class:RoadRageGUI	file:
+setDirection	minh1212-roadrage/src/model/AbstractVehicle.java	/^    public void setDirection(final Direction theDir) {$/;"	m	class:AbstractVehicle
+setDirection	minh1212-roadrage/src/model/Vehicle.java	/^    void setDirection(Direction theDir);$/;"	m	interface:Vehicle
 setEmpty	RaceDay/src/controller/RaceDOS.java	/^    public void setEmpty() {$/;"	m	class:RaceDOS
-setGreen	SnapShop/src/image/Pixel.java	/^    public void setGreen(final int theGreen) throws IllegalArgumentException {$/;"	m	class:Pixel
+setGreen	minh1212-snapshop/src/image/Pixel.java	/^    public void setGreen(final int theGreen) throws IllegalArgumentException {$/;"	m	class:Pixel
 setIcon	RaceDay/src/controller/SingleAction.java	/^    private void setIcon(final ImageIcon theIcon) {$/;"	m	class:SingleAction	file:
 setIcon	RaceDay/src/controller/ToggleAction.java	/^    private void setIcon(final ImageIcon theIcon) {$/;"	m	class:ToggleAction	file:
-setLightColor	RoadRage/src/view/RoadRagePanel.java	/^    private void setLightColor(final Light theLight) {$/;"	m	class:RoadRagePanel	file:
-setMembership	BookStore/src/model/Cart.java	/^    public void setMembership(final boolean theMembership) {$/;"	m	class:Cart
-setPixelData	SnapShop/src/image/PixelImage.java	/^    public void setPixelData(final Pixel[][] theData) throws IllegalArgumentException {$/;"	m	class:PixelImage
-setRadius	Testing/src/shapes/Circle.java	/^    public final void setRadius(final double theRadius) {$/;"	m	class:Circle
-setRed	SnapShop/src/image/Pixel.java	/^    public void setRed(final int theRed) throws IllegalArgumentException {$/;"	m	class:Pixel
+setLightColor	minh1212-roadrage/src/view/RoadRagePanel.java	/^    private void setLightColor(final Light theLight) {$/;"	m	class:RoadRagePanel	file:
+setMembership	Book-store/src/model/Cart.java	/^    public void setMembership(final boolean theMembership) {$/;"	m	class:Cart
+setPixelData	minh1212-snapshop/src/image/PixelImage.java	/^    public void setPixelData(final Pixel[][] theData) throws IllegalArgumentException {$/;"	m	class:PixelImage
+setRadius	minh1212-testing/src/shapes/Circle.java	/^    public final void setRadius(final double theRadius) {$/;"	m	class:Circle
+setRed	minh1212-snapshop/src/image/Pixel.java	/^    public void setRed(final int theRed) throws IllegalArgumentException {$/;"	m	class:Pixel
 setSliderDisable	RaceDay/src/controller/RaceDayController.java	/^    public void setSliderDisable() {$/;"	m	class:RaceDayController
 setSliderEnable	RaceDay/src/controller/RaceDayController.java	/^    public void setSliderEnable() {$/;"	m	class:RaceDayController
 setSliderToZero	RaceDay/src/controller/RaceDayController.java	/^    public void setSliderToZero() {$/;"	m	class:RaceDayController
 setSliderValue	RaceDay/src/controller/RaceDayController.java	/^    public void setSliderValue(final int theValue) {$/;"	m	class:RaceDayController
-setTimeStep	RoadRage/src/view/RoadRageGUI.java	/^    private void setTimeStep(final long theTime) {$/;"	m	class:RoadRageGUI	file:
-setUp	BookStore/src/tests/ItemTest.java	/^    public void setUp() {$/;"	m	class:ItemTest
-setUp	Testing/src/test/CircleTest.java	/^    public void setUp() {$/;"	m	class:CircleTest
+setTimeStep	minh1212-roadrage/src/view/RoadRageGUI.java	/^    private void setTimeStep(final long theTime) {$/;"	m	class:RoadRageGUI	file:
+setUp	Book-store/src/tests/ItemTest.java	/^    public void setUp() {$/;"	m	class:ItemTest
+setUp	minh1212-testing/src/test/CircleTest.java	/^    public void setUp() {$/;"	m	class:CircleTest
 setUpComponents	RaceDay/src/controller/RaceDayController.java	/^    public final void setUpComponents() {$/;"	m	class:RaceDayController
-setX	RoadRage/src/model/AbstractVehicle.java	/^    public void setX(final int theX) {$/;"	m	class:AbstractVehicle
-setX	RoadRage/src/model/Vehicle.java	/^    void setX(int theX);$/;"	m	interface:Vehicle
-setY	RoadRage/src/model/AbstractVehicle.java	/^    public void setY(final int theY) {$/;"	m	class:AbstractVehicle
-setY	RoadRage/src/model/Vehicle.java	/^    void setY(int theY);$/;"	m	interface:Vehicle
+setX	minh1212-roadrage/src/model/AbstractVehicle.java	/^    public void setX(final int theX) {$/;"	m	class:AbstractVehicle
+setX	minh1212-roadrage/src/model/Vehicle.java	/^    void setX(int theX);$/;"	m	interface:Vehicle
+setY	minh1212-roadrage/src/model/AbstractVehicle.java	/^    public void setY(final int theY) {$/;"	m	class:AbstractVehicle
+setY	minh1212-roadrage/src/model/Vehicle.java	/^    void setY(int theY);$/;"	m	interface:Vehicle
 setupComponents	RaceDay/src/controller/RaceDOS.java	/^    private void setupComponents() {$/;"	m	class:RaceDOS	file:
 setupComponents	RaceDay/src/controller/RaceRP.java	/^    private void setupComponents() {$/;"	m	class:RaceRP	file:
 setupComponents	RaceDay/src/controller/RaceTimer.java	/^    private void setupComponents() {$/;"	m	class:RaceTimer	file:
 setupComponents	RaceDay/src/view/RaceStatus.java	/^    private void setupComponents() {$/;"	m	class:RaceStatus	file:
-setupGUI	BookStore/src/view/BookstoreFrame.java	/^    private void setupGUI() {$/;"	m	class:BookstoreFrame	file:
-shapes	Testing/src/shapes/Circle.java	/^package shapes;$/;"	p
-start	SnapShop/src/gui/SnapShopGUI.java	/^    public void start() {$/;"	m	class:SnapShopGUI
-swap	SnapShop/src/filters/AbstractFilter.java	/^    protected void swap(final Pixel[][] theData, final int row1, final int col1,$/;"	m	class:AbstractFilter
-test	Testing/src/test/CircleTest.java	/^package test;$/;"	p
-testCalculateArea	Testing/src/test/CircleTest.java	/^    public void testCalculateArea() {$/;"	m	class:CircleTest
-testCalculateCircumference	Testing/src/test/CircleTest.java	/^    public void testCalculateCircumference() {$/;"	m	class:CircleTest
-testCalculateDiameter	Testing/src/test/CircleTest.java	/^    public void testCalculateDiameter() {$/;"	m	class:CircleTest
-testCanPass	RoadRage/src/tests/HumanTest.java	/^    public void testCanPass() {$/;"	m	class:HumanTest
-testCanPass	RoadRage/src/tests/TruckTest.java	/^    public void testCanPass() {$/;"	m	class:TruckTest
-testCenterNPE	Testing/src/test/CircleTest.java	/^    public void testCenterNPE() {$/;"	m	class:CircleTest
-testChooseDirectionMustReverse	RoadRage/src/tests/TruckTest.java	/^    public void testChooseDirectionMustReverse() {$/;"	m	class:TruckTest
-testChooseDirectionOnGrassMustReverse	RoadRage/src/tests/HumanTest.java	/^    public void testChooseDirectionOnGrassMustReverse() {$/;"	m	class:HumanTest
-testChooseDirectionOnGrassNearCrosswalk	RoadRage/src/tests/HumanTest.java	/^    public void testChooseDirectionOnGrassNearCrosswalk() {$/;"	m	class:HumanTest
-testChooseDirectionSurroundedByGrass	RoadRage/src/tests/HumanTest.java	/^    public void testChooseDirectionSurroundedByGrass() {$/;"	m	class:HumanTest
-testChooseDirectionSurroundedBySTREET	RoadRage/src/tests/TruckTest.java	/^    public void testChooseDirectionSurroundedBySTREET() {$/;"	m	class:TruckTest
-testCircle	Testing/src/test/CircleTest.java	/^    public void testCircle() {$/;"	m	class:CircleTest
-testCircleDoublePointColor	Testing/src/test/CircleTest.java	/^    public void testCircleDoublePointColor() {$/;"	m	class:CircleTest
-testCircleIAE	Testing/src/test/CircleTest.java	/^    public void testCircleIAE() {$/;"	m	class:CircleTest
-testColorNPE	Testing/src/test/CircleTest.java	/^    public void testColorNPE() {$/;"	m	class:CircleTest
-testGetBulkPrice	BookStore/src/tests/ItemTest.java	/^    public void testGetBulkPrice() {$/;"	m	class:ItemTest
-testGetBulkQuantity	BookStore/src/tests/ItemTest.java	/^    public void testGetBulkQuantity() {$/;"	m	class:ItemTest
-testGetCenter	Testing/src/test/CircleTest.java	/^    public void testGetCenter() {$/;"	m	class:CircleTest
-testGetColor	Testing/src/test/CircleTest.java	/^    public void testGetColor() {$/;"	m	class:CircleTest
-testGetPrice	BookStore/src/tests/ItemTest.java	/^    public void testGetPrice() {$/;"	m	class:ItemTest
-testGetRadius	Testing/src/test/CircleTest.java	/^    public void testGetRadius() {$/;"	m	class:CircleTest
-testHashCode	BookStore/src/tests/ItemTest.java	/^    public void testHashCode() {$/;"	m	class:ItemTest
-testHumanConstructor	RoadRage/src/tests/HumanTest.java	/^    public void testHumanConstructor() {$/;"	m	class:HumanTest
-testHumanSetters	RoadRage/src/tests/HumanTest.java	/^    public void testHumanSetters() {$/;"	m	class:HumanTest
-testIsBulk	BookStore/src/tests/ItemTest.java	/^    public void testIsBulk() {$/;"	m	class:ItemTest
-testItemBulkQuantityIAE	BookStore/src/tests/ItemTest.java	/^    public void testItemBulkQuantityIAE() {$/;"	m	class:ItemTest
-testItemStringBigDecimal	BookStore/src/tests/ItemTest.java	/^    public void testItemStringBigDecimal() {$/;"	m	class:ItemTest
-testItemStringBigDecimalIntBigDecimal	BookStore/src/tests/ItemTest.java	/^    public void testItemStringBigDecimalIntBigDecimal() {$/;"	m	class:ItemTest
-testRadiusNegativeIAE	Testing/src/test/CircleTest.java	/^    public void testRadiusNegativeIAE() {$/;"	m	class:CircleTest
-testRadiusPositeIAE	Testing/src/test/CircleTest.java	/^    public void testRadiusPositeIAE() {$/;"	m	class:CircleTest
-testRadiusZeroIAE	Testing/src/test/CircleTest.java	/^    public void testRadiusZeroIAE() {$/;"	m	class:CircleTest
-testSetCenter	Testing/src/test/CircleTest.java	/^    public void testSetCenter() {$/;"	m	class:CircleTest
-testSetColor	Testing/src/test/CircleTest.java	/^    public void testSetColor() {$/;"	m	class:CircleTest
-testSetRadius	Testing/src/test/CircleTest.java	/^    public void testSetRadius() {$/;"	m	class:CircleTest
-testToString	Testing/src/test/CircleTest.java	/^    public void testToString() {$/;"	m	class:CircleTest
-testTruckConstructor	RoadRage/src/tests/TruckTest.java	/^    public void testTruckConstructor() {$/;"	m	class:TruckTest
-testTruckSetters	RoadRage/src/tests/TruckTest.java	/^    public void testTruckSetters() {$/;"	m	class:TruckTest
-tests	BookStore/src/tests/ItemTest.java	/^package tests;$/;"	p
-tests	RoadRage/src/tests/HumanTest.java	/^package tests;$/;"	p
-tests	RoadRage/src/tests/TruckTest.java	/^package tests;$/;"	p
+setupGUI	Book-store/src/view/BookstoreFrame.java	/^    private void setupGUI() {$/;"	m	class:BookstoreFrame	file:
+shapes	minh1212-testing/src/shapes/Circle.java	/^package shapes;$/;"	p
+start	minh1212-snapshop/src/gui/SnapShopGUI.java	/^    public void start() {$/;"	m	class:SnapShopGUI
+swap	minh1212-snapshop/src/filters/AbstractFilter.java	/^    protected void swap(final Pixel[][] theData, final int row1, final int col1,$/;"	m	class:AbstractFilter
+test	minh1212-testing/src/test/CircleTest.java	/^package test;$/;"	p
+testCalculateArea	minh1212-testing/src/test/CircleTest.java	/^    public void testCalculateArea() {$/;"	m	class:CircleTest
+testCalculateCircumference	minh1212-testing/src/test/CircleTest.java	/^    public void testCalculateCircumference() {$/;"	m	class:CircleTest
+testCalculateDiameter	minh1212-testing/src/test/CircleTest.java	/^    public void testCalculateDiameter() {$/;"	m	class:CircleTest
+testCanPass	minh1212-roadrage/src/tests/HumanTest.java	/^    public void testCanPass() {$/;"	m	class:HumanTest
+testCanPass	minh1212-roadrage/src/tests/TruckTest.java	/^    public void testCanPass() {$/;"	m	class:TruckTest
+testCenterNPE	minh1212-testing/src/test/CircleTest.java	/^    public void testCenterNPE() {$/;"	m	class:CircleTest
+testChooseDirectionMustReverse	minh1212-roadrage/src/tests/TruckTest.java	/^    public void testChooseDirectionMustReverse() {$/;"	m	class:TruckTest
+testChooseDirectionOnGrassMustReverse	minh1212-roadrage/src/tests/HumanTest.java	/^    public void testChooseDirectionOnGrassMustReverse() {$/;"	m	class:HumanTest
+testChooseDirectionOnGrassNearCrosswalk	minh1212-roadrage/src/tests/HumanTest.java	/^    public void testChooseDirectionOnGrassNearCrosswalk() {$/;"	m	class:HumanTest
+testChooseDirectionSurroundedByGrass	minh1212-roadrage/src/tests/HumanTest.java	/^    public void testChooseDirectionSurroundedByGrass() {$/;"	m	class:HumanTest
+testChooseDirectionSurroundedBySTREET	minh1212-roadrage/src/tests/TruckTest.java	/^    public void testChooseDirectionSurroundedBySTREET() {$/;"	m	class:TruckTest
+testCircle	minh1212-testing/src/test/CircleTest.java	/^    public void testCircle() {$/;"	m	class:CircleTest
+testCircleDoublePointColor	minh1212-testing/src/test/CircleTest.java	/^    public void testCircleDoublePointColor() {$/;"	m	class:CircleTest
+testCircleIAE	minh1212-testing/src/test/CircleTest.java	/^    public void testCircleIAE() {$/;"	m	class:CircleTest
+testColorNPE	minh1212-testing/src/test/CircleTest.java	/^    public void testColorNPE() {$/;"	m	class:CircleTest
+testGetBulkPrice	Book-store/src/tests/ItemTest.java	/^    public void testGetBulkPrice() {$/;"	m	class:ItemTest
+testGetBulkQuantity	Book-store/src/tests/ItemTest.java	/^    public void testGetBulkQuantity() {$/;"	m	class:ItemTest
+testGetCenter	minh1212-testing/src/test/CircleTest.java	/^    public void testGetCenter() {$/;"	m	class:CircleTest
+testGetColor	minh1212-testing/src/test/CircleTest.java	/^    public void testGetColor() {$/;"	m	class:CircleTest
+testGetPrice	Book-store/src/tests/ItemTest.java	/^    public void testGetPrice() {$/;"	m	class:ItemTest
+testGetRadius	minh1212-testing/src/test/CircleTest.java	/^    public void testGetRadius() {$/;"	m	class:CircleTest
+testHashCode	Book-store/src/tests/ItemTest.java	/^    public void testHashCode() {$/;"	m	class:ItemTest
+testHumanConstructor	minh1212-roadrage/src/tests/HumanTest.java	/^    public void testHumanConstructor() {$/;"	m	class:HumanTest
+testHumanSetters	minh1212-roadrage/src/tests/HumanTest.java	/^    public void testHumanSetters() {$/;"	m	class:HumanTest
+testIsBulk	Book-store/src/tests/ItemTest.java	/^    public void testIsBulk() {$/;"	m	class:ItemTest
+testItemBulkQuantityIAE	Book-store/src/tests/ItemTest.java	/^    public void testItemBulkQuantityIAE() {$/;"	m	class:ItemTest
+testItemStringBigDecimal	Book-store/src/tests/ItemTest.java	/^    public void testItemStringBigDecimal() {$/;"	m	class:ItemTest
+testItemStringBigDecimalIntBigDecimal	Book-store/src/tests/ItemTest.java	/^    public void testItemStringBigDecimalIntBigDecimal() {$/;"	m	class:ItemTest
+testRadiusNegativeIAE	minh1212-testing/src/test/CircleTest.java	/^    public void testRadiusNegativeIAE() {$/;"	m	class:CircleTest
+testRadiusPositeIAE	minh1212-testing/src/test/CircleTest.java	/^    public void testRadiusPositeIAE() {$/;"	m	class:CircleTest
+testRadiusZeroIAE	minh1212-testing/src/test/CircleTest.java	/^    public void testRadiusZeroIAE() {$/;"	m	class:CircleTest
+testSetCenter	minh1212-testing/src/test/CircleTest.java	/^    public void testSetCenter() {$/;"	m	class:CircleTest
+testSetColor	minh1212-testing/src/test/CircleTest.java	/^    public void testSetColor() {$/;"	m	class:CircleTest
+testSetRadius	minh1212-testing/src/test/CircleTest.java	/^    public void testSetRadius() {$/;"	m	class:CircleTest
+testToString	minh1212-testing/src/test/CircleTest.java	/^    public void testToString() {$/;"	m	class:CircleTest
+testTruckConstructor	minh1212-roadrage/src/tests/TruckTest.java	/^    public void testTruckConstructor() {$/;"	m	class:TruckTest
+testTruckSetters	minh1212-roadrage/src/tests/TruckTest.java	/^    public void testTruckSetters() {$/;"	m	class:TruckTest
+tests	Book-store/src/tests/ItemTest.java	/^package tests;$/;"	p
+tests	minh1212-roadrage/src/tests/HumanTest.java	/^package tests;$/;"	p
+tests	minh1212-roadrage/src/tests/TruckTest.java	/^package tests;$/;"	p
 timeSlider	RaceDay/src/controller/RaceDayController.java	/^    public void timeSlider(final int theFactor) {$/;"	m	class:RaceDayController
-toString	BookStore/src/model/Cart.java	/^    public String toString() {$/;"	m	class:Cart
-toString	BookStore/src/model/Item.java	/^    public String toString() {$/;"	m	class:Item
-toString	BookStore/src/model/ItemOrder.java	/^    public String toString() {$/;"	m	class:ItemOrder
+toString	Book-store/src/model/Cart.java	/^    public String toString() {$/;"	m	class:Cart
+toString	Book-store/src/model/Item.java	/^    public String toString() {$/;"	m	class:Item
+toString	Book-store/src/model/ItemOrder.java	/^    public String toString() {$/;"	m	class:ItemOrder
 toString	RaceDay/src/model/LeaderboardMessge.java	/^    public String toString() {$/;"	m	class:LeaderboardMessge
 toString	RaceDay/src/model/RaceParticipants.java	/^    public String toString() {$/;"	m	class:RaceParticipants
 toString	RaceDay/src/model/TelementryMessge.java	/^    public String toString() {$/;"	m	class:TelementryMessge
-toString	RoadRage/src/model/AbstractVehicle.java	/^    public String toString() {$/;"	m	class:AbstractVehicle
-toString	RoadRage/src/model/Terrain.java	/^    public String toString() {$/;"	m	class:Terrain
-toString	Testing/src/shapes/Circle.java	/^    public String toString() {$/;"	m	class:Circle
+toString	minh1212-roadrage/src/model/AbstractVehicle.java	/^    public String toString() {$/;"	m	class:AbstractVehicle
+toString	minh1212-roadrage/src/model/Terrain.java	/^    public String toString() {$/;"	m	class:Terrain
+toString	minh1212-testing/src/shapes/Circle.java	/^    public String toString() {$/;"	m	class:Circle
 toggleParticipant	RaceDay/src/model/Race.java	/^    public void toggleParticipant(final int theParticpantID, final boolean theToggle) {$/;"	m	class:Race
 toggleParticipant	RaceDay/src/model/RaceControls.java	/^    void toggleParticipant(int theParticpantID, boolean theToggle);$/;"	m	interface:RaceControls
-updateItem	BookStore/src/view/BookstoreFrame.java	/^    private void updateItem(final Item theItem, final JTextField theQuantity) {$/;"	m	class:BookstoreFrame	file:
-updateTotal	BookStore/src/view/BookstoreFrame.java	/^    private void updateTotal() {$/;"	m	class:BookstoreFrame	file:
-utility	BookStore/src/utility/FileLoader.java	/^package utility;$/;"	p
-valueOf	RoadRage/src/model/Direction.java	/^    public static Direction valueOf(final char theLetter) {$/;"	m	class:Direction
-valueOf	RoadRage/src/model/Terrain.java	/^    public static Terrain valueOf(final char theLetter) {$/;"	m	class:Terrain
-view	BookStore/src/view/BookstoreFrame.java	/^package view;$/;"	p
-view	BookStore/src/view/BookstoreMain.java	/^package view;$/;"	p
+updateItem	Book-store/src/view/BookstoreFrame.java	/^    private void updateItem(final Item theItem, final JTextField theQuantity) {$/;"	m	class:BookstoreFrame	file:
+updateTotal	Book-store/src/view/BookstoreFrame.java	/^    private void updateTotal() {$/;"	m	class:BookstoreFrame	file:
+utility	Book-store/src/utility/FileLoader.java	/^package utility;$/;"	p
+valueOf	minh1212-roadrage/src/model/Direction.java	/^    public static Direction valueOf(final char theLetter) {$/;"	m	class:Direction
+valueOf	minh1212-roadrage/src/model/Terrain.java	/^    public static Terrain valueOf(final char theLetter) {$/;"	m	class:Terrain
+view	Book-store/src/view/BookstoreFrame.java	/^package view;$/;"	p
+view	Book-store/src/view/BookstoreMain.java	/^package view;$/;"	p
 view	RaceDay/src/view/RaceDayView.java	/^package view;$/;"	p
 view	RaceDay/src/view/RaceLeaderboard.java	/^package view;$/;"	p
 view	RaceDay/src/view/RaceStatus.java	/^package view;$/;"	p
 view	RaceDay/src/view/RaceTrack.java	/^package view;$/;"	p
 view	RaceDay/src/view/RacerList.java	/^package view;$/;"	p
 view	RaceDay/src/view/RacerShape.java	/^package view;$/;"	p
-view	RoadRage/src/view/RoadRageGUI.java	/^package view;$/;"	p
-view	RoadRage/src/view/RoadRageMain.java	/^package view;$/;"	p
-view	RoadRage/src/view/RoadRagePanel.java	/^package view;$/;"	p
-view.util	RoadRage/src/view/util/FileLoader.java	/^package view.util;$/;"	p
-weight	SnapShop/src/filters/AbstractFilter.java	/^    protected void weight(final PixelImage theImage, final int[][] theWeights)$/;"	m	class:AbstractFilter
-weight	SnapShop/src/filters/AbstractFilter.java	/^    protected void weight(final PixelImage theImage, final int[][] theWeights,$/;"	m	class:AbstractFilter
+view	minh1212-roadrage/src/view/RoadRageGUI.java	/^package view;$/;"	p
+view	minh1212-roadrage/src/view/RoadRageMain.java	/^package view;$/;"	p
+view	minh1212-roadrage/src/view/RoadRagePanel.java	/^package view;$/;"	p
+view.util	minh1212-roadrage/src/view/util/FileLoader.java	/^package view.util;$/;"	p
+weight	minh1212-snapshop/src/filters/AbstractFilter.java	/^    protected void weight(final PixelImage theImage, final int[][] theWeights)$/;"	m	class:AbstractFilter
+weight	minh1212-snapshop/src/filters/AbstractFilter.java	/^    protected void weight(final PixelImage theImage, final int[][] theWeights,$/;"	m	class:AbstractFilter

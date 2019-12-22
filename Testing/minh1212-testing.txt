@@ -1,0 +1,24 @@
+
+
+Assignment name: Assignment 1
+TCSS 305: Programming Practicum, Autumn 2018
+
+Name: Minh Phan	
+UWNetID: minh1212
+Subversion Revision Number:7
+
+Assignment Overview:
+Assignment 2 is about practicing writing Java classes using provided API and Collections. It creates a simple shopping cart. With an Item objects that stores information about an individual item, then ItemOrder store information about a purchase order from an item, and a cart that stores information about the customer's overall purchase. Also, we have a testing class that test from Item class to find bugs. 
+
+Technical Impression:
+To finish the assignment, I had to complete all three classes that given. The Item class is to get information about an individual item. This part is construct and initialize a bunch of method including name, price, bulk quantity, and bulk price. There is a isBulk() method that determine if the Item has bulk pricing or not. Equals(object) and Hashcode are taught in class this week, so those are the best review assignment.  Also, following by the hints and suggestions, I learnt the String representation of the price method by how to obtain a number formatter by calling the static method getCurrency. The second ItemOrder is pretty simple. I just need to put the Items from Item class into ItemOrder class. The last part Cart class was very challenging for me. It took me 3 days to run it works. First of all, I used ArrayList to hold elements from ItemOrder class including Item and Quantity.  However, add method is important on this part. I created the loop to remove the Item from previous user’s input. Then , add them with the new input. For the calculation part, I used HashMap to retrieve Item and Integer from ItemOrder class. Then filter them with Bulk price and membership. I was struggled to use HashMap, so I took time to do research and read Core Java textbook. After completed this assignment, I have more confident about my java coding skill, especially HashMap part, and solving problems skills. 
+
+Unresolved problems in my submission:
+No
+
+Citations and Collaborations:
+HashMap tutorial channels on Youtube. I also discussed with Minh Nguyen about how to iterate through HashMap.
+
+Questions:
+No
+
